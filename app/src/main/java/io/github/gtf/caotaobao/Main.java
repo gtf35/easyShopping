@@ -123,7 +123,9 @@ implements NavigationView.OnNavigationItemSelectedListener
 				{
 				}
 			});
-		
+		if (startTime == 1){
+			Dialog.show();
+		}
 		mHandler = new Handler(){  
 			@Override  
 			public void handleMessage(Message msg)
@@ -151,16 +153,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		{
 			if (IsAtHome)
 			{
-				mainView = getWindow().getDecorView();
-				Snackbar.make(mainView, "退出？", Snackbar.LENGTH_SHORT)
-					.setAction("确定", new View.OnClickListener() {
-						@Override
-						public void onClick(View v)
-						{
-							exitProgrames();
-						}
-					})
-					.setDuration(4000).show();
+				showSnackBar("退出？","确定",1);
 			}
 			else if (mWebView.canGoBack())
 			{
@@ -198,9 +191,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		}
 		else if (id == R.id.action_reload)
 		{
-			mainView = getWindow().getDecorView();
-			Snackbar.make(mainView, "刷新ing........", Snackbar.LENGTH_LONG)
-				.setAction("Action", null).show();
+			showSnackBar("刷新ing........"," ",0);
 			mWebView.reload();
 			return true;
 		}
@@ -223,16 +214,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 			}
 			else
 			{
-				mainView = getWindow().getDecorView();
-				Snackbar.make(mainView, "该选项在淘宝国际版中仅用作登录", Snackbar.LENGTH_LONG)
-					.setAction("登录", new View.OnClickListener() {
-						@Override
-						public void onClick(View v)
-						{
-							mWebView.loadUrl(mTaobaoLiteDengluUrl);
-						}
-					})
-					.setDuration(4000).show();
+				showSnackBar("该选项在淘宝国际版中仅用作登录","登录",2);
 			}
         }
 		else if (id == R.id.nav_gouwuche)
@@ -415,6 +397,29 @@ implements NavigationView.OnNavigationItemSelectedListener
 				}
 			});
 	}
-
+	/**
+     * 展示一个SnackBar
+     */
+    public void showSnackBar(String message,String button_text,final int action_number) {
+        //去掉虚拟按键
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+														 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION //隐藏虚拟按键栏
+														 | View.SYSTEM_UI_FLAG_IMMERSIVE //防止点击屏幕时,隐藏虚拟按键栏又弹了出来
+														 );
+        final Snackbar snackbar = Snackbar.make(getWindow().getDecorView(), message, Snackbar.LENGTH_INDEFINITE);
+        snackbar.setAction(button_text, new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					snackbar.dismiss();
+					//隐藏SnackBar时记得恢复隐藏虚拟按键栏,不然屏幕底部会多出一块空白布局出来,和难看
+					getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
+					if(action_number == 1){
+						exitProgrames();
+					}else if (action_number ==2){
+						mWebView.loadUrl(mTaobaoLiteDengluUrl);
+					}
+				}
+			}).show();
+    }
 
 }

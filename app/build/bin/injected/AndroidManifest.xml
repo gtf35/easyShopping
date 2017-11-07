@@ -2,8 +2,8 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="io.github.gtf.caotaobao"
-	android:versionCode="1"
-	android:versionName="1.1.test">
+	android:versionCode="2"
+	android:versionName="1.2.test">
 
 	<uses-sdk
 		android:minSdkVersion="16"
