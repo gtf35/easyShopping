@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myTaobao"
+            android:title="我的淘宝" />
+        <item
+            android:id="@+id/nav_gouwuche"
+            android:title="购物车" />
+        <item
+            android:id="@+id/nav_wuliu"
+            android:title="物流" />
+        <item
+            android:id="@+id/nav_dingdan"
+            android:title="订单" />
+		<item
+            android:id="@+id/nav_soucangjia"
+            android:title="收藏夹" />
+		<item
+            android:id="@+id/nav_zuji"
+            android:title="足迹" />
+		<item
+            android:id="@+id/nav_kajuanbao"
+            android:title="卡卷包" />
+    </group>
+
+	<item android:title="其他选项">
+        <menu>
+            <item
+                android:id="@+id/nav_mTabaoTypeChange"
+                android:title="国际版/标准版" />
+			<item
+                android:id="@+id/nav_updata"
+                android:title="获取最新版" />
+            <item
+                android:id="@+id/nav_Github"
+                android:title="开源项目主页" />
+        </menu>
+    </item>
+
+</menu>
