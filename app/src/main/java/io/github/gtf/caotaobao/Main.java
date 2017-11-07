@@ -406,7 +406,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 														 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION //隐藏虚拟按键栏
 														 | View.SYSTEM_UI_FLAG_IMMERSIVE //防止点击屏幕时,隐藏虚拟按键栏又弹了出来
 														 );
-        final Snackbar snackbar = Snackbar.make(getWindow().getDecorView(), message, Snackbar.LENGTH_INDEFINITE);
+        final Snackbar snackbar = Snackbar.make(getWindow().getDecorView(), message, Snackbar.LENGTH_LONG);
         snackbar.setAction(button_text, new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
