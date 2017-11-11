@@ -37,9 +37,10 @@ implements NavigationView.OnNavigationItemSelectedListener
 	TextView Logo1;
 	TextView Logo2;
 	View mainView;
+	ClipboardManager manager;
 
 	String updata_pan_url = "http://pan.baidu.com/s/1o8zbaFw";
-	
+
 	String mTaobaoUrl = "https://m.taobao.com/";
 	String mMyTaobaoUrl = "https://h5.m.taobao.com/mlapp/mytaobao.html";
 	String mTaobaoWuliuUrl = "https://h5.m.taobao.com/awp/mtb/olist.htm?sta=5#!/awp/mtb/olist.htm?sta=5";
@@ -48,6 +49,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	String mTaobaoSoucangjia = "https://h5.m.taobao.com/fav/index.htm";
 	String mTaobaoKajuanbao = "https://h5.m.taobao.com/app/hongbao/www/index/index.html";
 	String mTaobaoZuji = "https://h5.m.taobao.com/footprint/homev2.html";
+	String mTaobaoWW ="https://h5.m.taobao.com/ww/index.htm";
 
 	String mTaobaoLiteUrl = "https://m.intl.taobao.com";
 	String mTaobaoLiteGouwuche = "https://h5.m.taobao.com/mlapp/cart.html";
@@ -94,12 +96,15 @@ implements NavigationView.OnNavigationItemSelectedListener
 				public void onClick(View view)
 				{
 					IsAtHome = true;
-					if(IsTaobaoLite == false){
+					if (IsTaobaoLite == false)
+					{
 						mWebView.loadUrl(mTaobaoUrl);
-					}else{
+					}
+					else
+					{
 						mWebView.loadUrl(mTaobaoLiteUrl);
 					}
-					
+
 				}
 			});
 
@@ -123,7 +128,11 @@ implements NavigationView.OnNavigationItemSelectedListener
 				{
 				}
 			});
-		if (startTime == 1){
+
+		IshaveTaoKey();
+
+		if (startTime == 1)
+		{
 			Dialog.show();
 		}
 		mHandler = new Handler(){  
@@ -151,13 +160,13 @@ implements NavigationView.OnNavigationItemSelectedListener
         }
 		else
 		{
-			if (IsAtHome)
-			{
-				showSnackBar("退出？","确定",1);
-			}
-			else if (mWebView.canGoBack())
+			if (mWebView.canGoBack())
 			{
 				mWebView.goBack();
+			}
+			else
+			{
+				showSnackBar("退出？", "确定", 1);
 			}
         }
     }
@@ -189,9 +198,28 @@ implements NavigationView.OnNavigationItemSelectedListener
 			exitProgrames();
 			return true;
 		}
+		else if (id == R.id.share)
+		{
+			//提示dialog
+			Dialog.setCancelable(true);
+			Dialog.setTitle("淘口令：");
+			Dialog.setMessage("淘口令已经生成，并复制到了剪切板，去粘贴吧！");
+			Dialog.setPositiveButton("OK",  new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which)
+					{
+						String thisUrl = mWebView.getUrl();
+					    String thisTitle = toolbarTitle;
+						String thisTaokey = "【" + thisTitle + "】" + thisUrl + " 点击链接，再选择浏览器打开；或复制这条信息后打开👉手淘👈";
+						copy(thisTaokey, Main.this);
+					}
+				});
+			Dialog.show();
+			return true;
+		}	
 		else if (id == R.id.action_reload)
 		{
-			showSnackBar("刷新ing........"," ",0);
+			showSnackBar("刷新ing........", " ", 0);
 			mWebView.reload();
 			return true;
 		}
@@ -214,7 +242,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 			}
 			else
 			{
-				showSnackBar("该选项在淘宝国际版中仅用作登录","登录",2);
+				showSnackBar("该选项在淘宝国际版中仅用作登录", "登录", 2);
 			}
         }
 		else if (id == R.id.nav_gouwuche)
@@ -262,6 +290,10 @@ implements NavigationView.OnNavigationItemSelectedListener
 		{
 			mWebView.loadUrl(mTaobaoZuji);
 		}
+		else if (id == R.id.nav_wangwang)
+		{
+			mWebView.loadUrl(mTaobaoWW);
+		}
 		else if (id == R.id.nav_mTabaoTypeChange)
 		{
 			if (IsTaobaoLite == false)
@@ -303,19 +335,22 @@ implements NavigationView.OnNavigationItemSelectedListener
 			intent.setData(content_url);
 			startActivity(Intent.createChooser(intent, "请选择浏览器"));
 
-		}else if(id == R.id.nav_updata){
+		}
+		else if (id == R.id.nav_updata)
+		{
 			//从其他浏览器打开
 			Intent intent = new Intent();
 			intent.setAction(Intent.ACTION_VIEW);
 			Uri content_url = Uri.parse(updata_pan_url);
 			intent.setData(content_url);
 			startActivity(Intent.createChooser(intent, "请选择浏览器"));
-			
+
 		}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+
     }
 
 	public void exitProgrames()
@@ -384,6 +419,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 					super.onPageFinished(view, url);
 					mProgressDialog.hide();
 					toolbar.setTitle(toolbarTitle);
+					IshaveTaoKey();
 					if (HideLogo)
 					{
 						Timer timer = new Timer();
@@ -400,7 +436,8 @@ implements NavigationView.OnNavigationItemSelectedListener
 	/**
      * 展示一个SnackBar
      */
-    public void showSnackBar(String message,String button_text,final int action_number) {
+    public void showSnackBar(String message, String button_text, final int action_number)
+	{
         //去掉虚拟按键
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
 														 | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION //隐藏虚拟按键栏
@@ -409,17 +446,273 @@ implements NavigationView.OnNavigationItemSelectedListener
         final Snackbar snackbar = Snackbar.make(getWindow().getDecorView(), message, Snackbar.LENGTH_LONG);
         snackbar.setAction(button_text, new View.OnClickListener() {
 				@Override
-				public void onClick(View v) {
+				public void onClick(View v)
+				{
 					snackbar.dismiss();
 					//隐藏SnackBar时记得恢复隐藏虚拟按键栏,不然屏幕底部会多出一块空白布局出来,和难看
 					getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
-					if(action_number == 1){
+					if (action_number == 1)
+					{
 						exitProgrames();
-					}else if (action_number ==2){
+					}
+					else if (action_number == 2)
+					{
 						mWebView.loadUrl(mTaobaoLiteDengluUrl);
 					}
 				}
 			}).show();
     }
+
+	String getClipbord()
+	{
+		// 获取 剪切板数据
+		ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+		ClipData cd2 = cm.getPrimaryClip();
+		String str2 = cd2.getItemAt(0).getText().toString();
+		return str2;
+	}
+
+	@Override
+	protected void onDestroy()
+	{
+		//除指定的剪贴板数据改变监听器
+		// manager.removePrimaryClipChangedListener(manager.OnPrimaryClipChangedListenerwhat);
+		// TODO: Implement this method
+		super.onDestroy();
+	}
+
+	String getTaoKeyTitle(String taoKey)
+	{
+		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
+		double textLong1 =getLength(taoKey);
+		int textLong = (int)textLong1;
+		if (textLong < 1)
+		{
+			textLong = 1;
+			taoKey = "To fix a bug";
+		}
+		String[] tempArray = new String[textLong];
+		int i = 0;
+		while (i <= textLong - 1)
+		{
+			tempArray[i] = taoKey.substring(i, i + 1);
+			i = i + 1;
+		}
+		int start = 0;
+		int end = 0;
+		String finallyString = "";
+		int time = 0 ;
+		while (time < textLong)
+		{
+			String tempText = tempArray[time];
+			if (tempText.contains("【"))
+			{
+				start = time + 1;
+			}
+			if (tempText.contains("】"))
+			{
+				end = time - 1;
+			}
+			time = time + 1;
+		}
+
+		int a = start ;
+
+		while (a <= end)
+		{
+			finallyString = finallyString + tempArray[a];
+			a = a + 1;
+		}
+		//System.out.println(finallyString);
+		return finallyString;
+	}
+
+	String getTaoKeyUrl(String taoKey)
+	{
+		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
+		double textLong1 =getLength(taoKey);
+		int textLong = (int)textLong1;
+		if (textLong < 1)
+		{
+			textLong = 1;
+			taoKey = "To fix a bug";
+		}
+		String[] tempArray = new String[textLong];
+		int i = 0;
+		while (i <= textLong - 1)
+		{
+			tempArray[i] = taoKey.substring(i, i + 1);
+			i = i + 1;
+		}
+		int start = 0;
+		int end = 0;
+		String finallyString = "";
+		int time = 0 ;
+		while (time < textLong)
+		{
+			String tempText = tempArray[time];
+			if (tempText.contains("】"))
+			{
+				start = time + 1;
+			}
+			if (tempText.contains("点"))
+			{
+				end = time - 2;
+			}
+			time = time + 1;
+		}
+
+		int a = start ;
+
+		while (a <= end)
+		{
+			finallyString = finallyString + tempArray[a];
+			a = a + 1;
+		}
+		//System.out.println(finallyString);
+		return finallyString;
+	}
+
+	public static boolean isLetter(char c)
+	{ 
+        int k = 0x80; 
+        return c / k == 0 ? true : false; 
+    }
+
+	/**
+	 * 判断字符串是否为空
+	 * @param str
+	 * @return
+	 */
+	public static boolean isNull(String str)
+	{
+		if (str == null || str.trim().equals("") || str.trim().equalsIgnoreCase("null"))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	/** 
+     * 得到一个字符串的长度,显示的长度,一个汉字或日韩文长度为2,英文字符长度为1 
+     * @param String s 需要得到长度的字符串 
+     * @return int 得到的字符串长度 
+     */ 
+    public static int length(String s)
+	{
+        if (s == null)
+            return 0;
+        char[] c = s.toCharArray();
+        int len = 0;
+        for (int i = 0; i < c.length; i++)
+		{
+            len++;
+            if (!isLetter(c[i]))
+			{
+                len++;
+            }
+        }
+        return len;
+    }
+
+
+    /** 
+     * 得到一个字符串的长度,显示的长度,一个汉字或日韩文长度为1,英文字符长度为0.5 
+     * @param String s 需要得到长度的字符串 
+     * @return int 得到的字符串长度 
+     */ 
+    public static double getLength(String s)
+	{
+    	double valueLength = 0;  
+        String chinese = "[\u4e00-\u9fa5]";  
+        // 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1  
+        for (int i = 0; i < s.length(); i++)
+		{  
+            // 获取一个字符  
+            String temp = s.substring(i, i + 1);  
+            // 判断是否为中文字符  
+            if (temp.matches(chinese))
+			{  
+                // 中文字符长度为1  
+                valueLength += 1;  
+            }
+			else
+			{  
+                // 其他字符长度为0.5  
+                valueLength += 0.5;  
+            }  
+        }  
+        //进位取整  
+        return  Math.ceil(valueLength);  
+    }
+
+	/** 
+	 * 实现文本复制功能 
+	 * add by wangqianzhou 
+	 * @param content 
+	 */  
+	public static void copy(String content, Context context)  
+	{  
+// 得到剪贴板管理器  
+		ClipboardManager cmb = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);  
+		cmb.setText(content.trim());  
+	}  
+
+	public void IshaveTaoKey()
+	{
+		final String originalClipboard = getClipbord();
+		//Toast.makeText(Main.this, getTaoKeyUrl(originalClipboard), Toast.LENGTH_SHORT).show();
+		//Toast.makeText(Main.this, getTaoKeyTitle(originalClipboard), Toast.LENGTH_SHORT).show();
+		//提示dialog
+		Dialog.setCancelable(false);
+		Dialog.setTitle("淘口令：");
+		Dialog.setMessage("检测到有一个淘口令:" + getTaoKeyTitle(originalClipboard) + "\n 是否马上打开？");
+		Dialog.setPositiveButton("打开",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					copy("", Main.this);
+					mWebView.loadUrl(getTaoKeyUrl(originalClipboard));
+				}
+			});
+		Dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					copy("", Main.this);
+				}
+			});
+		//Toast.makeText(Main.this,originalClipboard,Toast.LENGTH_SHORT).show();
+		boolean IsTaoKey = originalClipboard.contains("后打开👉手淘👈");
+		if (IsTaoKey)
+		{
+			Toast.makeText(Main.this, "检测到有一个淘口令，是否马上打开？", Toast.LENGTH_SHORT).show();
+			Dialog.show();
+			copy("", Main.this);
+		}
+		else
+		{
+
+		}
+	}
+
+	@Override
+	protected void onRestart()
+	{
+		IshaveTaoKey();
+		// TODO: Implement this method
+		super.onRestart();
+	}
+
+	@Override
+	protected void onResume()
+	{
+		IshaveTaoKey();
+		// TODO: Implement this method
+		super.onResume();
+	}
 
 }
