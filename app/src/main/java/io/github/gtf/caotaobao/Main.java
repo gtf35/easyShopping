@@ -468,7 +468,12 @@ implements NavigationView.OnNavigationItemSelectedListener
 		// 获取 剪切板数据
 		ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
 		ClipData cd2 = cm.getPrimaryClip();
-		String str2 = cd2.getItemAt(0).getText().toString();
+		String str2 = "null";
+		if (cd2 != null){
+				str2 = cd2.getItemAt(0).getText().toString();
+			}else{
+				str2 = "null";
+			}
 		return str2;
 	}
 
