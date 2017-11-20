@@ -21,4 +21,9 @@
         android:orderInCategory="100"
         android:title="分享"
         app:showAsAction="never" />
+	<item
+        android:id="@+id/home"
+		app:srcCompat="@mipmap/home" 
+        android:title="主页"
+        app:showAsAction="ifRoom" />
 </menu>

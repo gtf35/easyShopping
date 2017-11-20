@@ -23,6 +23,7 @@ import android.widget.*;
 import java.util.*;
 import android.renderscript.*;
 import android.net.*;
+import android.content.pm.*;
 
 
 public class Main extends AppCompatActivity
@@ -58,10 +59,14 @@ implements NavigationView.OnNavigationItemSelectedListener
 	String mTaobaoLiteSoucangjia = "https://h5.m.taobao.com/fav/index.htm";
 
 	int startTime = 0;
+	int version;
 	String toolbarTitle = "Taobao";
 	boolean HideLogo = true;
 	boolean IsAtHome = true;
 	boolean IsTaobaoLite = false;
+
+	String mUA ="User-Agent: MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
 	{
@@ -74,39 +79,41 @@ implements NavigationView.OnNavigationItemSelectedListener
         setSupportActionBar(toolbar);
         mWebView = (WebView)findViewById(R.id.mWebView);
 		mProgressDialog = new ProgressDialog(this);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+        //fab = (FloatingActionButton) findViewById(R.id.fab);
 
 		//获取Preferences
 		SharedPreferences settingsRead = getSharedPreferences("data", 0);
 //取出数据
 	    IsTaobaoLite = settingsRead.getBoolean("IsTaobaoLite" , false);
-		startTime = settingsRead.getInt("startTime", 0) + 1;	
+		startTime = settingsRead.getInt("startTime", 0) + 1;
+		version = settingsRead.getInt("version", 0);
 //打开数据库
 		SharedPreferences settings = getSharedPreferences("data", 0);
 //处于编辑状态
 		SharedPreferences.Editor editor = settings.edit();
 //存放数据
 		editor.putInt("startTime", startTime);
+		editor.putInt("version",5);
 		editor.putBoolean("IsTaobaoLite", false);
 //完成提交
 		editor.commit();
 
-        fab.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View view)
-				{
-					IsAtHome = true;
-					if (IsTaobaoLite == false)
-					{
-						mWebView.loadUrl(mTaobaoUrl);
-					}
-					else
-					{
-						mWebView.loadUrl(mTaobaoLiteUrl);
-					}
+        /*fab.setOnClickListener(new View.OnClickListener() {
+		 @Override
+		 public void onClick(View view)
+		 {
+		 IsAtHome = true;
+		 if (IsTaobaoLite == false)
+		 {
+		 mWebView.loadUrl(mTaobaoUrl);
+		 }
+		 else
+		 {
+		 mWebView.loadUrl(mTaobaoLiteUrl);
+		 }
 
-				}
-			});
+		 }
+		 });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -118,23 +125,12 @@ implements NavigationView.OnNavigationItemSelectedListener
         navigationView.setNavigationItemSelectedListener(this);
 		LoadWebView();
 		mWebView.setVisibility(View.GONE);
-		//提示dialog
-		Dialog.setCancelable(false);
-		Dialog.setTitle("免责声明：");
-		Dialog.setMessage("该项目仅限学术交流使用，一切权利归淘宝公司所有，请自觉在24小时之内删除！ \n 使用此软件造成的一切风险及后果由使用者本人承担，开发者不承担任何责任!");
-		Dialog.setPositiveButton("同意",  new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which)
-				{
-				}
-			});
-
-		IshaveTaoKey();
-
-		if (startTime == 1)
-		{
-			Dialog.show();
+		if ( version < 5){
+			changeDialog();
+		}else if (startTime == 1){
+			noticeDialog();
 		}
+		IshaveTaoKey();
 		mHandler = new Handler(){  
 			@Override  
 			public void handleMessage(Message msg)
@@ -222,6 +218,18 @@ implements NavigationView.OnNavigationItemSelectedListener
 			showSnackBar("刷新ing........", " ", 0);
 			mWebView.reload();
 			return true;
+		}
+		else if (id == R.id.home)
+		{
+			IsAtHome = true;
+			if (IsTaobaoLite == false)
+			{
+				mWebView.loadUrl(mTaobaoUrl);
+			}
+			else
+			{
+				mWebView.loadUrl(mTaobaoLiteUrl);
+			}
 		}
 
         return super.onOptionsItemSelected(item);
@@ -346,6 +354,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 			startActivity(Intent.createChooser(intent, "请选择浏览器"));
 
 		}
+		
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -386,6 +395,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		mWebViewSettings.setAppCacheEnabled(true);
 		mWebViewSettings.setDatabaseEnabled(true);
 		mWebViewSettings.setDomStorageEnabled(true);//开启DOM缓存
+		mWebViewSettings.setUserAgentString(mUA);
 		//mWebViewSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 		if (IsTaobaoLite == false)
 		{
@@ -469,11 +479,14 @@ implements NavigationView.OnNavigationItemSelectedListener
 		ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
 		ClipData cd2 = cm.getPrimaryClip();
 		String str2 = "null";
-		if (cd2 != null){
-				str2 = cd2.getItemAt(0).getText().toString();
-			}else{
-				str2 = "null";
-			}
+		if (cd2 != null)
+		{
+			str2 = cd2.getItemAt(0).getText().toString();
+		}
+		else
+		{
+			str2 = "null";
+		}
 		return str2;
 	}
 
@@ -703,6 +716,38 @@ implements NavigationView.OnNavigationItemSelectedListener
 
 		}
 	}
+	
+	void noticeDialog(){
+		//提示dialog
+		Dialog.setCancelable(false);
+		Dialog.setTitle("免责声明：");
+		Dialog.setMessage("该项目仅限学术交流使用，一切权利归淘宝公司所有，请自觉在24小时之内删除！ \n 使用此软件造成的一切风险及后果由使用者本人承担，开发者不承担任何责任!");
+		Dialog.setPositiveButton("同意",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+				}
+			});
+		Dialog.show();
+	}
+	
+	void changeDialog(){
+		Dialog.setCancelable(false);
+		Dialog.setTitle("特大喜讯：");
+		Dialog.setMessage("淘宝里的条幅广告终于去掉了！！ \n 感谢酷安 @大漠飞雪 提供的UA！\n 感谢！");
+		Dialog.setPositiveButton("OK",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					if (startTime == 1)
+					{
+						noticeDialog();
+					}
+				}
+			});
+		Dialog.show();
+		
+	}
 
 	@Override
 	protected void onRestart()
@@ -720,4 +765,16 @@ implements NavigationView.OnNavigationItemSelectedListener
 		super.onResume();
 	}
 
+	/*public String getVersion() {
+		    try {
+			        PackageManager manager = this.getPackageManager();
+			        PackageInfo info = manager.getPackageInfo(this.getPackageName(), 0);
+			        String version = info.versionName;
+			        return version;
+			     } catch (Exception e) {
+		            e.printStackTrace();
+			        return this.getString(R.string.can_not_find_version_name);
+			     }
+		 }*/
+	
 }
