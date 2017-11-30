@@ -441,6 +441,31 @@ implements NavigationView.OnNavigationItemSelectedListener
 							}, 1000);
 					}
 				}
+				
+				@Override
+				public boolean shouldOverrideUrlLoading(WebView view, String url)  
+				{
+					if(url == null) return false;
+
+					try {
+						if (url.startsWith("http:") || url.startsWith("https:"))
+						{
+							mWebView.loadUrl(url);
+							return true;
+						}
+						else
+						{
+							//Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+							//startActivity(intent);
+							return true;
+						}
+					} catch (Exception e) { //防止crash (如果手机上没有安装处理某个scheme开头的url的APP, 会导致crash)
+						return false;
+					}
+				}
+				
+				
+				
 			});
 	}
 	/**

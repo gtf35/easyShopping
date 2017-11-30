@@ -7,8 +7,8 @@ android {
         applicationId "io.github.gtf.caotaobao"
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 5
-        versionName "2.0"
+        versionCode 6
+        versionName "2.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
