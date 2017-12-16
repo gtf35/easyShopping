@@ -2,8 +2,8 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="io.github.gtf.easyShopping"
-	android:versionCode="6"
-	android:versionName="1.5.beta">
+	android:versionCode="7"
+	android:versionName="1.6.beta">
 
 	<uses-sdk
 		android:minSdkVersion="14"
@@ -18,7 +18,7 @@
 		android:theme="@style/AppTheme">
 
 		<activity
-			android:name=".Main"
+			android:name="io.github.gtf.easyShopping.Main"
 			android:label="@string/app_name"
 			android:icon="@mipmap/ic_launcher"
 			android:theme="@style/AppTheme.NoActionBar">
@@ -26,7 +26,7 @@
 		</activity>
 
 		<activity-alias
-			android:name=".小购物Vip"
+			android:name="io.github.gtf.easyShopping.小购物Vip"
 			android:label="@string/app_name"
 			android:icon="@mipmap/icon"
 			android:theme="@style/AppTheme.NoActionBar"
@@ -46,7 +46,7 @@
 		</activity-alias>
 
 		<activity-alias
-			android:name=".小购物"
+			android:name="io.github.gtf.easyShopping.小购物"
 			android:targetActivity=".Main"
 			android:label="@string/app_name"
 			android:icon="@mipmap/ic_launcher"
@@ -74,21 +74,21 @@
 		</meta-data>
 
 		<activity
-			android:name=".SettingsActivity"
+			android:name="io.github.gtf.easyShopping.SettingsActivity"
 			android:label="@string/app_name"
 			android:theme="@style/AppTheme.NoActionBar">
 
 		</activity>
 
 		<activity
-			android:name=".upData"
+			android:name="io.github.gtf.easyShopping.upData"
 			android:label="@string/app_name"
 			android:theme="@style/AppTheme.NoActionBar">
 
 		</activity>
 
 		<activity
-			android:name=".pay"
+			android:name="io.github.gtf.easyShopping.pay"
 			android:label="@string/app_name"
 			android:theme="@style/AppTheme.NoActionBar">
 
@@ -116,9 +116,6 @@
 
 	<uses-permission
 		android:name="android.permission.ACCESS_WIFI_STATE"/>
-
-	<uses-permission
-		android:name="android.permission.RECORD_AUDIO"/>
 
 	<uses-permission
 		android:name="android.permission.GET_TASKS"/>

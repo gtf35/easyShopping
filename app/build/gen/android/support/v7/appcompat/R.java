@@ -7036,75 +7036,7 @@ containing a value of this type.
             0x01010109, 0x01010200, 0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#foreground}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-          @attr name android:foreground
-        */
-        public static final int ForegroundLinearLayout_android_foreground = 0;
-        /**
-          <p>This symbol is the offset where the {@link android.R.attr#foregroundGravity}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-          @attr name android:foregroundGravity
-        */
-        public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
-        /**
-          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#foregroundInsidePadding}
-          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name io.github.gtf.easyShopping:foregroundInsidePadding
-        */
-        public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
-        /** Attributes that can be used with a LinearLayoutCompat.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider io.github.gtf.easyShopping:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding io.github.gtf.easyShopping:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild io.github.gtf.easyShopping:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers io.github.gtf.easyShopping:showDividers}</code></td><td></td></tr>
-           </table>
-           @see #LinearLayoutCompat_android_baselineAligned
-           @see #LinearLayoutCompat_android_baselineAlignedChildIndex
-           @see #LinearLayoutCompat_android_gravity
-           @see #LinearLayoutCompat_android_orientation
-           @see #LinearLayoutCompat_android_weightSum
-           @see #LinearLayoutCompat_divider
-           @see #LinearLayoutCompat_dividerPadding
-           @see #LinearLayoutCompat_measureWithLargestChild
-           @see #LinearLayoutCompat_showDividers
-         */
-        public static final int[] LinearLayoutCompat = {
-            0x010100af, 0x010100c4, 0x01010126, 0x01010127,
-            0x01010128, 0x7f010061, 0x7f0100fe, 0x7f0100ff,
-            0x7f010100
-        };
-        /**
-          <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
-          attribute's value can be found in the {@link #LinearLayoutCompat} array.
-          @attr name android:baselineAligned
-        */
-        public static final int LinearLayoutCompat_android_baselineAligned = 2;
-        /**
-          <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
-          attribute's value can be found in the {@link #LinearLayoutCompat} array.
-          @attr name android:baselineAlignedChildIndex
-        */
-        public static final int LinearLayoutCompat_android_baselineAlignedChildIndex = 3;
-        /**
+          <p>This symbol is the offset where the {@link android.R.attr#foreground        /**
           <p>This symbol is the offset where the {@link android.R.attr#gravity}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
           @attr name android:gravity

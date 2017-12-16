@@ -44,8 +44,8 @@ public class SettingsFragment extends PreferenceFragment
 				public boolean onPreferenceClick(Preference preference)
 				{
 					Toast.makeText(getActivity(), "谢谢", Toast.LENGTH_SHORT).show();
-					Intent payIntent = new Intent(getActivity(),pay.class);
-					startActivity(payIntent);
+					SettingsActivity sa = (SettingsActivity)getActivity();
+					sa.pay();
 					return true;
 				}
 			});
@@ -64,7 +64,7 @@ public class SettingsFragment extends PreferenceFragment
 					//从其他浏览器打开
 					Intent intent = new Intent();
 					intent.setAction(Intent.ACTION_VIEW);
-					Uri content_url = Uri.parse("https://www.github.com/gtf35/caoTaobao");
+					Uri content_url = Uri.parse("https://www.github.com/gtf35/easyShopping");
 					intent.setData(content_url);
 					startActivity(Intent.createChooser(intent, "请选择浏览器"));
 					return true;
@@ -95,6 +95,11 @@ public class SettingsFragment extends PreferenceFragment
 				if(jingdongOK){
 					Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT).show();
 				}
+				if (xianyuOK){
+					xianyuOK = false;
+				} else{
+					xianyuOK = true;
+				}
 				return true;
 			}
 		});
@@ -115,6 +120,11 @@ public class SettingsFragment extends PreferenceFragment
 				public boolean onPreferenceChange(Preference preference,Object newValue){
 					if(xianyuOK){
 						Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT).show();
+						if(jingdongOK){
+							jingdongOK = false;
+						}else{
+							jingdongOK = true;
+						}
 					}
 					return true;
 				}

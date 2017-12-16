@@ -37,7 +37,7 @@ import android.*;
 import android.annotation.*;
 
 
-public class Main extends AppCompatActivity
+public class Main extends BaseActivity
 implements NavigationView.OnNavigationItemSelectedListener
 {
 	WebView mWebView;
@@ -371,11 +371,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 
 	public void exitProgrames()
 	{
-		Intent startMain = new Intent(Intent.ACTION_MAIN);
-		startMain.addCategory(Intent.CATEGORY_HOME);
-		startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		startActivity(startMain);
-		android.os.Process.killProcess(android.os.Process.myPid());
+		ActivityCollector.finishAll();
 	}
 
 	
