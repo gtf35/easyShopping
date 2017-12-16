@@ -2269,238 +2269,238 @@ containing a value of this type.
         public static final int windowNoTitle=0x7f010082;
     }
     public static final class bool {
-        public static final int abc_action_bar_embed_tabs=0x7f0c0000;
-        public static final int abc_allow_stacked_button_bar=0x7f0c0001;
-        public static final int abc_config_actionMenuItemAllCaps=0x7f0c0002;
-        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0c0003;
-        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0004;
+        public static final int abc_action_bar_embed_tabs=0x7f0e0000;
+        public static final int abc_allow_stacked_button_bar=0x7f0e0001;
+        public static final int abc_config_actionMenuItemAllCaps=0x7f0e0002;
+        public static final int abc_config_closeDialogWhenTouchOutside=0x7f0e0003;
+        public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0e0004;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f0a0047;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f0a0048;
-        public static final int abc_btn_colored_borderless_text_material=0x7f0a0049;
-        public static final int abc_color_highlight_material=0x7f0a004a;
-        public static final int abc_input_method_navigation_guard=0x7f0a000a;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f0a004b;
-        public static final int abc_primary_text_disable_only_material_light=0x7f0a004c;
-        public static final int abc_primary_text_material_dark=0x7f0a004d;
-        public static final int abc_primary_text_material_light=0x7f0a004e;
-        public static final int abc_search_url_text=0x7f0a004f;
-        public static final int abc_search_url_text_normal=0x7f0a000b;
-        public static final int abc_search_url_text_pressed=0x7f0a000c;
-        public static final int abc_search_url_text_selected=0x7f0a000d;
-        public static final int abc_secondary_text_material_dark=0x7f0a0050;
-        public static final int abc_secondary_text_material_light=0x7f0a0051;
-        public static final int abc_tint_btn_checkable=0x7f0a0052;
-        public static final int abc_tint_default=0x7f0a0053;
-        public static final int abc_tint_edittext=0x7f0a0054;
-        public static final int abc_tint_seek_thumb=0x7f0a0055;
-        public static final int abc_tint_spinner=0x7f0a0056;
-        public static final int abc_tint_switch_thumb=0x7f0a0057;
-        public static final int abc_tint_switch_track=0x7f0a0058;
-        public static final int accent_material_dark=0x7f0a000e;
-        public static final int accent_material_light=0x7f0a000f;
-        public static final int background_floating_material_dark=0x7f0a0010;
-        public static final int background_floating_material_light=0x7f0a0011;
-        public static final int background_material_dark=0x7f0a0012;
-        public static final int background_material_light=0x7f0a0013;
-        public static final int bright_foreground_disabled_material_dark=0x7f0a0014;
-        public static final int bright_foreground_disabled_material_light=0x7f0a0015;
-        public static final int bright_foreground_inverse_material_dark=0x7f0a0016;
-        public static final int bright_foreground_inverse_material_light=0x7f0a0017;
-        public static final int bright_foreground_material_dark=0x7f0a0018;
-        public static final int bright_foreground_material_light=0x7f0a0019;
-        public static final int button_material_dark=0x7f0a001a;
-        public static final int button_material_light=0x7f0a001b;
-        public static final int colorAccent=0x7f0a0046;
-        public static final int colorPrimary=0x7f0a0044;
-        public static final int colorPrimaryDark=0x7f0a0045;
-        public static final int design_error=0x7f0a0059;
-        public static final int design_fab_shadow_end_color=0x7f0a0000;
-        public static final int design_fab_shadow_mid_color=0x7f0a0001;
-        public static final int design_fab_shadow_start_color=0x7f0a0002;
-        public static final int design_fab_stroke_end_inner_color=0x7f0a0003;
-        public static final int design_fab_stroke_end_outer_color=0x7f0a0004;
-        public static final int design_fab_stroke_top_inner_color=0x7f0a0005;
-        public static final int design_fab_stroke_top_outer_color=0x7f0a0006;
-        public static final int design_snackbar_background_color=0x7f0a0007;
-        public static final int design_textinput_error_color_dark=0x7f0a0008;
-        public static final int design_textinput_error_color_light=0x7f0a0009;
-        public static final int design_tint_password_toggle=0x7f0a005a;
-        public static final int dim_foreground_disabled_material_dark=0x7f0a001c;
-        public static final int dim_foreground_disabled_material_light=0x7f0a001d;
-        public static final int dim_foreground_material_dark=0x7f0a001e;
-        public static final int dim_foreground_material_light=0x7f0a001f;
-        public static final int foreground_material_dark=0x7f0a0020;
-        public static final int foreground_material_light=0x7f0a0021;
-        public static final int highlighted_text_material_dark=0x7f0a0022;
-        public static final int highlighted_text_material_light=0x7f0a0023;
-        public static final int hint_foreground_material_dark=0x7f0a0024;
-        public static final int hint_foreground_material_light=0x7f0a0025;
-        public static final int material_blue_grey_800=0x7f0a0026;
-        public static final int material_blue_grey_900=0x7f0a0027;
-        public static final int material_blue_grey_950=0x7f0a0028;
-        public static final int material_deep_teal_200=0x7f0a0029;
-        public static final int material_deep_teal_500=0x7f0a002a;
-        public static final int material_grey_100=0x7f0a002b;
-        public static final int material_grey_300=0x7f0a002c;
-        public static final int material_grey_50=0x7f0a002d;
-        public static final int material_grey_600=0x7f0a002e;
-        public static final int material_grey_800=0x7f0a002f;
-        public static final int material_grey_850=0x7f0a0030;
-        public static final int material_grey_900=0x7f0a0031;
-        public static final int primary_dark_material_dark=0x7f0a0032;
-        public static final int primary_dark_material_light=0x7f0a0033;
-        public static final int primary_material_dark=0x7f0a0034;
-        public static final int primary_material_light=0x7f0a0035;
-        public static final int primary_text_default_material_dark=0x7f0a0036;
-        public static final int primary_text_default_material_light=0x7f0a0037;
-        public static final int primary_text_disabled_material_dark=0x7f0a0038;
-        public static final int primary_text_disabled_material_light=0x7f0a0039;
-        public static final int ripple_material_dark=0x7f0a003a;
-        public static final int ripple_material_light=0x7f0a003b;
-        public static final int secondary_text_default_material_dark=0x7f0a003c;
-        public static final int secondary_text_default_material_light=0x7f0a003d;
-        public static final int secondary_text_disabled_material_dark=0x7f0a003e;
-        public static final int secondary_text_disabled_material_light=0x7f0a003f;
-        public static final int switch_thumb_disabled_material_dark=0x7f0a0040;
-        public static final int switch_thumb_disabled_material_light=0x7f0a0041;
-        public static final int switch_thumb_material_dark=0x7f0a005b;
-        public static final int switch_thumb_material_light=0x7f0a005c;
-        public static final int switch_thumb_normal_material_dark=0x7f0a0042;
-        public static final int switch_thumb_normal_material_light=0x7f0a0043;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f0c0047;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f0c0048;
+        public static final int abc_btn_colored_borderless_text_material=0x7f0c0049;
+        public static final int abc_color_highlight_material=0x7f0c004a;
+        public static final int abc_input_method_navigation_guard=0x7f0c000a;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f0c004b;
+        public static final int abc_primary_text_disable_only_material_light=0x7f0c004c;
+        public static final int abc_primary_text_material_dark=0x7f0c004d;
+        public static final int abc_primary_text_material_light=0x7f0c004e;
+        public static final int abc_search_url_text=0x7f0c004f;
+        public static final int abc_search_url_text_normal=0x7f0c000b;
+        public static final int abc_search_url_text_pressed=0x7f0c000c;
+        public static final int abc_search_url_text_selected=0x7f0c000d;
+        public static final int abc_secondary_text_material_dark=0x7f0c0050;
+        public static final int abc_secondary_text_material_light=0x7f0c0051;
+        public static final int abc_tint_btn_checkable=0x7f0c0052;
+        public static final int abc_tint_default=0x7f0c0053;
+        public static final int abc_tint_edittext=0x7f0c0054;
+        public static final int abc_tint_seek_thumb=0x7f0c0055;
+        public static final int abc_tint_spinner=0x7f0c0056;
+        public static final int abc_tint_switch_thumb=0x7f0c0057;
+        public static final int abc_tint_switch_track=0x7f0c0058;
+        public static final int accent_material_dark=0x7f0c000e;
+        public static final int accent_material_light=0x7f0c000f;
+        public static final int background_floating_material_dark=0x7f0c0010;
+        public static final int background_floating_material_light=0x7f0c0011;
+        public static final int background_material_dark=0x7f0c0012;
+        public static final int background_material_light=0x7f0c0013;
+        public static final int bright_foreground_disabled_material_dark=0x7f0c0014;
+        public static final int bright_foreground_disabled_material_light=0x7f0c0015;
+        public static final int bright_foreground_inverse_material_dark=0x7f0c0016;
+        public static final int bright_foreground_inverse_material_light=0x7f0c0017;
+        public static final int bright_foreground_material_dark=0x7f0c0018;
+        public static final int bright_foreground_material_light=0x7f0c0019;
+        public static final int button_material_dark=0x7f0c001a;
+        public static final int button_material_light=0x7f0c001b;
+        public static final int colorAccent=0x7f0c0046;
+        public static final int colorPrimary=0x7f0c0044;
+        public static final int colorPrimaryDark=0x7f0c0045;
+        public static final int design_error=0x7f0c0059;
+        public static final int design_fab_shadow_end_color=0x7f0c0000;
+        public static final int design_fab_shadow_mid_color=0x7f0c0001;
+        public static final int design_fab_shadow_start_color=0x7f0c0002;
+        public static final int design_fab_stroke_end_inner_color=0x7f0c0003;
+        public static final int design_fab_stroke_end_outer_color=0x7f0c0004;
+        public static final int design_fab_stroke_top_inner_color=0x7f0c0005;
+        public static final int design_fab_stroke_top_outer_color=0x7f0c0006;
+        public static final int design_snackbar_background_color=0x7f0c0007;
+        public static final int design_textinput_error_color_dark=0x7f0c0008;
+        public static final int design_textinput_error_color_light=0x7f0c0009;
+        public static final int design_tint_password_toggle=0x7f0c005a;
+        public static final int dim_foreground_disabled_material_dark=0x7f0c001c;
+        public static final int dim_foreground_disabled_material_light=0x7f0c001d;
+        public static final int dim_foreground_material_dark=0x7f0c001e;
+        public static final int dim_foreground_material_light=0x7f0c001f;
+        public static final int foreground_material_dark=0x7f0c0020;
+        public static final int foreground_material_light=0x7f0c0021;
+        public static final int highlighted_text_material_dark=0x7f0c0022;
+        public static final int highlighted_text_material_light=0x7f0c0023;
+        public static final int hint_foreground_material_dark=0x7f0c0024;
+        public static final int hint_foreground_material_light=0x7f0c0025;
+        public static final int material_blue_grey_800=0x7f0c0026;
+        public static final int material_blue_grey_900=0x7f0c0027;
+        public static final int material_blue_grey_950=0x7f0c0028;
+        public static final int material_deep_teal_200=0x7f0c0029;
+        public static final int material_deep_teal_500=0x7f0c002a;
+        public static final int material_grey_100=0x7f0c002b;
+        public static final int material_grey_300=0x7f0c002c;
+        public static final int material_grey_50=0x7f0c002d;
+        public static final int material_grey_600=0x7f0c002e;
+        public static final int material_grey_800=0x7f0c002f;
+        public static final int material_grey_850=0x7f0c0030;
+        public static final int material_grey_900=0x7f0c0031;
+        public static final int primary_dark_material_dark=0x7f0c0032;
+        public static final int primary_dark_material_light=0x7f0c0033;
+        public static final int primary_material_dark=0x7f0c0034;
+        public static final int primary_material_light=0x7f0c0035;
+        public static final int primary_text_default_material_dark=0x7f0c0036;
+        public static final int primary_text_default_material_light=0x7f0c0037;
+        public static final int primary_text_disabled_material_dark=0x7f0c0038;
+        public static final int primary_text_disabled_material_light=0x7f0c0039;
+        public static final int ripple_material_dark=0x7f0c003a;
+        public static final int ripple_material_light=0x7f0c003b;
+        public static final int secondary_text_default_material_dark=0x7f0c003c;
+        public static final int secondary_text_default_material_light=0x7f0c003d;
+        public static final int secondary_text_disabled_material_dark=0x7f0c003e;
+        public static final int secondary_text_disabled_material_light=0x7f0c003f;
+        public static final int switch_thumb_disabled_material_dark=0x7f0c0040;
+        public static final int switch_thumb_disabled_material_light=0x7f0c0041;
+        public static final int switch_thumb_material_dark=0x7f0c005b;
+        public static final int switch_thumb_material_light=0x7f0c005c;
+        public static final int switch_thumb_normal_material_dark=0x7f0c0042;
+        public static final int switch_thumb_normal_material_light=0x7f0c0043;
     }
     public static final class dimen {
-        public static final int abc_action_bar_content_inset_material=0x7f060032;
-        public static final int abc_action_bar_content_inset_with_nav=0x7f060033;
-        public static final int abc_action_bar_default_height_material=0x7f060027;
-        public static final int abc_action_bar_default_padding_end_material=0x7f060034;
-        public static final int abc_action_bar_default_padding_start_material=0x7f060035;
-        public static final int abc_action_bar_elevation_material=0x7f060037;
-        public static final int abc_action_bar_icon_vertical_padding_material=0x7f060038;
-        public static final int abc_action_bar_overflow_padding_end_material=0x7f060039;
-        public static final int abc_action_bar_overflow_padding_start_material=0x7f06003a;
-        public static final int abc_action_bar_progress_bar_size=0x7f060028;
-        public static final int abc_action_bar_stacked_max_height=0x7f06003b;
-        public static final int abc_action_bar_stacked_tab_max_width=0x7f06003c;
-        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f06003d;
-        public static final int abc_action_bar_subtitle_top_margin_material=0x7f06003e;
-        public static final int abc_action_button_min_height_material=0x7f06003f;
-        public static final int abc_action_button_min_width_material=0x7f060040;
-        public static final int abc_action_button_min_width_overflow_material=0x7f060041;
-        public static final int abc_alert_dialog_button_bar_height=0x7f060026;
-        public static final int abc_button_inset_horizontal_material=0x7f060042;
-        public static final int abc_button_inset_vertical_material=0x7f060043;
-        public static final int abc_button_padding_horizontal_material=0x7f060044;
-        public static final int abc_button_padding_vertical_material=0x7f060045;
-        public static final int abc_cascading_menus_min_smallest_width=0x7f060046;
-        public static final int abc_config_prefDialogWidth=0x7f06002b;
-        public static final int abc_control_corner_material=0x7f060047;
-        public static final int abc_control_inset_material=0x7f060048;
-        public static final int abc_control_padding_material=0x7f060049;
-        public static final int abc_dialog_fixed_height_major=0x7f06002c;
-        public static final int abc_dialog_fixed_height_minor=0x7f06002d;
-        public static final int abc_dialog_fixed_width_major=0x7f06002e;
-        public static final int abc_dialog_fixed_width_minor=0x7f06002f;
-        public static final int abc_dialog_list_padding_vertical_material=0x7f06004a;
-        public static final int abc_dialog_min_width_major=0x7f060030;
-        public static final int abc_dialog_min_width_minor=0x7f060031;
-        public static final int abc_dialog_padding_material=0x7f06004b;
-        public static final int abc_dialog_padding_top_material=0x7f06004c;
-        public static final int abc_disabled_alpha_material_dark=0x7f06004d;
-        public static final int abc_disabled_alpha_material_light=0x7f06004e;
-        public static final int abc_dropdownitem_icon_width=0x7f06004f;
-        public static final int abc_dropdownitem_text_padding_left=0x7f060050;
-        public static final int abc_dropdownitem_text_padding_right=0x7f060051;
-        public static final int abc_edit_text_inset_bottom_material=0x7f060052;
-        public static final int abc_edit_text_inset_horizontal_material=0x7f060053;
-        public static final int abc_edit_text_inset_top_material=0x7f060054;
-        public static final int abc_floating_window_z=0x7f060055;
-        public static final int abc_list_item_padding_horizontal_material=0x7f060056;
-        public static final int abc_panel_menu_list_width=0x7f060057;
-        public static final int abc_progress_bar_height_material=0x7f060058;
-        public static final int abc_search_view_preferred_height=0x7f060059;
-        public static final int abc_search_view_preferred_width=0x7f06005a;
-        public static final int abc_seekbar_track_background_height_material=0x7f06005b;
-        public static final int abc_seekbar_track_progress_height_material=0x7f06005c;
-        public static final int abc_select_dialog_padding_start_material=0x7f06005d;
-        public static final int abc_switch_padding=0x7f060036;
-        public static final int abc_text_size_body_1_material=0x7f06005e;
-        public static final int abc_text_size_body_2_material=0x7f06005f;
-        public static final int abc_text_size_button_material=0x7f060060;
-        public static final int abc_text_size_caption_material=0x7f060061;
-        public static final int abc_text_size_display_1_material=0x7f060062;
-        public static final int abc_text_size_display_2_material=0x7f060063;
-        public static final int abc_text_size_display_3_material=0x7f060064;
-        public static final int abc_text_size_display_4_material=0x7f060065;
-        public static final int abc_text_size_headline_material=0x7f060066;
-        public static final int abc_text_size_large_material=0x7f060067;
-        public static final int abc_text_size_medium_material=0x7f060068;
-        public static final int abc_text_size_menu_header_material=0x7f060069;
-        public static final int abc_text_size_menu_material=0x7f06006a;
-        public static final int abc_text_size_small_material=0x7f06006b;
-        public static final int abc_text_size_subhead_material=0x7f06006c;
-        public static final int abc_text_size_subtitle_material_toolbar=0x7f060029;
-        public static final int abc_text_size_title_material=0x7f06006d;
-        public static final int abc_text_size_title_material_toolbar=0x7f06002a;
+        public static final int abc_action_bar_content_inset_material=0x7f080032;
+        public static final int abc_action_bar_content_inset_with_nav=0x7f080033;
+        public static final int abc_action_bar_default_height_material=0x7f080027;
+        public static final int abc_action_bar_default_padding_end_material=0x7f080034;
+        public static final int abc_action_bar_default_padding_start_material=0x7f080035;
+        public static final int abc_action_bar_elevation_material=0x7f080037;
+        public static final int abc_action_bar_icon_vertical_padding_material=0x7f080038;
+        public static final int abc_action_bar_overflow_padding_end_material=0x7f080039;
+        public static final int abc_action_bar_overflow_padding_start_material=0x7f08003a;
+        public static final int abc_action_bar_progress_bar_size=0x7f080028;
+        public static final int abc_action_bar_stacked_max_height=0x7f08003b;
+        public static final int abc_action_bar_stacked_tab_max_width=0x7f08003c;
+        public static final int abc_action_bar_subtitle_bottom_margin_material=0x7f08003d;
+        public static final int abc_action_bar_subtitle_top_margin_material=0x7f08003e;
+        public static final int abc_action_button_min_height_material=0x7f08003f;
+        public static final int abc_action_button_min_width_material=0x7f080040;
+        public static final int abc_action_button_min_width_overflow_material=0x7f080041;
+        public static final int abc_alert_dialog_button_bar_height=0x7f080026;
+        public static final int abc_button_inset_horizontal_material=0x7f080042;
+        public static final int abc_button_inset_vertical_material=0x7f080043;
+        public static final int abc_button_padding_horizontal_material=0x7f080044;
+        public static final int abc_button_padding_vertical_material=0x7f080045;
+        public static final int abc_cascading_menus_min_smallest_width=0x7f080046;
+        public static final int abc_config_prefDialogWidth=0x7f08002b;
+        public static final int abc_control_corner_material=0x7f080047;
+        public static final int abc_control_inset_material=0x7f080048;
+        public static final int abc_control_padding_material=0x7f080049;
+        public static final int abc_dialog_fixed_height_major=0x7f08002c;
+        public static final int abc_dialog_fixed_height_minor=0x7f08002d;
+        public static final int abc_dialog_fixed_width_major=0x7f08002e;
+        public static final int abc_dialog_fixed_width_minor=0x7f08002f;
+        public static final int abc_dialog_list_padding_vertical_material=0x7f08004a;
+        public static final int abc_dialog_min_width_major=0x7f080030;
+        public static final int abc_dialog_min_width_minor=0x7f080031;
+        public static final int abc_dialog_padding_material=0x7f08004b;
+        public static final int abc_dialog_padding_top_material=0x7f08004c;
+        public static final int abc_disabled_alpha_material_dark=0x7f08004d;
+        public static final int abc_disabled_alpha_material_light=0x7f08004e;
+        public static final int abc_dropdownitem_icon_width=0x7f08004f;
+        public static final int abc_dropdownitem_text_padding_left=0x7f080050;
+        public static final int abc_dropdownitem_text_padding_right=0x7f080051;
+        public static final int abc_edit_text_inset_bottom_material=0x7f080052;
+        public static final int abc_edit_text_inset_horizontal_material=0x7f080053;
+        public static final int abc_edit_text_inset_top_material=0x7f080054;
+        public static final int abc_floating_window_z=0x7f080055;
+        public static final int abc_list_item_padding_horizontal_material=0x7f080056;
+        public static final int abc_panel_menu_list_width=0x7f080057;
+        public static final int abc_progress_bar_height_material=0x7f080058;
+        public static final int abc_search_view_preferred_height=0x7f080059;
+        public static final int abc_search_view_preferred_width=0x7f08005a;
+        public static final int abc_seekbar_track_background_height_material=0x7f08005b;
+        public static final int abc_seekbar_track_progress_height_material=0x7f08005c;
+        public static final int abc_select_dialog_padding_start_material=0x7f08005d;
+        public static final int abc_switch_padding=0x7f080036;
+        public static final int abc_text_size_body_1_material=0x7f08005e;
+        public static final int abc_text_size_body_2_material=0x7f08005f;
+        public static final int abc_text_size_button_material=0x7f080060;
+        public static final int abc_text_size_caption_material=0x7f080061;
+        public static final int abc_text_size_display_1_material=0x7f080062;
+        public static final int abc_text_size_display_2_material=0x7f080063;
+        public static final int abc_text_size_display_3_material=0x7f080064;
+        public static final int abc_text_size_display_4_material=0x7f080065;
+        public static final int abc_text_size_headline_material=0x7f080066;
+        public static final int abc_text_size_large_material=0x7f080067;
+        public static final int abc_text_size_medium_material=0x7f080068;
+        public static final int abc_text_size_menu_header_material=0x7f080069;
+        public static final int abc_text_size_menu_material=0x7f08006a;
+        public static final int abc_text_size_small_material=0x7f08006b;
+        public static final int abc_text_size_subhead_material=0x7f08006c;
+        public static final int abc_text_size_subtitle_material_toolbar=0x7f080029;
+        public static final int abc_text_size_title_material=0x7f08006d;
+        public static final int abc_text_size_title_material_toolbar=0x7f08002a;
         /**  Default screen margins, per the Android Design guidelines. 
  Example customization of dimensions originally defined in res/values/dimens.xml
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). 
          */
-        public static final int activity_horizontal_margin=0x7f060078;
-        public static final int activity_vertical_margin=0x7f060079;
-        public static final int design_appbar_elevation=0x7f06000b;
-        public static final int design_bottom_navigation_active_item_max_width=0x7f06000c;
-        public static final int design_bottom_navigation_active_text_size=0x7f06000d;
-        public static final int design_bottom_navigation_height=0x7f06000e;
-        public static final int design_bottom_navigation_item_max_width=0x7f06000f;
-        public static final int design_bottom_navigation_margin=0x7f060010;
-        public static final int design_bottom_navigation_text_size=0x7f060011;
-        public static final int design_bottom_sheet_modal_elevation=0x7f060012;
-        public static final int design_bottom_sheet_peek_height_min=0x7f060013;
-        public static final int design_fab_border_width=0x7f060014;
-        public static final int design_fab_elevation=0x7f060015;
-        public static final int design_fab_image_size=0x7f060016;
-        public static final int design_fab_size_mini=0x7f060017;
-        public static final int design_fab_size_normal=0x7f060018;
-        public static final int design_fab_translation_z_pressed=0x7f060019;
-        public static final int design_navigation_elevation=0x7f06001a;
-        public static final int design_navigation_icon_padding=0x7f06001b;
-        public static final int design_navigation_icon_size=0x7f06001c;
-        public static final int design_navigation_max_width=0x7f060003;
-        public static final int design_navigation_padding_bottom=0x7f06001d;
-        public static final int design_navigation_separator_vertical_padding=0x7f06001e;
-        public static final int design_snackbar_action_inline_max_width=0x7f060004;
-        public static final int design_snackbar_background_corner_radius=0x7f060005;
-        public static final int design_snackbar_elevation=0x7f06001f;
-        public static final int design_snackbar_extra_spacing_horizontal=0x7f060006;
-        public static final int design_snackbar_max_width=0x7f060007;
-        public static final int design_snackbar_min_width=0x7f060008;
-        public static final int design_snackbar_padding_horizontal=0x7f060020;
-        public static final int design_snackbar_padding_vertical=0x7f060021;
-        public static final int design_snackbar_padding_vertical_2lines=0x7f060009;
-        public static final int design_snackbar_text_size=0x7f060022;
-        public static final int design_tab_max_width=0x7f060023;
-        public static final int design_tab_scrollable_min_width=0x7f06000a;
-        public static final int design_tab_text_size=0x7f060024;
-        public static final int design_tab_text_size_2line=0x7f060025;
-        public static final int disabled_alpha_material_dark=0x7f06006e;
-        public static final int disabled_alpha_material_light=0x7f06006f;
-        public static final int fab_margin=0x7f06007a;
-        public static final int highlight_alpha_material_colored=0x7f060070;
-        public static final int highlight_alpha_material_dark=0x7f060071;
-        public static final int highlight_alpha_material_light=0x7f060072;
-        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f060000;
-        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f060001;
-        public static final int item_touch_helper_swipe_escape_velocity=0x7f060002;
-        public static final int nav_header_height=0x7f060077;
+        public static final int activity_horizontal_margin=0x7f080078;
+        public static final int activity_vertical_margin=0x7f080079;
+        public static final int design_appbar_elevation=0x7f08000b;
+        public static final int design_bottom_navigation_active_item_max_width=0x7f08000c;
+        public static final int design_bottom_navigation_active_text_size=0x7f08000d;
+        public static final int design_bottom_navigation_height=0x7f08000e;
+        public static final int design_bottom_navigation_item_max_width=0x7f08000f;
+        public static final int design_bottom_navigation_margin=0x7f080010;
+        public static final int design_bottom_navigation_text_size=0x7f080011;
+        public static final int design_bottom_sheet_modal_elevation=0x7f080012;
+        public static final int design_bottom_sheet_peek_height_min=0x7f080013;
+        public static final int design_fab_border_width=0x7f080014;
+        public static final int design_fab_elevation=0x7f080015;
+        public static final int design_fab_image_size=0x7f080016;
+        public static final int design_fab_size_mini=0x7f080017;
+        public static final int design_fab_size_normal=0x7f080018;
+        public static final int design_fab_translation_z_pressed=0x7f080019;
+        public static final int design_navigation_elevation=0x7f08001a;
+        public static final int design_navigation_icon_padding=0x7f08001b;
+        public static final int design_navigation_icon_size=0x7f08001c;
+        public static final int design_navigation_max_width=0x7f080003;
+        public static final int design_navigation_padding_bottom=0x7f08001d;
+        public static final int design_navigation_separator_vertical_padding=0x7f08001e;
+        public static final int design_snackbar_action_inline_max_width=0x7f080004;
+        public static final int design_snackbar_background_corner_radius=0x7f080005;
+        public static final int design_snackbar_elevation=0x7f08001f;
+        public static final int design_snackbar_extra_spacing_horizontal=0x7f080006;
+        public static final int design_snackbar_max_width=0x7f080007;
+        public static final int design_snackbar_min_width=0x7f080008;
+        public static final int design_snackbar_padding_horizontal=0x7f080020;
+        public static final int design_snackbar_padding_vertical=0x7f080021;
+        public static final int design_snackbar_padding_vertical_2lines=0x7f080009;
+        public static final int design_snackbar_text_size=0x7f080022;
+        public static final int design_tab_max_width=0x7f080023;
+        public static final int design_tab_scrollable_min_width=0x7f08000a;
+        public static final int design_tab_text_size=0x7f080024;
+        public static final int design_tab_text_size_2line=0x7f080025;
+        public static final int disabled_alpha_material_dark=0x7f08006e;
+        public static final int disabled_alpha_material_light=0x7f08006f;
+        public static final int fab_margin=0x7f08007a;
+        public static final int highlight_alpha_material_colored=0x7f080070;
+        public static final int highlight_alpha_material_dark=0x7f080071;
+        public static final int highlight_alpha_material_light=0x7f080072;
+        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f080000;
+        public static final int item_touch_helper_swipe_escape_max_velocity=0x7f080001;
+        public static final int item_touch_helper_swipe_escape_velocity=0x7f080002;
+        public static final int nav_header_height=0x7f080077;
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int nav_header_vertical_spacing=0x7f060076;
-        public static final int notification_large_icon_height=0x7f060073;
-        public static final int notification_large_icon_width=0x7f060074;
-        public static final int notification_subtext_size=0x7f060075;
+        public static final int nav_header_vertical_spacing=0x7f080076;
+        public static final int notification_large_icon_height=0x7f080073;
+        public static final int notification_large_icon_width=0x7f080074;
+        public static final int notification_subtext_size=0x7f080075;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
@@ -2600,172 +2600,174 @@ containing a value of this type.
         public static final int side_nav_bar=0x7f02005d;
     }
     public static final class id {
-        public static final int Logo1=0x7f070071;
-        public static final int Logo2=0x7f070072;
-        public static final int action0=0x7f070081;
-        public static final int action_bar=0x7f07005e;
-        public static final int action_bar_activity_content=0x7f070002;
-        public static final int action_bar_container=0x7f07005d;
-        public static final int action_bar_root=0x7f070059;
-        public static final int action_bar_spinner=0x7f070003;
-        public static final int action_bar_subtitle=0x7f07003e;
-        public static final int action_bar_title=0x7f07003d;
-        public static final int action_context_bar=0x7f07005f;
-        public static final int action_divider=0x7f070085;
-        public static final int action_exit=0x7f07009b;
-        public static final int action_home=0x7f070099;
-        public static final int action_menu_divider=0x7f070004;
-        public static final int action_menu_presenter=0x7f070005;
-        public static final int action_mode_bar=0x7f07005b;
-        public static final int action_mode_bar_stub=0x7f07005a;
-        public static final int action_mode_close_button=0x7f07003f;
-        public static final int action_reload=0x7f07009a;
-        public static final int activity_chooser_view_content=0x7f070040;
-        public static final int add=0x7f070034;
-        public static final int alertTitle=0x7f07004c;
-        public static final int all=0x7f070022;
-        public static final int always=0x7f070038;
-        public static final int auto=0x7f070010;
-        public static final int beginning=0x7f070036;
-        public static final int bottom=0x7f070011;
-        public static final int buttonPanel=0x7f070047;
-        public static final int cancel_action=0x7f070082;
-        public static final int center=0x7f070012;
-        public static final int center_horizontal=0x7f070013;
-        public static final int center_vertical=0x7f070014;
-        public static final int checkbox=0x7f070055;
-        public static final int chronometer=0x7f070088;
-        public static final int clip_horizontal=0x7f07001e;
-        public static final int clip_vertical=0x7f07001f;
-        public static final int collapseActionView=0x7f070039;
-        public static final int contentPanel=0x7f07004d;
-        public static final int content_main=0x7f07006f;
-        public static final int custom=0x7f070053;
-        public static final int customPanel=0x7f070052;
-        public static final int decor_content_parent=0x7f07005c;
-        public static final int default_activity_button=0x7f070043;
-        public static final int design_bottom_sheet=0x7f070074;
-        public static final int design_menu_item_action_area=0x7f07007b;
-        public static final int design_menu_item_action_area_stub=0x7f07007a;
-        public static final int design_menu_item_text=0x7f070079;
-        public static final int design_navigation_view=0x7f070078;
-        public static final int disableHome=0x7f07002e;
-        public static final int drawer_layout=0x7f07007d;
-        public static final int edit_query=0x7f070060;
-        public static final int end=0x7f070015;
-        public static final int end_padder=0x7f07008d;
-        public static final int enterAlways=0x7f07000b;
-        public static final int enterAlwaysCollapsed=0x7f07000c;
-        public static final int exitUntilCollapsed=0x7f07000d;
-        public static final int expand_activities_button=0x7f070041;
-        public static final int expanded_menu=0x7f070054;
-        public static final int fill=0x7f070020;
-        public static final int fill_horizontal=0x7f070021;
-        public static final int fill_vertical=0x7f070016;
-        public static final int fixed=0x7f070025;
-        public static final int home=0x7f070006;
-        public static final int homeAsUp=0x7f07002f;
-        public static final int icon=0x7f070045;
-        public static final int ifRoom=0x7f07003a;
-        public static final int image=0x7f070042;
-        public static final int imageView=0x7f07007f;
-        public static final int info=0x7f07008c;
-        public static final int item_touch_helper_previous_elevation=0x7f070000;
-        public static final int left=0x7f070017;
-        public static final int line1=0x7f070086;
-        public static final int line3=0x7f07008a;
-        public static final int listMode=0x7f07002c;
-        public static final int list_item=0x7f070044;
-        public static final int mChangeWebView=0x7f07006e;
-        public static final int mWebView=0x7f070070;
-        public static final int media_actions=0x7f070084;
-        public static final int middle=0x7f070037;
-        public static final int mini=0x7f070023;
-        public static final int multiply=0x7f070027;
-        public static final int nav_Github=0x7f070098;
-        public static final int nav_dingdan=0x7f070091;
-        public static final int nav_gouwuche=0x7f07008f;
-        public static final int nav_kajuanbao=0x7f070094;
-        public static final int nav_mTabaoTypeChange=0x7f070096;
-        public static final int nav_myTaobao=0x7f07008e;
-        public static final int nav_soucangjia=0x7f070092;
-        public static final int nav_updata=0x7f070097;
-        public static final int nav_view=0x7f07007e;
-        public static final int nav_wangwang=0x7f070095;
-        public static final int nav_wuliu=0x7f070090;
-        public static final int nav_zuji=0x7f070093;
-        public static final int navigation_header_container=0x7f070077;
-        public static final int never=0x7f07003b;
-        public static final int none=0x7f07001b;
-        public static final int normal=0x7f070024;
-        public static final int parallax=0x7f07001c;
-        public static final int parentPanel=0x7f070049;
-        public static final int pin=0x7f07001d;
-        public static final int progress_circular=0x7f070007;
-        public static final int progress_horizontal=0x7f070008;
-        public static final int radio=0x7f070057;
-        public static final int right=0x7f070018;
-        public static final int screen=0x7f070028;
-        public static final int scroll=0x7f07000e;
-        public static final int scrollIndicatorDown=0x7f070051;
-        public static final int scrollIndicatorUp=0x7f07004e;
-        public static final int scrollView=0x7f07004f;
-        public static final int scrollable=0x7f070026;
-        public static final int search_badge=0x7f070062;
-        public static final int search_bar=0x7f070061;
-        public static final int search_button=0x7f070063;
-        public static final int search_close_btn=0x7f070068;
-        public static final int search_edit_frame=0x7f070064;
-        public static final int search_go_btn=0x7f07006a;
-        public static final int search_mag_icon=0x7f070065;
-        public static final int search_plate=0x7f070066;
-        public static final int search_src_text=0x7f070067;
-        public static final int search_voice_btn=0x7f07006b;
-        public static final int select_dialog_listview=0x7f07006c;
-        public static final int share=0x7f07009c;
-        public static final int shortcut=0x7f070056;
-        public static final int showCustom=0x7f070030;
-        public static final int showHome=0x7f070031;
-        public static final int showTitle=0x7f070032;
-        public static final int snackbar_action=0x7f070076;
-        public static final int snackbar_text=0x7f070075;
-        public static final int snap=0x7f07000f;
-        public static final int spacer=0x7f070048;
-        public static final int split_action_bar=0x7f070009;
-        public static final int src_atop=0x7f070029;
-        public static final int src_in=0x7f07002a;
-        public static final int src_over=0x7f07002b;
-        public static final int start=0x7f070019;
-        public static final int status_bar_latest_event_content=0x7f070083;
-        public static final int submenuarrow=0x7f070058;
-        public static final int submit_area=0x7f070069;
-        public static final int tabMode=0x7f07002d;
-        public static final int text=0x7f07008b;
-        public static final int text2=0x7f070089;
-        public static final int textSpacerNoButtons=0x7f070050;
-        public static final int textView=0x7f070080;
-        public static final int text_input_password_toggle=0x7f07007c;
-        public static final int time=0x7f070087;
-        public static final int title=0x7f070046;
-        public static final int title_template=0x7f07004b;
-        public static final int toolbar=0x7f07006d;
-        public static final int top=0x7f07001a;
-        public static final int topPanel=0x7f07004a;
-        public static final int touch_outside=0x7f070073;
-        public static final int up=0x7f07000a;
-        public static final int useLogo=0x7f070033;
-        public static final int view_offset_helper=0x7f070001;
-        public static final int withText=0x7f07003c;
-        public static final int wrap_content=0x7f070035;
+        public static final int Logo1=0x7f090071;
+        public static final int Logo2=0x7f090072;
+        public static final int action0=0x7f090083;
+        public static final int action_bar=0x7f09005e;
+        public static final int action_bar_activity_content=0x7f090002;
+        public static final int action_bar_container=0x7f09005d;
+        public static final int action_bar_root=0x7f090059;
+        public static final int action_bar_spinner=0x7f090003;
+        public static final int action_bar_subtitle=0x7f09003e;
+        public static final int action_bar_title=0x7f09003d;
+        public static final int action_context_bar=0x7f09005f;
+        public static final int action_divider=0x7f090087;
+        public static final int action_exit=0x7f09009e;
+        public static final int action_home=0x7f09009a;
+        public static final int action_menu_divider=0x7f090004;
+        public static final int action_menu_presenter=0x7f090005;
+        public static final int action_mode_bar=0x7f09005b;
+        public static final int action_mode_bar_stub=0x7f09005a;
+        public static final int action_mode_close_button=0x7f09003f;
+        public static final int action_reload=0x7f09009b;
+        public static final int action_settings=0x7f09009c;
+        public static final int activity_chooser_view_content=0x7f090040;
+        public static final int add=0x7f090034;
+        public static final int alertTitle=0x7f09004c;
+        public static final int all=0x7f090022;
+        public static final int always=0x7f090038;
+        public static final int auto=0x7f090010;
+        public static final int beginning=0x7f090036;
+        public static final int bottom=0x7f090011;
+        public static final int buttonPanel=0x7f090047;
+        public static final int cancel_action=0x7f090084;
+        public static final int center=0x7f090012;
+        public static final int center_horizontal=0x7f090013;
+        public static final int center_vertical=0x7f090014;
+        public static final int checkbox=0x7f090055;
+        public static final int chronometer=0x7f09008a;
+        public static final int clip_horizontal=0x7f09001e;
+        public static final int clip_vertical=0x7f09001f;
+        public static final int collapseActionView=0x7f090039;
+        public static final int contentPanel=0x7f09004d;
+        public static final int content_main=0x7f09006f;
+        public static final int custom=0x7f090053;
+        public static final int customPanel=0x7f090052;
+        public static final int decor_content_parent=0x7f09005c;
+        public static final int default_activity_button=0x7f090043;
+        public static final int design_bottom_sheet=0x7f090074;
+        public static final int design_menu_item_action_area=0x7f09007b;
+        public static final int design_menu_item_action_area_stub=0x7f09007a;
+        public static final int design_menu_item_text=0x7f090079;
+        public static final int design_navigation_view=0x7f090078;
+        public static final int disableHome=0x7f09002e;
+        public static final int drawer_layout=0x7f09007f;
+        public static final int edit_query=0x7f090060;
+        public static final int end=0x7f090015;
+        public static final int end_padder=0x7f09008f;
+        public static final int enterAlways=0x7f09000b;
+        public static final int enterAlwaysCollapsed=0x7f09000c;
+        public static final int exitUntilCollapsed=0x7f09000d;
+        public static final int expand_activities_button=0x7f090041;
+        public static final int expanded_menu=0x7f090054;
+        public static final int fill=0x7f090020;
+        public static final int fill_horizontal=0x7f090021;
+        public static final int fill_vertical=0x7f090016;
+        public static final int fixed=0x7f090025;
+        public static final int home=0x7f090006;
+        public static final int homeAsUp=0x7f09002f;
+        public static final int icon=0x7f090045;
+        public static final int ifRoom=0x7f09003a;
+        public static final int image=0x7f090042;
+        public static final int imageView=0x7f090081;
+        public static final int info=0x7f09008e;
+        public static final int item_longclicked_saveImage=0x7f09007e;
+        public static final int item_longclicked_viewImage=0x7f09007d;
+        public static final int item_touch_helper_previous_elevation=0x7f090000;
+        public static final int left=0x7f090017;
+        public static final int line1=0x7f090088;
+        public static final int line3=0x7f09008c;
+        public static final int listMode=0x7f09002c;
+        public static final int list_item=0x7f090044;
+        public static final int mChangeWebView=0x7f09006e;
+        public static final int mWebView=0x7f090070;
+        public static final int media_actions=0x7f090086;
+        public static final int middle=0x7f090037;
+        public static final int mini=0x7f090023;
+        public static final int multiply=0x7f090027;
+        public static final int nav_dingdan=0x7f090093;
+        public static final int nav_exit=0x7f090099;
+        public static final int nav_gouwuche=0x7f090091;
+        public static final int nav_kajuanbao=0x7f090096;
+        public static final int nav_myTaobao=0x7f090090;
+        public static final int nav_settings=0x7f090098;
+        public static final int nav_soucangjia=0x7f090094;
+        public static final int nav_view=0x7f090080;
+        public static final int nav_wangwang=0x7f090097;
+        public static final int nav_wuliu=0x7f090092;
+        public static final int nav_zuji=0x7f090095;
+        public static final int navigation_header_container=0x7f090077;
+        public static final int never=0x7f09003b;
+        public static final int none=0x7f09001b;
+        public static final int normal=0x7f090024;
+        public static final int parallax=0x7f09001c;
+        public static final int parentPanel=0x7f090049;
+        public static final int pin=0x7f09001d;
+        public static final int progress_circular=0x7f090007;
+        public static final int progress_horizontal=0x7f090008;
+        public static final int radio=0x7f090057;
+        public static final int right=0x7f090018;
+        public static final int screen=0x7f090028;
+        public static final int scroll=0x7f09000e;
+        public static final int scrollIndicatorDown=0x7f090051;
+        public static final int scrollIndicatorUp=0x7f09004e;
+        public static final int scrollView=0x7f09004f;
+        public static final int scrollable=0x7f090026;
+        public static final int search_badge=0x7f090062;
+        public static final int search_bar=0x7f090061;
+        public static final int search_button=0x7f090063;
+        public static final int search_close_btn=0x7f090068;
+        public static final int search_edit_frame=0x7f090064;
+        public static final int search_go_btn=0x7f09006a;
+        public static final int search_mag_icon=0x7f090065;
+        public static final int search_plate=0x7f090066;
+        public static final int search_src_text=0x7f090067;
+        public static final int search_voice_btn=0x7f09006b;
+        public static final int select_dialog_listview=0x7f09006c;
+        public static final int share=0x7f09009d;
+        public static final int shortcut=0x7f090056;
+        public static final int showCustom=0x7f090030;
+        public static final int showHome=0x7f090031;
+        public static final int showTitle=0x7f090032;
+        public static final int snackbar_action=0x7f090076;
+        public static final int snackbar_text=0x7f090075;
+        public static final int snap=0x7f09000f;
+        public static final int spacer=0x7f090048;
+        public static final int split_action_bar=0x7f090009;
+        public static final int src_atop=0x7f090029;
+        public static final int src_in=0x7f09002a;
+        public static final int src_over=0x7f09002b;
+        public static final int start=0x7f090019;
+        public static final int status_bar_latest_event_content=0x7f090085;
+        public static final int submenuarrow=0x7f090058;
+        public static final int submit_area=0x7f090069;
+        public static final int tabMode=0x7f09002d;
+        public static final int text=0x7f09008d;
+        public static final int text2=0x7f09008b;
+        public static final int textSpacerNoButtons=0x7f090050;
+        public static final int textView=0x7f090082;
+        public static final int text_input_password_toggle=0x7f09007c;
+        public static final int time=0x7f090089;
+        public static final int title=0x7f090046;
+        public static final int title_template=0x7f09004b;
+        public static final int toolbar=0x7f09006d;
+        public static final int top=0x7f09001a;
+        public static final int topPanel=0x7f09004a;
+        public static final int touch_outside=0x7f090073;
+        public static final int up=0x7f09000a;
+        public static final int useLogo=0x7f090033;
+        public static final int view_offset_helper=0x7f090001;
+        public static final int withText=0x7f09003c;
+        public static final int wrap_content=0x7f090035;
     }
     public static final class integer {
-        public static final int abc_config_activityDefaultDur=0x7f090003;
-        public static final int abc_config_activityShortDur=0x7f090004;
-        public static final int app_bar_elevation_anim_duration=0x7f090001;
-        public static final int bottom_sheet_slide_duration=0x7f090002;
-        public static final int cancel_button_image_alpha=0x7f090005;
-        public static final int design_snackbar_text_max_lines=0x7f090000;
-        public static final int status_bar_notification_info_maxnum=0x7f090006;
+        public static final int abc_config_activityDefaultDur=0x7f0b0003;
+        public static final int abc_config_activityShortDur=0x7f0b0004;
+        public static final int app_bar_elevation_anim_duration=0x7f0b0001;
+        public static final int bottom_sheet_slide_duration=0x7f0b0002;
+        public static final int cancel_button_image_alpha=0x7f0b0005;
+        public static final int design_snackbar_text_max_lines=0x7f0b0000;
+        public static final int status_bar_notification_info_maxnum=0x7f0b0006;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f040000;
@@ -2810,436 +2812,444 @@ containing a value of this type.
         public static final int design_navigation_menu=0x7f040027;
         public static final int design_navigation_menu_item=0x7f040028;
         public static final int design_text_input_password_icon=0x7f040029;
-        public static final int main=0x7f04002a;
-        public static final int nav_header_main=0x7f04002b;
-        public static final int notification_media_action=0x7f04002c;
-        public static final int notification_media_cancel_action=0x7f04002d;
-        public static final int notification_template_big_media=0x7f04002e;
-        public static final int notification_template_big_media_narrow=0x7f04002f;
-        public static final int notification_template_lines=0x7f040030;
-        public static final int notification_template_media=0x7f040031;
-        public static final int notification_template_part_chronometer=0x7f040032;
-        public static final int notification_template_part_time=0x7f040033;
-        public static final int select_dialog_item_material=0x7f040034;
-        public static final int select_dialog_multichoice_material=0x7f040035;
-        public static final int select_dialog_singlechoice_material=0x7f040036;
-        public static final int support_simple_spinner_dropdown_item=0x7f040037;
+        public static final int list_item_longclicked_img=0x7f04002a;
+        public static final int main=0x7f04002b;
+        public static final int nav_header_main=0x7f04002c;
+        public static final int notification_media_action=0x7f04002d;
+        public static final int notification_media_cancel_action=0x7f04002e;
+        public static final int notification_template_big_media=0x7f04002f;
+        public static final int notification_template_big_media_narrow=0x7f040030;
+        public static final int notification_template_lines=0x7f040031;
+        public static final int notification_template_media=0x7f040032;
+        public static final int notification_template_part_chronometer=0x7f040033;
+        public static final int notification_template_part_time=0x7f040034;
+        public static final int select_dialog_item_material=0x7f040035;
+        public static final int select_dialog_multichoice_material=0x7f040036;
+        public static final int select_dialog_singlechoice_material=0x7f040037;
+        public static final int support_simple_spinner_dropdown_item=0x7f040038;
     }
     public static final class menu {
-        public static final int activity_main_drawer=0x7f0d0000;
-        public static final int main=0x7f0d0001;
+        public static final int activity_main_drawer=0x7f0f0000;
+        public static final int main=0x7f0f0001;
     }
     public static final class mipmap {
         public static final int home=0x7f030000;
         public static final int ic_launcher=0x7f030001;
         public static final int icon=0x7f030002;
     }
+    public static final class raw {
+        public static final int pay_weixin=0x7f070000;
+    }
     public static final class string {
-        public static final int abc_action_bar_home_description=0x7f0b0003;
-        public static final int abc_action_bar_home_description_format=0x7f0b0004;
-        public static final int abc_action_bar_home_subtitle_description_format=0x7f0b0005;
-        public static final int abc_action_bar_up_description=0x7f0b0006;
-        public static final int abc_action_menu_overflow_description=0x7f0b0007;
-        public static final int abc_action_mode_done=0x7f0b0008;
-        public static final int abc_activity_chooser_view_see_all=0x7f0b0009;
-        public static final int abc_activitychooserview_choose_application=0x7f0b000a;
-        public static final int abc_capital_off=0x7f0b000b;
-        public static final int abc_capital_on=0x7f0b000c;
-        public static final int abc_font_family_body_1_material=0x7f0b0018;
-        public static final int abc_font_family_body_2_material=0x7f0b0019;
-        public static final int abc_font_family_button_material=0x7f0b001a;
-        public static final int abc_font_family_caption_material=0x7f0b001b;
-        public static final int abc_font_family_display_1_material=0x7f0b001c;
-        public static final int abc_font_family_display_2_material=0x7f0b001d;
-        public static final int abc_font_family_display_3_material=0x7f0b001e;
-        public static final int abc_font_family_display_4_material=0x7f0b001f;
-        public static final int abc_font_family_headline_material=0x7f0b0020;
-        public static final int abc_font_family_menu_material=0x7f0b0021;
-        public static final int abc_font_family_subhead_material=0x7f0b0022;
-        public static final int abc_font_family_title_material=0x7f0b0023;
-        public static final int abc_search_hint=0x7f0b000d;
-        public static final int abc_searchview_description_clear=0x7f0b000e;
-        public static final int abc_searchview_description_query=0x7f0b000f;
-        public static final int abc_searchview_description_search=0x7f0b0010;
-        public static final int abc_searchview_description_submit=0x7f0b0011;
-        public static final int abc_searchview_description_voice=0x7f0b0012;
-        public static final int abc_shareactionprovider_share_with=0x7f0b0013;
-        public static final int abc_shareactionprovider_share_with_application=0x7f0b0014;
-        public static final int abc_toolbar_collapse_description=0x7f0b0015;
-        public static final int action_settings=0x7f0b0027;
-        public static final int app_name=0x7f0b0024;
-        public static final int appbar_scrolling_view_behavior=0x7f0b0000;
-        public static final int bottom_sheet_behavior=0x7f0b0001;
-        public static final int character_counter_pattern=0x7f0b0002;
-        public static final int navigation_drawer_close=0x7f0b0026;
-        public static final int navigation_drawer_open=0x7f0b0025;
-        public static final int search_menu_title=0x7f0b0016;
-        public static final int status_bar_notification_info_overflow=0x7f0b0017;
+        public static final int APIkey=0x7f0d0025;
+        public static final int abc_action_bar_home_description=0x7f0d0003;
+        public static final int abc_action_bar_home_description_format=0x7f0d0004;
+        public static final int abc_action_bar_home_subtitle_description_format=0x7f0d0005;
+        public static final int abc_action_bar_up_description=0x7f0d0006;
+        public static final int abc_action_menu_overflow_description=0x7f0d0007;
+        public static final int abc_action_mode_done=0x7f0d0008;
+        public static final int abc_activity_chooser_view_see_all=0x7f0d0009;
+        public static final int abc_activitychooserview_choose_application=0x7f0d000a;
+        public static final int abc_capital_off=0x7f0d000b;
+        public static final int abc_capital_on=0x7f0d000c;
+        public static final int abc_font_family_body_1_material=0x7f0d0018;
+        public static final int abc_font_family_body_2_material=0x7f0d0019;
+        public static final int abc_font_family_button_material=0x7f0d001a;
+        public static final int abc_font_family_caption_material=0x7f0d001b;
+        public static final int abc_font_family_display_1_material=0x7f0d001c;
+        public static final int abc_font_family_display_2_material=0x7f0d001d;
+        public static final int abc_font_family_display_3_material=0x7f0d001e;
+        public static final int abc_font_family_display_4_material=0x7f0d001f;
+        public static final int abc_font_family_headline_material=0x7f0d0020;
+        public static final int abc_font_family_menu_material=0x7f0d0021;
+        public static final int abc_font_family_subhead_material=0x7f0d0022;
+        public static final int abc_font_family_title_material=0x7f0d0023;
+        public static final int abc_search_hint=0x7f0d000d;
+        public static final int abc_searchview_description_clear=0x7f0d000e;
+        public static final int abc_searchview_description_query=0x7f0d000f;
+        public static final int abc_searchview_description_search=0x7f0d0010;
+        public static final int abc_searchview_description_submit=0x7f0d0011;
+        public static final int abc_searchview_description_voice=0x7f0d0012;
+        public static final int abc_shareactionprovider_share_with=0x7f0d0013;
+        public static final int abc_shareactionprovider_share_with_application=0x7f0d0014;
+        public static final int abc_toolbar_collapse_description=0x7f0d0015;
+        public static final int action_settings=0x7f0d0028;
+        public static final int app_name=0x7f0d0024;
+        public static final int appbar_scrolling_view_behavior=0x7f0d0000;
+        public static final int bottom_sheet_behavior=0x7f0d0001;
+        public static final int character_counter_pattern=0x7f0d0002;
+        public static final int navigation_drawer_close=0x7f0d0027;
+        public static final int navigation_drawer_open=0x7f0d0026;
+        public static final int search_menu_title=0x7f0d0016;
+        public static final int status_bar_notification_info_overflow=0x7f0d0017;
     }
     public static final class style {
-        public static final int AlertDialog_AppCompat=0x7f0800a4;
-        public static final int AlertDialog_AppCompat_Light=0x7f0800a5;
-        public static final int Animation_AppCompat_Dialog=0x7f0800a6;
-        public static final int Animation_AppCompat_DropDownUp=0x7f0800a7;
-        public static final int Animation_Design_BottomSheetDialog=0x7f080002;
+        public static final int AlertDialog_AppCompat=0x7f0a00a4;
+        public static final int AlertDialog_AppCompat_Light=0x7f0a00a5;
+        public static final int Animation_AppCompat_Dialog=0x7f0a00a6;
+        public static final int Animation_AppCompat_DropDownUp=0x7f0a00a7;
+        public static final int Animation_Design_BottomSheetDialog=0x7f0a0002;
         /**  Base application theme. 
          */
-        public static final int AppTheme=0x7f080165;
-        public static final int AppTheme_AppBarOverlay=0x7f080167;
-        public static final int AppTheme_NoActionBar=0x7f080166;
-        public static final int AppTheme_PopupOverlay=0x7f080168;
-        public static final int Base_AlertDialog_AppCompat=0x7f0800a8;
-        public static final int Base_AlertDialog_AppCompat_Light=0x7f0800a9;
-        public static final int Base_Animation_AppCompat_Dialog=0x7f0800aa;
-        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0800ab;
-        public static final int Base_DialogWindowTitle_AppCompat=0x7f0800ac;
-        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0800ad;
-        public static final int Base_TextAppearance_AppCompat=0x7f080052;
-        public static final int Base_TextAppearance_AppCompat_Body1=0x7f080053;
-        public static final int Base_TextAppearance_AppCompat_Body2=0x7f080054;
-        public static final int Base_TextAppearance_AppCompat_Button=0x7f08003c;
-        public static final int Base_TextAppearance_AppCompat_Caption=0x7f080055;
-        public static final int Base_TextAppearance_AppCompat_Display1=0x7f080056;
-        public static final int Base_TextAppearance_AppCompat_Display2=0x7f080057;
-        public static final int Base_TextAppearance_AppCompat_Display3=0x7f080058;
-        public static final int Base_TextAppearance_AppCompat_Display4=0x7f080059;
-        public static final int Base_TextAppearance_AppCompat_Headline=0x7f08005a;
-        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f080025;
-        public static final int Base_TextAppearance_AppCompat_Large=0x7f08005b;
-        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f080026;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f08005c;
-        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f08005d;
-        public static final int Base_TextAppearance_AppCompat_Medium=0x7f08005e;
-        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f080027;
-        public static final int Base_TextAppearance_AppCompat_Menu=0x7f08005f;
-        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0800ae;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f080060;
-        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f080061;
-        public static final int Base_TextAppearance_AppCompat_Small=0x7f080062;
-        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f080028;
-        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f080063;
-        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f080029;
-        public static final int Base_TextAppearance_AppCompat_Title=0x7f080064;
-        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f08002a;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f08009d;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f080065;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f080066;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f080067;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f080068;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f080069;
-        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f08006a;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f08006b;
-        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f08009e;
-        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0800af;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f08006c;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f08006d;
-        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f08006e;
-        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f08006f;
-        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f080070;
-        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0800b0;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f080071;
-        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f080072;
-        public static final int Base_Theme_AppCompat=0x7f080073;
-        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0800b1;
-        public static final int Base_Theme_AppCompat_Dialog=0x7f08002b;
-        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0800b2;
-        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0800b3;
-        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0800b4;
-        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f08001b;
-        public static final int Base_Theme_AppCompat_Light=0x7f080074;
-        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0800b5;
-        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f08002c;
-        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0800b6;
-        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0800b7;
-        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0800b8;
-        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f08001c;
-        public static final int Base_ThemeOverlay_AppCompat=0x7f0800b9;
-        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0800ba;
-        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0800bb;
-        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0800bc;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f08002d;
-        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0800bd;
-        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0800be;
-        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f08002e;
-        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f08002f;
-        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f080030;
-        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f080038;
-        public static final int Base_V12_Widget_AppCompat_EditText=0x7f080039;
-        public static final int Base_V21_Theme_AppCompat=0x7f080075;
-        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f080076;
-        public static final int Base_V21_Theme_AppCompat_Light=0x7f080077;
-        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f080078;
-        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f080079;
-        public static final int Base_V22_Theme_AppCompat=0x7f08009b;
-        public static final int Base_V22_Theme_AppCompat_Light=0x7f08009c;
-        public static final int Base_V23_Theme_AppCompat=0x7f08009f;
-        public static final int Base_V23_Theme_AppCompat_Light=0x7f0800a0;
-        public static final int Base_V7_Theme_AppCompat=0x7f0800bf;
-        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0800c0;
-        public static final int Base_V7_Theme_AppCompat_Light=0x7f0800c1;
-        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0800c2;
-        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0800c3;
-        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0800c4;
-        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0800c5;
-        public static final int Base_Widget_AppCompat_ActionBar=0x7f0800c6;
-        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0800c7;
-        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0800c8;
-        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f08007a;
-        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f08007b;
-        public static final int Base_Widget_AppCompat_ActionButton=0x7f08007c;
-        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f08007d;
-        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f08007e;
-        public static final int Base_Widget_AppCompat_ActionMode=0x7f0800c9;
-        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0800ca;
-        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f08003a;
-        public static final int Base_Widget_AppCompat_Button=0x7f08007f;
-        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f080080;
-        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f080081;
-        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0800cb;
-        public static final int Base_Widget_AppCompat_Button_Colored=0x7f0800a1;
-        public static final int Base_Widget_AppCompat_Button_Small=0x7f080082;
-        public static final int Base_Widget_AppCompat_ButtonBar=0x7f080083;
-        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0800cc;
-        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f080084;
-        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f080085;
-        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0800cd;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f08001a;
-        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0800ce;
-        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f080086;
-        public static final int Base_Widget_AppCompat_EditText=0x7f08003b;
-        public static final int Base_Widget_AppCompat_ImageButton=0x7f080087;
-        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0800cf;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0800d0;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0800d1;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f080088;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f080089;
-        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f08008a;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f08008b;
-        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f08008c;
-        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0800d2;
-        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f08008d;
-        public static final int Base_Widget_AppCompat_ListView=0x7f08008e;
-        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f08008f;
-        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f080090;
-        public static final int Base_Widget_AppCompat_PopupMenu=0x7f080091;
-        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f080092;
-        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0800d3;
-        public static final int Base_Widget_AppCompat_ProgressBar=0x7f080031;
-        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f080032;
-        public static final int Base_Widget_AppCompat_RatingBar=0x7f080093;
-        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0800a2;
-        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0800a3;
-        public static final int Base_Widget_AppCompat_SearchView=0x7f0800d4;
-        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0800d5;
-        public static final int Base_Widget_AppCompat_SeekBar=0x7f080094;
-        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0800d6;
-        public static final int Base_Widget_AppCompat_Spinner=0x7f080095;
-        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f08001d;
-        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f080096;
-        public static final int Base_Widget_AppCompat_Toolbar=0x7f0800d7;
-        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f080097;
-        public static final int Base_Widget_Design_AppBarLayout=0x7f080003;
-        public static final int Base_Widget_Design_TabLayout=0x7f080004;
-        public static final int Platform_AppCompat=0x7f080033;
-        public static final int Platform_AppCompat_Light=0x7f080034;
-        public static final int Platform_ThemeOverlay_AppCompat=0x7f080098;
-        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f080099;
-        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f08009a;
-        public static final int Platform_V11_AppCompat=0x7f080035;
-        public static final int Platform_V11_AppCompat_Light=0x7f080036;
-        public static final int Platform_V14_AppCompat=0x7f08003d;
-        public static final int Platform_V14_AppCompat_Light=0x7f08003e;
-        public static final int Platform_Widget_AppCompat_Spinner=0x7f080037;
-        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f080044;
-        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f080045;
-        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f080046;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f080047;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f080048;
-        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f080049;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f08004a;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f08004b;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f08004c;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f08004d;
-        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f08004e;
-        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f08004f;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f080050;
-        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f080051;
-        public static final int TextAppearance_AppCompat=0x7f0800d8;
-        public static final int TextAppearance_AppCompat_Body1=0x7f0800d9;
-        public static final int TextAppearance_AppCompat_Body2=0x7f0800da;
-        public static final int TextAppearance_AppCompat_Button=0x7f0800db;
-        public static final int TextAppearance_AppCompat_Caption=0x7f0800dc;
-        public static final int TextAppearance_AppCompat_Display1=0x7f0800dd;
-        public static final int TextAppearance_AppCompat_Display2=0x7f0800de;
-        public static final int TextAppearance_AppCompat_Display3=0x7f0800df;
-        public static final int TextAppearance_AppCompat_Display4=0x7f0800e0;
-        public static final int TextAppearance_AppCompat_Headline=0x7f0800e1;
-        public static final int TextAppearance_AppCompat_Inverse=0x7f0800e2;
-        public static final int TextAppearance_AppCompat_Large=0x7f0800e3;
-        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0800e4;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0800e5;
-        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0800e6;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0800e7;
-        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0800e8;
-        public static final int TextAppearance_AppCompat_Medium=0x7f0800e9;
-        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0800ea;
-        public static final int TextAppearance_AppCompat_Menu=0x7f0800eb;
-        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0800ec;
-        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0800ed;
-        public static final int TextAppearance_AppCompat_Small=0x7f0800ee;
-        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0800ef;
-        public static final int TextAppearance_AppCompat_Subhead=0x7f0800f0;
-        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0800f1;
-        public static final int TextAppearance_AppCompat_Title=0x7f0800f2;
-        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0800f3;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0800f4;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0800f5;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0800f6;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0800f7;
-        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0800f8;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0800f9;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0800fa;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0800fb;
-        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0800fc;
-        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0800fd;
-        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0800fe;
-        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0800ff;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f080100;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f080101;
-        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f080102;
-        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f080103;
-        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f080104;
-        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f080005;
-        public static final int TextAppearance_Design_Counter=0x7f080006;
-        public static final int TextAppearance_Design_Counter_Overflow=0x7f080007;
-        public static final int TextAppearance_Design_Error=0x7f080008;
-        public static final int TextAppearance_Design_Hint=0x7f080009;
-        public static final int TextAppearance_Design_Snackbar_Message=0x7f08000a;
-        public static final int TextAppearance_Design_Tab=0x7f08000b;
-        public static final int TextAppearance_StatusBar_EventContent=0x7f08003f;
-        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f080040;
-        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f080041;
-        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f080042;
-        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f080043;
-        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f080105;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f080106;
-        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f080107;
-        public static final int Theme_AppCompat=0x7f080108;
-        public static final int Theme_AppCompat_CompactMenu=0x7f080109;
-        public static final int Theme_AppCompat_DayNight=0x7f08001e;
-        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f08001f;
-        public static final int Theme_AppCompat_DayNight_Dialog=0x7f080020;
-        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f080021;
-        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f080022;
-        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f080023;
-        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f080024;
-        public static final int Theme_AppCompat_Dialog=0x7f08010a;
-        public static final int Theme_AppCompat_Dialog_Alert=0x7f08010b;
-        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f08010c;
-        public static final int Theme_AppCompat_DialogWhenLarge=0x7f08010d;
-        public static final int Theme_AppCompat_Light=0x7f08010e;
-        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f08010f;
-        public static final int Theme_AppCompat_Light_Dialog=0x7f080110;
-        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f080111;
-        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f080112;
-        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f080113;
-        public static final int Theme_AppCompat_Light_NoActionBar=0x7f080114;
-        public static final int Theme_AppCompat_NoActionBar=0x7f080115;
-        public static final int Theme_Design=0x7f08000c;
-        public static final int Theme_Design_BottomSheetDialog=0x7f08000d;
-        public static final int Theme_Design_Light=0x7f08000e;
-        public static final int Theme_Design_Light_BottomSheetDialog=0x7f08000f;
-        public static final int Theme_Design_Light_NoActionBar=0x7f080010;
-        public static final int Theme_Design_NoActionBar=0x7f080011;
-        public static final int ThemeOverlay_AppCompat=0x7f080116;
-        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f080117;
-        public static final int ThemeOverlay_AppCompat_Dark=0x7f080118;
-        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f080119;
-        public static final int ThemeOverlay_AppCompat_Dialog=0x7f08011a;
-        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f08011b;
-        public static final int ThemeOverlay_AppCompat_Light=0x7f08011c;
-        public static final int Widget_AppCompat_ActionBar=0x7f08011d;
-        public static final int Widget_AppCompat_ActionBar_Solid=0x7f08011e;
-        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f08011f;
-        public static final int Widget_AppCompat_ActionBar_TabText=0x7f080120;
-        public static final int Widget_AppCompat_ActionBar_TabView=0x7f080121;
-        public static final int Widget_AppCompat_ActionButton=0x7f080122;
-        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f080123;
-        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f080124;
-        public static final int Widget_AppCompat_ActionMode=0x7f080125;
-        public static final int Widget_AppCompat_ActivityChooserView=0x7f080126;
-        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f080127;
-        public static final int Widget_AppCompat_Button=0x7f080128;
-        public static final int Widget_AppCompat_Button_Borderless=0x7f080129;
-        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f08012a;
-        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f08012b;
-        public static final int Widget_AppCompat_Button_Colored=0x7f08012c;
-        public static final int Widget_AppCompat_Button_Small=0x7f08012d;
-        public static final int Widget_AppCompat_ButtonBar=0x7f08012e;
-        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f08012f;
-        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f080130;
-        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f080131;
-        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f080132;
-        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f080133;
-        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f080134;
-        public static final int Widget_AppCompat_EditText=0x7f080135;
-        public static final int Widget_AppCompat_ImageButton=0x7f080136;
-        public static final int Widget_AppCompat_Light_ActionBar=0x7f080137;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f080138;
-        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f080139;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f08013a;
-        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f08013b;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f08013c;
-        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f08013d;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f08013e;
-        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f08013f;
-        public static final int Widget_AppCompat_Light_ActionButton=0x7f080140;
-        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f080141;
-        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f080142;
-        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f080143;
-        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f080144;
-        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f080145;
-        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f080146;
-        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f080147;
-        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f080148;
-        public static final int Widget_AppCompat_Light_PopupMenu=0x7f080149;
-        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f08014a;
-        public static final int Widget_AppCompat_Light_SearchView=0x7f08014b;
-        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f08014c;
-        public static final int Widget_AppCompat_ListMenuView=0x7f08014d;
-        public static final int Widget_AppCompat_ListPopupWindow=0x7f08014e;
-        public static final int Widget_AppCompat_ListView=0x7f08014f;
-        public static final int Widget_AppCompat_ListView_DropDown=0x7f080150;
-        public static final int Widget_AppCompat_ListView_Menu=0x7f080151;
-        public static final int Widget_AppCompat_PopupMenu=0x7f080152;
-        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f080153;
-        public static final int Widget_AppCompat_PopupWindow=0x7f080154;
-        public static final int Widget_AppCompat_ProgressBar=0x7f080155;
-        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f080156;
-        public static final int Widget_AppCompat_RatingBar=0x7f080157;
-        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f080158;
-        public static final int Widget_AppCompat_RatingBar_Small=0x7f080159;
-        public static final int Widget_AppCompat_SearchView=0x7f08015a;
-        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f08015b;
-        public static final int Widget_AppCompat_SeekBar=0x7f08015c;
-        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f08015d;
-        public static final int Widget_AppCompat_Spinner=0x7f08015e;
-        public static final int Widget_AppCompat_Spinner_DropDown=0x7f08015f;
-        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f080160;
-        public static final int Widget_AppCompat_Spinner_Underlined=0x7f080161;
-        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f080162;
-        public static final int Widget_AppCompat_Toolbar=0x7f080163;
-        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f080164;
-        public static final int Widget_Design_AppBarLayout=0x7f080001;
-        public static final int Widget_Design_BottomSheet_Modal=0x7f080012;
-        public static final int Widget_Design_CollapsingToolbar=0x7f080013;
-        public static final int Widget_Design_CoordinatorLayout=0x7f080014;
-        public static final int Widget_Design_FloatingActionButton=0x7f080015;
-        public static final int Widget_Design_NavigationView=0x7f080016;
-        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f080017;
-        public static final int Widget_Design_Snackbar=0x7f080018;
-        public static final int Widget_Design_TabLayout=0x7f080000;
-        public static final int Widget_Design_TextInputLayout=0x7f080019;
+        public static final int AppTheme=0x7f0a0165;
+        public static final int AppTheme_AppBarOverlay=0x7f0a0167;
+        public static final int AppTheme_NoActionBar=0x7f0a0166;
+        public static final int AppTheme_PopupOverlay=0x7f0a0168;
+        public static final int Base_AlertDialog_AppCompat=0x7f0a00a8;
+        public static final int Base_AlertDialog_AppCompat_Light=0x7f0a00a9;
+        public static final int Base_Animation_AppCompat_Dialog=0x7f0a00aa;
+        public static final int Base_Animation_AppCompat_DropDownUp=0x7f0a00ab;
+        public static final int Base_DialogWindowTitle_AppCompat=0x7f0a00ac;
+        public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0a00ad;
+        public static final int Base_TextAppearance_AppCompat=0x7f0a0052;
+        public static final int Base_TextAppearance_AppCompat_Body1=0x7f0a0053;
+        public static final int Base_TextAppearance_AppCompat_Body2=0x7f0a0054;
+        public static final int Base_TextAppearance_AppCompat_Button=0x7f0a003c;
+        public static final int Base_TextAppearance_AppCompat_Caption=0x7f0a0055;
+        public static final int Base_TextAppearance_AppCompat_Display1=0x7f0a0056;
+        public static final int Base_TextAppearance_AppCompat_Display2=0x7f0a0057;
+        public static final int Base_TextAppearance_AppCompat_Display3=0x7f0a0058;
+        public static final int Base_TextAppearance_AppCompat_Display4=0x7f0a0059;
+        public static final int Base_TextAppearance_AppCompat_Headline=0x7f0a005a;
+        public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0a0025;
+        public static final int Base_TextAppearance_AppCompat_Large=0x7f0a005b;
+        public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0a0026;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a005c;
+        public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a005d;
+        public static final int Base_TextAppearance_AppCompat_Medium=0x7f0a005e;
+        public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0a0027;
+        public static final int Base_TextAppearance_AppCompat_Menu=0x7f0a005f;
+        public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0a00ae;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a0060;
+        public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0a0061;
+        public static final int Base_TextAppearance_AppCompat_Small=0x7f0a0062;
+        public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0a0028;
+        public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0a0063;
+        public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0a0029;
+        public static final int Base_TextAppearance_AppCompat_Title=0x7f0a0064;
+        public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0a002a;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a009d;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a0065;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a0066;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a0067;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a0068;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a0069;
+        public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a006a;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0a006b;
+        public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a009e;
+        public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a00af;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a006c;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a006d;
+        public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a006e;
+        public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0a006f;
+        public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a0070;
+        public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a00b0;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a0071;
+        public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a0072;
+        public static final int Base_Theme_AppCompat=0x7f0a0073;
+        public static final int Base_Theme_AppCompat_CompactMenu=0x7f0a00b1;
+        public static final int Base_Theme_AppCompat_Dialog=0x7f0a002b;
+        public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0a00b2;
+        public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0a00b3;
+        public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0a00b4;
+        public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0a001b;
+        public static final int Base_Theme_AppCompat_Light=0x7f0a0074;
+        public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0a00b5;
+        public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0a002c;
+        public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0a00b6;
+        public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0a00b7;
+        public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a00b8;
+        public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0a001c;
+        public static final int Base_ThemeOverlay_AppCompat=0x7f0a00b9;
+        public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0a00ba;
+        public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0a00bb;
+        public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a00bc;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0a002d;
+        public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a00bd;
+        public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0a00be;
+        public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0a002e;
+        public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0a002f;
+        public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0a0030;
+        public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0a0038;
+        public static final int Base_V12_Widget_AppCompat_EditText=0x7f0a0039;
+        public static final int Base_V21_Theme_AppCompat=0x7f0a0075;
+        public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0a0076;
+        public static final int Base_V21_Theme_AppCompat_Light=0x7f0a0077;
+        public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0a0078;
+        public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0a0079;
+        public static final int Base_V22_Theme_AppCompat=0x7f0a009b;
+        public static final int Base_V22_Theme_AppCompat_Light=0x7f0a009c;
+        public static final int Base_V23_Theme_AppCompat=0x7f0a009f;
+        public static final int Base_V23_Theme_AppCompat_Light=0x7f0a00a0;
+        public static final int Base_V7_Theme_AppCompat=0x7f0a00bf;
+        public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0a00c0;
+        public static final int Base_V7_Theme_AppCompat_Light=0x7f0a00c1;
+        public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0a00c2;
+        public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0a00c3;
+        public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0a00c4;
+        public static final int Base_V7_Widget_AppCompat_EditText=0x7f0a00c5;
+        public static final int Base_Widget_AppCompat_ActionBar=0x7f0a00c6;
+        public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0a00c7;
+        public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0a00c8;
+        public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0a007a;
+        public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0a007b;
+        public static final int Base_Widget_AppCompat_ActionButton=0x7f0a007c;
+        public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0a007d;
+        public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0a007e;
+        public static final int Base_Widget_AppCompat_ActionMode=0x7f0a00c9;
+        public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0a00ca;
+        public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0a003a;
+        public static final int Base_Widget_AppCompat_Button=0x7f0a007f;
+        public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0a0080;
+        public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0a0081;
+        public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a00cb;
+        public static final int Base_Widget_AppCompat_Button_Colored=0x7f0a00a1;
+        public static final int Base_Widget_AppCompat_Button_Small=0x7f0a0082;
+        public static final int Base_Widget_AppCompat_ButtonBar=0x7f0a0083;
+        public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a00cc;
+        public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0a0084;
+        public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0a0085;
+        public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0a00cd;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0a001a;
+        public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0a00ce;
+        public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0a0086;
+        public static final int Base_Widget_AppCompat_EditText=0x7f0a003b;
+        public static final int Base_Widget_AppCompat_ImageButton=0x7f0a0087;
+        public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0a00cf;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0a00d0;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a00d1;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0a0088;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a0089;
+        public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0a008a;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0a008b;
+        public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a008c;
+        public static final int Base_Widget_AppCompat_ListMenuView=0x7f0a00d2;
+        public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0a008d;
+        public static final int Base_Widget_AppCompat_ListView=0x7f0a008e;
+        public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0a008f;
+        public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0a0090;
+        public static final int Base_Widget_AppCompat_PopupMenu=0x7f0a0091;
+        public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0a0092;
+        public static final int Base_Widget_AppCompat_PopupWindow=0x7f0a00d3;
+        public static final int Base_Widget_AppCompat_ProgressBar=0x7f0a0031;
+        public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0032;
+        public static final int Base_Widget_AppCompat_RatingBar=0x7f0a0093;
+        public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0a00a2;
+        public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0a00a3;
+        public static final int Base_Widget_AppCompat_SearchView=0x7f0a00d4;
+        public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0a00d5;
+        public static final int Base_Widget_AppCompat_SeekBar=0x7f0a0094;
+        public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0a00d6;
+        public static final int Base_Widget_AppCompat_Spinner=0x7f0a0095;
+        public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0a001d;
+        public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0a0096;
+        public static final int Base_Widget_AppCompat_Toolbar=0x7f0a00d7;
+        public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a0097;
+        public static final int Base_Widget_Design_AppBarLayout=0x7f0a0003;
+        public static final int Base_Widget_Design_TabLayout=0x7f0a0004;
+        public static final int Platform_AppCompat=0x7f0a0033;
+        public static final int Platform_AppCompat_Light=0x7f0a0034;
+        public static final int Platform_ThemeOverlay_AppCompat=0x7f0a0098;
+        public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0a0099;
+        public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0a009a;
+        public static final int Platform_V11_AppCompat=0x7f0a0035;
+        public static final int Platform_V11_AppCompat_Light=0x7f0a0036;
+        public static final int Platform_V14_AppCompat=0x7f0a003d;
+        public static final int Platform_V14_AppCompat_Light=0x7f0a003e;
+        public static final int Platform_Widget_AppCompat_Spinner=0x7f0a0037;
+        public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0a0044;
+        public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0a0045;
+        public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0a0046;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0a0047;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0a0048;
+        public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0a0049;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0a004a;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0a004b;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0a004c;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0a004d;
+        public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0a004e;
+        public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0a004f;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0a0050;
+        public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0a0051;
+        public static final int TextAppearance_AppCompat=0x7f0a00d8;
+        public static final int TextAppearance_AppCompat_Body1=0x7f0a00d9;
+        public static final int TextAppearance_AppCompat_Body2=0x7f0a00da;
+        public static final int TextAppearance_AppCompat_Button=0x7f0a00db;
+        public static final int TextAppearance_AppCompat_Caption=0x7f0a00dc;
+        public static final int TextAppearance_AppCompat_Display1=0x7f0a00dd;
+        public static final int TextAppearance_AppCompat_Display2=0x7f0a00de;
+        public static final int TextAppearance_AppCompat_Display3=0x7f0a00df;
+        public static final int TextAppearance_AppCompat_Display4=0x7f0a00e0;
+        public static final int TextAppearance_AppCompat_Headline=0x7f0a00e1;
+        public static final int TextAppearance_AppCompat_Inverse=0x7f0a00e2;
+        public static final int TextAppearance_AppCompat_Large=0x7f0a00e3;
+        public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0a00e4;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0a00e5;
+        public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0a00e6;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0a00e7;
+        public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0a00e8;
+        public static final int TextAppearance_AppCompat_Medium=0x7f0a00e9;
+        public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0a00ea;
+        public static final int TextAppearance_AppCompat_Menu=0x7f0a00eb;
+        public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0a00ec;
+        public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0a00ed;
+        public static final int TextAppearance_AppCompat_Small=0x7f0a00ee;
+        public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0a00ef;
+        public static final int TextAppearance_AppCompat_Subhead=0x7f0a00f0;
+        public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0a00f1;
+        public static final int TextAppearance_AppCompat_Title=0x7f0a00f2;
+        public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0a00f3;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0a00f4;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0a00f5;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0a00f6;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0a00f7;
+        public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0a00f8;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0a00f9;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0a00fa;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0a00fb;
+        public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0a00fc;
+        public static final int TextAppearance_AppCompat_Widget_Button=0x7f0a00fd;
+        public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0a00fe;
+        public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0a00ff;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0a0100;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0a0101;
+        public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0a0102;
+        public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0a0103;
+        public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0a0104;
+        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f0a0005;
+        public static final int TextAppearance_Design_Counter=0x7f0a0006;
+        public static final int TextAppearance_Design_Counter_Overflow=0x7f0a0007;
+        public static final int TextAppearance_Design_Error=0x7f0a0008;
+        public static final int TextAppearance_Design_Hint=0x7f0a0009;
+        public static final int TextAppearance_Design_Snackbar_Message=0x7f0a000a;
+        public static final int TextAppearance_Design_Tab=0x7f0a000b;
+        public static final int TextAppearance_StatusBar_EventContent=0x7f0a003f;
+        public static final int TextAppearance_StatusBar_EventContent_Info=0x7f0a0040;
+        public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f0a0041;
+        public static final int TextAppearance_StatusBar_EventContent_Time=0x7f0a0042;
+        public static final int TextAppearance_StatusBar_EventContent_Title=0x7f0a0043;
+        public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0a0105;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0a0106;
+        public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0a0107;
+        public static final int Theme_AppCompat=0x7f0a0108;
+        public static final int Theme_AppCompat_CompactMenu=0x7f0a0109;
+        public static final int Theme_AppCompat_DayNight=0x7f0a001e;
+        public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0a001f;
+        public static final int Theme_AppCompat_DayNight_Dialog=0x7f0a0020;
+        public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0a0021;
+        public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0a0022;
+        public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0a0023;
+        public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0a0024;
+        public static final int Theme_AppCompat_Dialog=0x7f0a010a;
+        public static final int Theme_AppCompat_Dialog_Alert=0x7f0a010b;
+        public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0a010c;
+        public static final int Theme_AppCompat_DialogWhenLarge=0x7f0a010d;
+        public static final int Theme_AppCompat_Light=0x7f0a010e;
+        public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0a010f;
+        public static final int Theme_AppCompat_Light_Dialog=0x7f0a0110;
+        public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0a0111;
+        public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0a0112;
+        public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0a0113;
+        public static final int Theme_AppCompat_Light_NoActionBar=0x7f0a0114;
+        public static final int Theme_AppCompat_NoActionBar=0x7f0a0115;
+        public static final int Theme_Design=0x7f0a000c;
+        public static final int Theme_Design_BottomSheetDialog=0x7f0a000d;
+        public static final int Theme_Design_Light=0x7f0a000e;
+        public static final int Theme_Design_Light_BottomSheetDialog=0x7f0a000f;
+        public static final int Theme_Design_Light_NoActionBar=0x7f0a0010;
+        public static final int Theme_Design_NoActionBar=0x7f0a0011;
+        public static final int ThemeOverlay_AppCompat=0x7f0a0116;
+        public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0a0117;
+        public static final int ThemeOverlay_AppCompat_Dark=0x7f0a0118;
+        public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0a0119;
+        public static final int ThemeOverlay_AppCompat_Dialog=0x7f0a011a;
+        public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0a011b;
+        public static final int ThemeOverlay_AppCompat_Light=0x7f0a011c;
+        public static final int Widget_AppCompat_ActionBar=0x7f0a011d;
+        public static final int Widget_AppCompat_ActionBar_Solid=0x7f0a011e;
+        public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0a011f;
+        public static final int Widget_AppCompat_ActionBar_TabText=0x7f0a0120;
+        public static final int Widget_AppCompat_ActionBar_TabView=0x7f0a0121;
+        public static final int Widget_AppCompat_ActionButton=0x7f0a0122;
+        public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0a0123;
+        public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0a0124;
+        public static final int Widget_AppCompat_ActionMode=0x7f0a0125;
+        public static final int Widget_AppCompat_ActivityChooserView=0x7f0a0126;
+        public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0a0127;
+        public static final int Widget_AppCompat_Button=0x7f0a0128;
+        public static final int Widget_AppCompat_Button_Borderless=0x7f0a0129;
+        public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0a012a;
+        public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0a012b;
+        public static final int Widget_AppCompat_Button_Colored=0x7f0a012c;
+        public static final int Widget_AppCompat_Button_Small=0x7f0a012d;
+        public static final int Widget_AppCompat_ButtonBar=0x7f0a012e;
+        public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0a012f;
+        public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0a0130;
+        public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0a0131;
+        public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0a0132;
+        public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0a0133;
+        public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0a0134;
+        public static final int Widget_AppCompat_EditText=0x7f0a0135;
+        public static final int Widget_AppCompat_ImageButton=0x7f0a0136;
+        public static final int Widget_AppCompat_Light_ActionBar=0x7f0a0137;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0a0138;
+        public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0a0139;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0a013a;
+        public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0a013b;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0a013c;
+        public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0a013d;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0a013e;
+        public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0a013f;
+        public static final int Widget_AppCompat_Light_ActionButton=0x7f0a0140;
+        public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0a0141;
+        public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0a0142;
+        public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0a0143;
+        public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0a0144;
+        public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0a0145;
+        public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0a0146;
+        public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0a0147;
+        public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0a0148;
+        public static final int Widget_AppCompat_Light_PopupMenu=0x7f0a0149;
+        public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0a014a;
+        public static final int Widget_AppCompat_Light_SearchView=0x7f0a014b;
+        public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0a014c;
+        public static final int Widget_AppCompat_ListMenuView=0x7f0a014d;
+        public static final int Widget_AppCompat_ListPopupWindow=0x7f0a014e;
+        public static final int Widget_AppCompat_ListView=0x7f0a014f;
+        public static final int Widget_AppCompat_ListView_DropDown=0x7f0a0150;
+        public static final int Widget_AppCompat_ListView_Menu=0x7f0a0151;
+        public static final int Widget_AppCompat_PopupMenu=0x7f0a0152;
+        public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0a0153;
+        public static final int Widget_AppCompat_PopupWindow=0x7f0a0154;
+        public static final int Widget_AppCompat_ProgressBar=0x7f0a0155;
+        public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0a0156;
+        public static final int Widget_AppCompat_RatingBar=0x7f0a0157;
+        public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0a0158;
+        public static final int Widget_AppCompat_RatingBar_Small=0x7f0a0159;
+        public static final int Widget_AppCompat_SearchView=0x7f0a015a;
+        public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0a015b;
+        public static final int Widget_AppCompat_SeekBar=0x7f0a015c;
+        public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0a015d;
+        public static final int Widget_AppCompat_Spinner=0x7f0a015e;
+        public static final int Widget_AppCompat_Spinner_DropDown=0x7f0a015f;
+        public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0a0160;
+        public static final int Widget_AppCompat_Spinner_Underlined=0x7f0a0161;
+        public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0a0162;
+        public static final int Widget_AppCompat_Toolbar=0x7f0a0163;
+        public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0a0164;
+        public static final int Widget_Design_AppBarLayout=0x7f0a0001;
+        public static final int Widget_Design_BottomSheet_Modal=0x7f0a0012;
+        public static final int Widget_Design_CollapsingToolbar=0x7f0a0013;
+        public static final int Widget_Design_CoordinatorLayout=0x7f0a0014;
+        public static final int Widget_Design_FloatingActionButton=0x7f0a0015;
+        public static final int Widget_Design_NavigationView=0x7f0a0016;
+        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f0a0017;
+        public static final int Widget_Design_Snackbar=0x7f0a0018;
+        public static final int Widget_Design_TabLayout=0x7f0a0000;
+        public static final int Widget_Design_TextInputLayout=0x7f0a0019;
+    }
+    public static final class xml {
+        public static final int preference=0x7f060000;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -3248,35 +3258,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background io.github.gtf.caotaobao:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit io.github.gtf.caotaobao:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked io.github.gtf.caotaobao:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd io.github.gtf.caotaobao:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions io.github.gtf.caotaobao:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft io.github.gtf.caotaobao:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight io.github.gtf.caotaobao:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart io.github.gtf.caotaobao:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation io.github.gtf.caotaobao:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout io.github.gtf.caotaobao:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions io.github.gtf.caotaobao:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider io.github.gtf.caotaobao:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation io.github.gtf.caotaobao:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height io.github.gtf.caotaobao:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll io.github.gtf.caotaobao:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator io.github.gtf.caotaobao:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout io.github.gtf.caotaobao:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon io.github.gtf.caotaobao:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle io.github.gtf.caotaobao:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding io.github.gtf.caotaobao:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo io.github.gtf.caotaobao:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode io.github.gtf.caotaobao:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme io.github.gtf.caotaobao:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding io.github.gtf.caotaobao:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle io.github.gtf.caotaobao:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle io.github.gtf.caotaobao:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle io.github.gtf.caotaobao:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title io.github.gtf.caotaobao:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle io.github.gtf.caotaobao:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background io.github.gtf.easyShopping:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit io.github.gtf.easyShopping:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked io.github.gtf.easyShopping:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd io.github.gtf.easyShopping:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions io.github.gtf.easyShopping:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft io.github.gtf.easyShopping:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight io.github.gtf.easyShopping:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart io.github.gtf.easyShopping:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation io.github.gtf.easyShopping:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout io.github.gtf.easyShopping:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions io.github.gtf.easyShopping:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider io.github.gtf.easyShopping:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation io.github.gtf.easyShopping:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height io.github.gtf.easyShopping:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll io.github.gtf.easyShopping:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator io.github.gtf.easyShopping:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout io.github.gtf.easyShopping:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon io.github.gtf.easyShopping:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle io.github.gtf.easyShopping:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding io.github.gtf.easyShopping:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo io.github.gtf.easyShopping:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode io.github.gtf.easyShopping:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme io.github.gtf.easyShopping:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding io.github.gtf.easyShopping:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle io.github.gtf.easyShopping:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle io.github.gtf.easyShopping:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle io.github.gtf.easyShopping:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title io.github.gtf.easyShopping:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle io.github.gtf.easyShopping:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3319,17 +3329,17 @@ containing a value of this type.
             0x7f0100b0
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#background}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:background
+          @attr name io.github.gtf.easyShopping:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3337,11 +3347,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:backgroundSplit
+          @attr name io.github.gtf.easyShopping:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3349,11 +3359,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:backgroundStacked
+          @attr name io.github.gtf.easyShopping:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3365,11 +3375,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetEnd
+          @attr name io.github.gtf.easyShopping:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3381,11 +3391,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetEndWithActions
+          @attr name io.github.gtf.easyShopping:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3397,11 +3407,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetLeft
+          @attr name io.github.gtf.easyShopping:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3413,11 +3423,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetRight
+          @attr name io.github.gtf.easyShopping:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3429,11 +3439,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetStart
+          @attr name io.github.gtf.easyShopping:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3445,21 +3455,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetStartWithNavigation
+          @attr name io.github.gtf.easyShopping:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:customNavigationLayout
+          @attr name io.github.gtf.easyShopping:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3477,21 +3487,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:displayOptions
+          @attr name io.github.gtf.easyShopping:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#divider}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:divider
+          @attr name io.github.gtf.easyShopping:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#elevation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3503,11 +3513,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:elevation
+          @attr name io.github.gtf.easyShopping:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#height}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3519,11 +3529,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:height
+          @attr name io.github.gtf.easyShopping:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3533,51 +3543,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:hideOnContentScroll
+          @attr name io.github.gtf.easyShopping:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:homeAsUpIndicator
+          @attr name io.github.gtf.easyShopping:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:homeLayout
+          @attr name io.github.gtf.easyShopping:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#icon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:icon
+          @attr name io.github.gtf.easyShopping:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:indeterminateProgressStyle
+          @attr name io.github.gtf.easyShopping:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3589,21 +3599,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:itemPadding
+          @attr name io.github.gtf.easyShopping:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#logo}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:logo
+          @attr name io.github.gtf.easyShopping:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3617,21 +3627,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:navigationMode
+          @attr name io.github.gtf.easyShopping:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:popupTheme
+          @attr name io.github.gtf.easyShopping:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3643,21 +3653,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:progressBarPadding
+          @attr name io.github.gtf.easyShopping:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:progressBarStyle
+          @attr name io.github.gtf.easyShopping:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3667,21 +3677,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:subtitle
+          @attr name io.github.gtf.easyShopping:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:subtitleTextStyle
+          @attr name io.github.gtf.easyShopping:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#title}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3691,17 +3701,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:title
+          @attr name io.github.gtf.easyShopping:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:titleTextStyle
+          @attr name io.github.gtf.easyShopping:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3753,12 +3763,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background io.github.gtf.caotaobao:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit io.github.gtf.caotaobao:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout io.github.gtf.caotaobao:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height io.github.gtf.caotaobao:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle io.github.gtf.caotaobao:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle io.github.gtf.caotaobao:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background io.github.gtf.easyShopping:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit io.github.gtf.easyShopping:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout io.github.gtf.easyShopping:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height io.github.gtf.easyShopping:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle io.github.gtf.easyShopping:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle io.github.gtf.easyShopping:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3772,17 +3782,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010064, 0x7f010074
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#background}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:background
+          @attr name io.github.gtf.easyShopping:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3790,21 +3800,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:backgroundSplit
+          @attr name io.github.gtf.easyShopping:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:closeItemLayout
+          @attr name io.github.gtf.easyShopping:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#height}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3816,27 +3826,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:height
+          @attr name io.github.gtf.easyShopping:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:subtitleTextStyle
+          @attr name io.github.gtf.easyShopping:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:titleTextStyle
+          @attr name io.github.gtf.easyShopping:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3845,8 +3855,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable io.github.gtf.caotaobao:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount io.github.gtf.caotaobao:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable io.github.gtf.easyShopping:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount io.github.gtf.easyShopping:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3855,17 +3865,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010075, 0x7f010076
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:expandActivityOverflowButtonDrawable
+          @attr name io.github.gtf.easyShopping:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3875,7 +3885,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:initialActivityCount
+          @attr name io.github.gtf.easyShopping:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -3885,11 +3895,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout io.github.gtf.caotaobao:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout io.github.gtf.caotaobao:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout io.github.gtf.caotaobao:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout io.github.gtf.caotaobao:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout io.github.gtf.caotaobao:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout io.github.gtf.easyShopping:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout io.github.gtf.easyShopping:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout io.github.gtf.easyShopping:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout io.github.gtf.easyShopping:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout io.github.gtf.easyShopping:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -3909,53 +3919,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonPanelSideLayout
+          @attr name io.github.gtf.easyShopping:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listItemLayout
+          @attr name io.github.gtf.easyShopping:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listLayout
+          @attr name io.github.gtf.easyShopping:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:multiChoiceItemLayout
+          @attr name io.github.gtf.easyShopping:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:singleChoiceItemLayout
+          @attr name io.github.gtf.easyShopping:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -3965,8 +3975,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation io.github.gtf.caotaobao:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded io.github.gtf.caotaobao:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation io.github.gtf.easyShopping:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded io.github.gtf.easyShopping:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -3982,7 +3992,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#elevation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3994,11 +4004,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:elevation
+          @attr name io.github.gtf.easyShopping:elevation
         */
         public static final int AppBarLayout_elevation = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expanded}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4008,7 +4018,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expanded
+          @attr name io.github.gtf.easyShopping:expanded
         */
         public static final int AppBarLayout_expanded = 1;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -4017,8 +4027,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed io.github.gtf.caotaobao:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible io.github.gtf.caotaobao:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed io.github.gtf.easyShopping:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible io.github.gtf.easyShopping:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -4027,7 +4037,7 @@ containing a value of this type.
             0x7f010005, 0x7f010006
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4037,11 +4047,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:state_collapsed
+          @attr name io.github.gtf.easyShopping:state_collapsed
         */
         public static final int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4051,7 +4061,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:state_collapsible
+          @attr name io.github.gtf.easyShopping:state_collapsible
         */
         public static final int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -4060,8 +4070,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags io.github.gtf.caotaobao:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator io.github.gtf.caotaobao:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags io.github.gtf.easyShopping:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator io.github.gtf.easyShopping:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -4070,7 +4080,7 @@ containing a value of this type.
             0x7f010007, 0x7f010008
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -4086,17 +4096,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:layout_scrollFlags
+          @attr name io.github.gtf.easyShopping:layout_scrollFlags
         */
         public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:layout_scrollInterpolator
+          @attr name io.github.gtf.easyShopping:layout_scrollInterpolator
         */
         public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4106,7 +4116,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat io.github.gtf.caotaobao:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat io.github.gtf.easyShopping:srcCompat}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4121,13 +4131,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:srcCompat
+          @attr name io.github.gtf.easyShopping:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -4137,9 +4147,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark io.github.gtf.caotaobao:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint io.github.gtf.caotaobao:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode io.github.gtf.caotaobao:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark io.github.gtf.easyShopping:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint io.github.gtf.easyShopping:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode io.github.gtf.easyShopping:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -4156,17 +4166,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:tickMark
+          @attr name io.github.gtf.easyShopping:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4177,11 +4187,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tickMarkTint
+          @attr name io.github.gtf.easyShopping:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4198,7 +4208,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:tickMarkTintMode
+          @attr name io.github.gtf.easyShopping:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -4276,7 +4286,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps io.github.gtf.caotaobao:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps io.github.gtf.easyShopping:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4291,14 +4301,14 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name io.github.gtf.caotaobao:textAllCaps
+          @attr name io.github.gtf.easyShopping:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4307,121 +4317,121 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider io.github.gtf.caotaobao:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground io.github.gtf.caotaobao:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme io.github.gtf.caotaobao:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize io.github.gtf.caotaobao:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle io.github.gtf.caotaobao:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle io.github.gtf.caotaobao:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle io.github.gtf.caotaobao:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle io.github.gtf.caotaobao:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle io.github.gtf.caotaobao:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme io.github.gtf.caotaobao:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme io.github.gtf.caotaobao:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle io.github.gtf.caotaobao:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle io.github.gtf.caotaobao:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance io.github.gtf.caotaobao:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor io.github.gtf.caotaobao:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground io.github.gtf.caotaobao:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle io.github.gtf.caotaobao:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable io.github.gtf.caotaobao:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable io.github.gtf.caotaobao:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable io.github.gtf.caotaobao:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable io.github.gtf.caotaobao:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable io.github.gtf.caotaobao:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle io.github.gtf.caotaobao:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable io.github.gtf.caotaobao:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable io.github.gtf.caotaobao:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground io.github.gtf.caotaobao:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle io.github.gtf.caotaobao:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable io.github.gtf.caotaobao:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle io.github.gtf.caotaobao:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle io.github.gtf.caotaobao:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle io.github.gtf.caotaobao:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle io.github.gtf.caotaobao:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons io.github.gtf.caotaobao:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle io.github.gtf.caotaobao:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme io.github.gtf.caotaobao:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider io.github.gtf.easyShopping:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground io.github.gtf.easyShopping:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme io.github.gtf.easyShopping:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize io.github.gtf.easyShopping:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle io.github.gtf.easyShopping:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle io.github.gtf.easyShopping:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle io.github.gtf.easyShopping:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle io.github.gtf.easyShopping:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle io.github.gtf.easyShopping:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme io.github.gtf.easyShopping:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme io.github.gtf.easyShopping:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle io.github.gtf.easyShopping:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle io.github.gtf.easyShopping:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance io.github.gtf.easyShopping:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor io.github.gtf.easyShopping:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground io.github.gtf.easyShopping:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle io.github.gtf.easyShopping:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable io.github.gtf.easyShopping:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable io.github.gtf.easyShopping:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable io.github.gtf.easyShopping:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable io.github.gtf.easyShopping:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable io.github.gtf.easyShopping:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle io.github.gtf.easyShopping:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable io.github.gtf.easyShopping:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable io.github.gtf.easyShopping:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground io.github.gtf.easyShopping:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle io.github.gtf.easyShopping:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable io.github.gtf.easyShopping:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle io.github.gtf.easyShopping:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle io.github.gtf.easyShopping:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle io.github.gtf.easyShopping:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle io.github.gtf.easyShopping:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons io.github.gtf.easyShopping:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle io.github.gtf.easyShopping:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme io.github.gtf.easyShopping:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle io.github.gtf.caotaobao:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle io.github.gtf.caotaobao:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle io.github.gtf.caotaobao:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle io.github.gtf.caotaobao:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle io.github.gtf.caotaobao:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle io.github.gtf.caotaobao:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle io.github.gtf.caotaobao:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle io.github.gtf.caotaobao:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall io.github.gtf.caotaobao:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle io.github.gtf.caotaobao:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle io.github.gtf.caotaobao:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent io.github.gtf.caotaobao:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating io.github.gtf.caotaobao:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal io.github.gtf.caotaobao:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated io.github.gtf.caotaobao:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight io.github.gtf.caotaobao:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal io.github.gtf.caotaobao:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary io.github.gtf.caotaobao:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark io.github.gtf.caotaobao:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal io.github.gtf.caotaobao:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground io.github.gtf.caotaobao:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding io.github.gtf.caotaobao:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme io.github.gtf.caotaobao:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal io.github.gtf.caotaobao:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical io.github.gtf.caotaobao:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle io.github.gtf.caotaobao:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight io.github.gtf.caotaobao:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground io.github.gtf.caotaobao:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor io.github.gtf.caotaobao:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle io.github.gtf.caotaobao:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator io.github.gtf.caotaobao:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle io.github.gtf.caotaobao:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator io.github.gtf.caotaobao:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog io.github.gtf.caotaobao:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle io.github.gtf.caotaobao:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle io.github.gtf.caotaobao:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight io.github.gtf.caotaobao:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge io.github.gtf.caotaobao:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall io.github.gtf.caotaobao:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft io.github.gtf.caotaobao:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight io.github.gtf.caotaobao:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground io.github.gtf.caotaobao:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme io.github.gtf.caotaobao:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth io.github.gtf.caotaobao:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle io.github.gtf.caotaobao:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle io.github.gtf.caotaobao:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle io.github.gtf.caotaobao:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle io.github.gtf.caotaobao:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator io.github.gtf.caotaobao:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall io.github.gtf.caotaobao:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle io.github.gtf.caotaobao:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle io.github.gtf.caotaobao:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground io.github.gtf.caotaobao:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless io.github.gtf.caotaobao:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle io.github.gtf.caotaobao:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle io.github.gtf.caotaobao:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle io.github.gtf.caotaobao:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu io.github.gtf.caotaobao:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem io.github.gtf.caotaobao:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall io.github.gtf.caotaobao:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader io.github.gtf.caotaobao:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle io.github.gtf.caotaobao:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle io.github.gtf.caotaobao:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu io.github.gtf.caotaobao:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem io.github.gtf.caotaobao:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl io.github.gtf.caotaobao:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle io.github.gtf.caotaobao:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle io.github.gtf.caotaobao:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar io.github.gtf.caotaobao:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay io.github.gtf.caotaobao:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay io.github.gtf.caotaobao:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor io.github.gtf.caotaobao:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor io.github.gtf.caotaobao:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor io.github.gtf.caotaobao:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor io.github.gtf.caotaobao:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor io.github.gtf.caotaobao:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor io.github.gtf.caotaobao:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle io.github.gtf.caotaobao:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle io.github.gtf.easyShopping:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle io.github.gtf.easyShopping:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle io.github.gtf.easyShopping:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle io.github.gtf.easyShopping:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle io.github.gtf.easyShopping:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle io.github.gtf.easyShopping:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle io.github.gtf.easyShopping:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle io.github.gtf.easyShopping:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall io.github.gtf.easyShopping:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle io.github.gtf.easyShopping:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle io.github.gtf.easyShopping:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent io.github.gtf.easyShopping:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating io.github.gtf.easyShopping:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal io.github.gtf.easyShopping:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated io.github.gtf.easyShopping:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight io.github.gtf.easyShopping:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal io.github.gtf.easyShopping:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary io.github.gtf.easyShopping:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark io.github.gtf.easyShopping:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal io.github.gtf.easyShopping:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground io.github.gtf.easyShopping:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding io.github.gtf.easyShopping:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme io.github.gtf.easyShopping:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal io.github.gtf.easyShopping:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical io.github.gtf.easyShopping:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle io.github.gtf.easyShopping:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight io.github.gtf.easyShopping:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground io.github.gtf.easyShopping:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor io.github.gtf.easyShopping:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle io.github.gtf.easyShopping:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator io.github.gtf.easyShopping:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle io.github.gtf.easyShopping:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator io.github.gtf.easyShopping:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog io.github.gtf.easyShopping:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle io.github.gtf.easyShopping:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle io.github.gtf.easyShopping:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight io.github.gtf.easyShopping:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge io.github.gtf.easyShopping:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall io.github.gtf.easyShopping:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft io.github.gtf.easyShopping:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight io.github.gtf.easyShopping:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground io.github.gtf.easyShopping:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme io.github.gtf.easyShopping:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth io.github.gtf.easyShopping:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle io.github.gtf.easyShopping:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle io.github.gtf.easyShopping:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle io.github.gtf.easyShopping:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle io.github.gtf.easyShopping:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator io.github.gtf.easyShopping:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall io.github.gtf.easyShopping:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle io.github.gtf.easyShopping:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle io.github.gtf.easyShopping:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground io.github.gtf.easyShopping:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless io.github.gtf.easyShopping:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle io.github.gtf.easyShopping:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle io.github.gtf.easyShopping:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle io.github.gtf.easyShopping:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu io.github.gtf.easyShopping:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem io.github.gtf.easyShopping:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall io.github.gtf.easyShopping:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader io.github.gtf.easyShopping:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle io.github.gtf.easyShopping:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle io.github.gtf.easyShopping:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu io.github.gtf.easyShopping:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem io.github.gtf.easyShopping:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl io.github.gtf.easyShopping:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle io.github.gtf.easyShopping:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle io.github.gtf.easyShopping:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar io.github.gtf.easyShopping:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay io.github.gtf.easyShopping:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay io.github.gtf.easyShopping:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor io.github.gtf.easyShopping:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor io.github.gtf.easyShopping:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor io.github.gtf.easyShopping:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor io.github.gtf.easyShopping:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor io.github.gtf.easyShopping:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor io.github.gtf.easyShopping:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle io.github.gtf.easyShopping:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -4571,37 +4581,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ef, 0x7f0100f0, 0x7f0100f1
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarDivider
+          @attr name io.github.gtf.easyShopping:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarItemBackground
+          @attr name io.github.gtf.easyShopping:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarPopupTheme
+          @attr name io.github.gtf.easyShopping:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4621,111 +4631,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:actionBarSize
+          @attr name io.github.gtf.easyShopping:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarSplitStyle
+          @attr name io.github.gtf.easyShopping:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarStyle
+          @attr name io.github.gtf.easyShopping:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarTabBarStyle
+          @attr name io.github.gtf.easyShopping:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarTabStyle
+          @attr name io.github.gtf.easyShopping:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarTabTextStyle
+          @attr name io.github.gtf.easyShopping:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarTheme
+          @attr name io.github.gtf.easyShopping:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionBarWidgetTheme
+          @attr name io.github.gtf.easyShopping:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionButtonStyle
+          @attr name io.github.gtf.easyShopping:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionDropDownStyle
+          @attr name io.github.gtf.easyShopping:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionMenuTextAppearance
+          @attr name io.github.gtf.easyShopping:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4733,181 +4743,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:actionMenuTextColor
+          @attr name io.github.gtf.easyShopping:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeBackground
+          @attr name io.github.gtf.easyShopping:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeCloseButtonStyle
+          @attr name io.github.gtf.easyShopping:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeCloseDrawable
+          @attr name io.github.gtf.easyShopping:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeCopyDrawable
+          @attr name io.github.gtf.easyShopping:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeCutDrawable
+          @attr name io.github.gtf.easyShopping:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeFindDrawable
+          @attr name io.github.gtf.easyShopping:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModePasteDrawable
+          @attr name io.github.gtf.easyShopping:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModePopupWindowStyle
+          @attr name io.github.gtf.easyShopping:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeSelectAllDrawable
+          @attr name io.github.gtf.easyShopping:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeShareDrawable
+          @attr name io.github.gtf.easyShopping:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeSplitBackground
+          @attr name io.github.gtf.easyShopping:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeStyle
+          @attr name io.github.gtf.easyShopping:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionModeWebSearchDrawable
+          @attr name io.github.gtf.easyShopping:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionOverflowButtonStyle
+          @attr name io.github.gtf.easyShopping:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionOverflowMenuStyle
+          @attr name io.github.gtf.easyShopping:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:activityChooserViewStyle
+          @attr name io.github.gtf.easyShopping:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:alertDialogButtonGroupStyle
+          @attr name io.github.gtf.easyShopping:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -4917,27 +4927,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:alertDialogCenterButtons
+          @attr name io.github.gtf.easyShopping:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 95;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:alertDialogStyle
+          @attr name io.github.gtf.easyShopping:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 93;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:alertDialogTheme
+          @attr name io.github.gtf.easyShopping:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 96;
         /**
@@ -4953,117 +4963,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:autoCompleteTextViewStyle
+          @attr name io.github.gtf.easyShopping:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:borderlessButtonStyle
+          @attr name io.github.gtf.easyShopping:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonBarButtonStyle
+          @attr name io.github.gtf.easyShopping:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonBarNegativeButtonStyle
+          @attr name io.github.gtf.easyShopping:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonBarNeutralButtonStyle
+          @attr name io.github.gtf.easyShopping:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonBarPositiveButtonStyle
+          @attr name io.github.gtf.easyShopping:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonBarStyle
+          @attr name io.github.gtf.easyShopping:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonStyle
+          @attr name io.github.gtf.easyShopping:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:buttonStyleSmall
+          @attr name io.github.gtf.easyShopping:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 103;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:checkboxStyle
+          @attr name io.github.gtf.easyShopping:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:checkedTextViewStyle
+          @attr name io.github.gtf.easyShopping:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5074,11 +5084,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorAccent
+          @attr name io.github.gtf.easyShopping:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 85;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5089,11 +5099,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorBackgroundFloating
+          @attr name io.github.gtf.easyShopping:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 92;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5104,11 +5114,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorButtonNormal
+          @attr name io.github.gtf.easyShopping:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5119,11 +5129,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorControlActivated
+          @attr name io.github.gtf.easyShopping:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 87;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5134,11 +5144,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorControlHighlight
+          @attr name io.github.gtf.easyShopping:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 88;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5149,11 +5159,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorControlNormal
+          @attr name io.github.gtf.easyShopping:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 86;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5164,11 +5174,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorPrimary
+          @attr name io.github.gtf.easyShopping:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 83;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5179,11 +5189,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorPrimaryDark
+          @attr name io.github.gtf.easyShopping:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 84;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5194,21 +5204,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:colorSwitchThumbNormal
+          @attr name io.github.gtf.easyShopping:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:controlBackground
+          @attr name io.github.gtf.easyShopping:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 91;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5220,51 +5230,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:dialogPreferredPadding
+          @attr name io.github.gtf.easyShopping:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:dialogTheme
+          @attr name io.github.gtf.easyShopping:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:dividerHorizontal
+          @attr name io.github.gtf.easyShopping:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:dividerVertical
+          @attr name io.github.gtf.easyShopping:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:dropDownListViewStyle
+          @attr name io.github.gtf.easyShopping:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5276,21 +5286,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:dropdownListPreferredItemHeight
+          @attr name io.github.gtf.easyShopping:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:editTextBackground
+          @attr name io.github.gtf.easyShopping:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5298,81 +5308,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:editTextColor
+          @attr name io.github.gtf.easyShopping:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:editTextStyle
+          @attr name io.github.gtf.easyShopping:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:homeAsUpIndicator
+          @attr name io.github.gtf.easyShopping:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:imageButtonStyle
+          @attr name io.github.gtf.easyShopping:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listChoiceBackgroundIndicator
+          @attr name io.github.gtf.easyShopping:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 82;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listDividerAlertDialog
+          @attr name io.github.gtf.easyShopping:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listMenuViewStyle
+          @attr name io.github.gtf.easyShopping:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:listPopupWindowStyle
+          @attr name io.github.gtf.easyShopping:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5384,11 +5394,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:listPreferredItemHeight
+          @attr name io.github.gtf.easyShopping:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5400,11 +5410,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:listPreferredItemHeightLarge
+          @attr name io.github.gtf.easyShopping:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5416,11 +5426,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:listPreferredItemHeightSmall
+          @attr name io.github.gtf.easyShopping:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5432,11 +5442,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:listPreferredItemPaddingLeft
+          @attr name io.github.gtf.easyShopping:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5448,31 +5458,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:listPreferredItemPaddingRight
+          @attr name io.github.gtf.easyShopping:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:panelBackground
+          @attr name io.github.gtf.easyShopping:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 79;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:panelMenuListTheme
+          @attr name io.github.gtf.easyShopping:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 81;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5484,211 +5494,211 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:panelMenuListWidth
+          @attr name io.github.gtf.easyShopping:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 80;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:popupMenuStyle
+          @attr name io.github.gtf.easyShopping:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:popupWindowStyle
+          @attr name io.github.gtf.easyShopping:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:radioButtonStyle
+          @attr name io.github.gtf.easyShopping:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:ratingBarStyle
+          @attr name io.github.gtf.easyShopping:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:ratingBarStyleIndicator
+          @attr name io.github.gtf.easyShopping:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 109;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:ratingBarStyleSmall
+          @attr name io.github.gtf.easyShopping:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 110;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:searchViewStyle
+          @attr name io.github.gtf.easyShopping:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:seekBarStyle
+          @attr name io.github.gtf.easyShopping:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 111;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:selectableItemBackground
+          @attr name io.github.gtf.easyShopping:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:selectableItemBackgroundBorderless
+          @attr name io.github.gtf.easyShopping:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:spinnerDropDownItemStyle
+          @attr name io.github.gtf.easyShopping:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:spinnerStyle
+          @attr name io.github.gtf.easyShopping:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:switchStyle
+          @attr name io.github.gtf.easyShopping:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceLargePopupMenu
+          @attr name io.github.gtf.easyShopping:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceListItem
+          @attr name io.github.gtf.easyShopping:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceListItemSmall
+          @attr name io.github.gtf.easyShopping:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 78;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearancePopupMenuHeader
+          @attr name io.github.gtf.easyShopping:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceSearchResultSubtitle
+          @attr name io.github.gtf.easyShopping:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceSearchResultTitle
+          @attr name io.github.gtf.easyShopping:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:textAppearanceSmallPopupMenu
+          @attr name io.github.gtf.easyShopping:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5696,11 +5706,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:textColorAlertDialogListItem
+          @attr name io.github.gtf.easyShopping:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 97;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5708,31 +5718,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:textColorSearchUrl
+          @attr name io.github.gtf.easyShopping:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:toolbarNavigationButtonStyle
+          @attr name io.github.gtf.easyShopping:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:toolbarStyle
+          @attr name io.github.gtf.easyShopping:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5742,11 +5752,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowActionBar
+          @attr name io.github.gtf.easyShopping:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5756,11 +5766,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowActionBarOverlay
+          @attr name io.github.gtf.easyShopping:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5770,11 +5780,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowActionModeOverlay
+          @attr name io.github.gtf.easyShopping:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5789,11 +5799,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowFixedHeightMajor
+          @attr name io.github.gtf.easyShopping:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5808,11 +5818,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowFixedHeightMinor
+          @attr name io.github.gtf.easyShopping:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5827,11 +5837,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowFixedWidthMajor
+          @attr name io.github.gtf.easyShopping:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5846,11 +5856,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowFixedWidthMinor
+          @attr name io.github.gtf.easyShopping:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5865,11 +5875,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowMinWidthMajor
+          @attr name io.github.gtf.easyShopping:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5884,11 +5894,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowMinWidthMinor
+          @attr name io.github.gtf.easyShopping:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5898,7 +5908,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:windowNoTitle
+          @attr name io.github.gtf.easyShopping:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -5907,9 +5917,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable io.github.gtf.caotaobao:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight io.github.gtf.caotaobao:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed io.github.gtf.caotaobao:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable io.github.gtf.easyShopping:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight io.github.gtf.easyShopping:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed io.github.gtf.easyShopping:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -5919,7 +5929,7 @@ containing a value of this type.
             0x7f010009, 0x7f01000a, 0x7f01000b
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -5929,11 +5939,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:behavior_hideable
+          @attr name io.github.gtf.easyShopping:behavior_hideable
         */
         public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -5953,11 +5963,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:behavior_peekHeight
+          @attr name io.github.gtf.easyShopping:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -5967,7 +5977,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:behavior_skipCollapsed
+          @attr name io.github.gtf.easyShopping:behavior_skipCollapsed
         */
         public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -5976,7 +5986,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking io.github.gtf.caotaobao:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking io.github.gtf.easyShopping:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -5984,7 +5994,7 @@ containing a value of this type.
             0x7f0100f2
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -5994,7 +6004,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:allowStacking
+          @attr name io.github.gtf.easyShopping:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6003,22 +6013,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity io.github.gtf.caotaobao:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance io.github.gtf.caotaobao:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim io.github.gtf.caotaobao:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity io.github.gtf.caotaobao:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin io.github.gtf.caotaobao:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom io.github.gtf.caotaobao:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd io.github.gtf.caotaobao:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart io.github.gtf.caotaobao:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop io.github.gtf.caotaobao:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance io.github.gtf.caotaobao:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration io.github.gtf.caotaobao:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger io.github.gtf.caotaobao:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim io.github.gtf.caotaobao:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title io.github.gtf.caotaobao:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled io.github.gtf.caotaobao:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId io.github.gtf.caotaobao:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity io.github.gtf.easyShopping:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance io.github.gtf.easyShopping:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim io.github.gtf.easyShopping:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity io.github.gtf.easyShopping:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin io.github.gtf.easyShopping:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom io.github.gtf.easyShopping:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd io.github.gtf.easyShopping:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart io.github.gtf.easyShopping:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop io.github.gtf.easyShopping:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance io.github.gtf.easyShopping:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration io.github.gtf.easyShopping:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger io.github.gtf.easyShopping:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim io.github.gtf.easyShopping:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title io.github.gtf.easyShopping:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled io.github.gtf.easyShopping:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId io.github.gtf.easyShopping:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6044,7 +6054,7 @@ containing a value of this type.
             0x7f010018, 0x7f010019, 0x7f01001a, 0x7f010059
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6065,21 +6075,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:collapsedTitleGravity
+          @attr name io.github.gtf.easyShopping:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:collapsedTitleTextAppearance
+          @attr name io.github.gtf.easyShopping:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6090,11 +6100,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentScrim
+          @attr name io.github.gtf.easyShopping:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6115,11 +6125,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:expandedTitleGravity
+          @attr name io.github.gtf.easyShopping:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6131,11 +6141,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expandedTitleMargin
+          @attr name io.github.gtf.easyShopping:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6147,11 +6157,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expandedTitleMarginBottom
+          @attr name io.github.gtf.easyShopping:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6163,11 +6173,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expandedTitleMarginEnd
+          @attr name io.github.gtf.easyShopping:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6179,11 +6189,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expandedTitleMarginStart
+          @attr name io.github.gtf.easyShopping:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6195,21 +6205,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:expandedTitleMarginTop
+          @attr name io.github.gtf.easyShopping:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:expandedTitleTextAppearance
+          @attr name io.github.gtf.easyShopping:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6219,11 +6229,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:scrimAnimationDuration
+          @attr name io.github.gtf.easyShopping:scrimAnimationDuration
         */
         public static final int CollapsingToolbarLayout_scrimAnimationDuration = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6235,11 +6245,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:scrimVisibleHeightTrigger
+          @attr name io.github.gtf.easyShopping:scrimVisibleHeightTrigger
         */
         public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6250,11 +6260,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:statusBarScrim
+          @attr name io.github.gtf.easyShopping:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#title}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6264,11 +6274,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:title
+          @attr name io.github.gtf.easyShopping:title
         */
         public static final int CollapsingToolbarLayout_title = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6278,17 +6288,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleEnabled
+          @attr name io.github.gtf.easyShopping:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:toolbarId
+          @attr name io.github.gtf.easyShopping:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 9;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -6297,8 +6307,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode io.github.gtf.caotaobao:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier io.github.gtf.caotaobao:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode io.github.gtf.easyShopping:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier io.github.gtf.easyShopping:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -6307,7 +6317,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001b, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -6321,11 +6331,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:layout_collapseMode
+          @attr name io.github.gtf.easyShopping:layout_collapseMode
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -6335,7 +6345,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:layout_collapseParallaxMultiplier
+          @attr name io.github.gtf.easyShopping:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -6344,7 +6354,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha io.github.gtf.caotaobao:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha io.github.gtf.easyShopping:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -6356,7 +6366,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100f3
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#alpha}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -6366,7 +6376,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:alpha
+          @attr name io.github.gtf.easyShopping:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -6388,8 +6398,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint io.github.gtf.caotaobao:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode io.github.gtf.caotaobao:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint io.github.gtf.easyShopping:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode io.github.gtf.easyShopping:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -6405,7 +6415,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6416,11 +6426,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:buttonTint
+          @attr name io.github.gtf.easyShopping:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -6436,7 +6446,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:buttonTintMode
+          @attr name io.github.gtf.easyShopping:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -6445,8 +6455,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines io.github.gtf.caotaobao:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground io.github.gtf.caotaobao:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines io.github.gtf.easyShopping:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground io.github.gtf.easyShopping:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -6455,23 +6465,23 @@ containing a value of this type.
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#keylines}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:keylines
+          @attr name io.github.gtf.easyShopping:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:statusBarBackground
+          @attr name io.github.gtf.easyShopping:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -6481,12 +6491,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor io.github.gtf.caotaobao:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity io.github.gtf.caotaobao:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior io.github.gtf.caotaobao:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges io.github.gtf.caotaobao:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge io.github.gtf.caotaobao:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline io.github.gtf.caotaobao:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor io.github.gtf.easyShopping:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity io.github.gtf.easyShopping:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior io.github.gtf.easyShopping:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges io.github.gtf.easyShopping:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge io.github.gtf.easyShopping:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline io.github.gtf.easyShopping:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -6507,17 +6517,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:layout_anchor
+          @attr name io.github.gtf.easyShopping:layout_anchor
         */
         public static final int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6542,11 +6552,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:layout_anchorGravity
+          @attr name io.github.gtf.easyShopping:layout_anchorGravity
         */
         public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6556,11 +6566,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:layout_behavior
+          @attr name io.github.gtf.easyShopping:layout_behavior
         */
         public static final int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6579,11 +6589,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:layout_dodgeInsetEdges
+          @attr name io.github.gtf.easyShopping:layout_dodgeInsetEdges
         */
         public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6601,11 +6611,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:layout_insetEdge
+          @attr name io.github.gtf.easyShopping:layout_insetEdge
         */
         public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -6615,7 +6625,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:layout_keyline
+          @attr name io.github.gtf.easyShopping:layout_keyline
         */
         public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -6624,9 +6634,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme io.github.gtf.caotaobao:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle io.github.gtf.caotaobao:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError io.github.gtf.caotaobao:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme io.github.gtf.easyShopping:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle io.github.gtf.easyShopping:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError io.github.gtf.easyShopping:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -6636,27 +6646,27 @@ containing a value of this type.
             0x7f010025, 0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:bottomSheetDialogTheme
+          @attr name io.github.gtf.easyShopping:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:bottomSheetStyle
+          @attr name io.github.gtf.easyShopping:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -6667,7 +6677,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:textColorError
+          @attr name io.github.gtf.easyShopping:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -6676,14 +6686,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength io.github.gtf.caotaobao:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength io.github.gtf.caotaobao:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength io.github.gtf.caotaobao:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color io.github.gtf.caotaobao:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize io.github.gtf.caotaobao:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars io.github.gtf.caotaobao:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars io.github.gtf.caotaobao:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness io.github.gtf.caotaobao:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength io.github.gtf.easyShopping:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength io.github.gtf.easyShopping:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength io.github.gtf.easyShopping:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color io.github.gtf.easyShopping:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize io.github.gtf.easyShopping:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars io.github.gtf.easyShopping:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars io.github.gtf.easyShopping:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness io.github.gtf.easyShopping:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -6699,7 +6709,7 @@ containing a value of this type.
             0x7f0100fa, 0x7f0100fb, 0x7f0100fc, 0x7f0100fd
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6711,11 +6721,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:arrowHeadLength
+          @attr name io.github.gtf.easyShopping:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6727,11 +6737,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:arrowShaftLength
+          @attr name io.github.gtf.easyShopping:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#barLength}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6743,11 +6753,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:barLength
+          @attr name io.github.gtf.easyShopping:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#color}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6758,11 +6768,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:color
+          @attr name io.github.gtf.easyShopping:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6774,11 +6784,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:drawableSize
+          @attr name io.github.gtf.easyShopping:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6790,11 +6800,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:gapBetweenBars
+          @attr name io.github.gtf.easyShopping:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6804,11 +6814,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:spinBars
+          @attr name io.github.gtf.easyShopping:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#thickness}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -6820,7 +6830,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:thickness
+          @attr name io.github.gtf.easyShopping:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -6829,14 +6839,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint io.github.gtf.caotaobao:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode io.github.gtf.caotaobao:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth io.github.gtf.caotaobao:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation io.github.gtf.caotaobao:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize io.github.gtf.caotaobao:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ io.github.gtf.caotaobao:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor io.github.gtf.caotaobao:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding io.github.gtf.caotaobao:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint io.github.gtf.easyShopping:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode io.github.gtf.easyShopping:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth io.github.gtf.easyShopping:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation io.github.gtf.easyShopping:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize io.github.gtf.easyShopping:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ io.github.gtf.easyShopping:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor io.github.gtf.easyShopping:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding io.github.gtf.easyShopping:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -6852,7 +6862,7 @@ containing a value of this type.
             0x7f01002c, 0x7f010072, 0x7f010135, 0x7f010136
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6863,11 +6873,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:backgroundTint
+          @attr name io.github.gtf.easyShopping:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6883,11 +6893,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:backgroundTintMode
+          @attr name io.github.gtf.easyShopping:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6899,11 +6909,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:borderWidth
+          @attr name io.github.gtf.easyShopping:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#elevation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6915,11 +6925,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:elevation
+          @attr name io.github.gtf.easyShopping:elevation
         */
         public static final int FloatingActionButton_elevation = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6933,11 +6943,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:fabSize
+          @attr name io.github.gtf.easyShopping:fabSize
         */
         public static final int FloatingActionButton_fabSize = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6949,11 +6959,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:pressedTranslationZ
+          @attr name io.github.gtf.easyShopping:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6964,11 +6974,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:rippleColor
+          @attr name io.github.gtf.easyShopping:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -6978,7 +6988,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:useCompatPadding
+          @attr name io.github.gtf.easyShopping:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 4;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -6987,7 +6997,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide io.github.gtf.caotaobao:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide io.github.gtf.easyShopping:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -6995,7 +7005,7 @@ containing a value of this type.
             0x7f01002d
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -7005,7 +7015,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:behavior_autoHide
+          @attr name io.github.gtf.easyShopping:behavior_autoHide
         */
         public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7016,7 +7026,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding io.github.gtf.caotaobao:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding io.github.gtf.easyShopping:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7038,7 +7048,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7048,7 +7058,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:foregroundInsidePadding
+          @attr name io.github.gtf.easyShopping:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7062,10 +7072,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider io.github.gtf.caotaobao:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding io.github.gtf.caotaobao:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild io.github.gtf.caotaobao:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers io.github.gtf.caotaobao:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider io.github.gtf.easyShopping:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding io.github.gtf.easyShopping:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild io.github.gtf.easyShopping:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers io.github.gtf.easyShopping:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -7113,17 +7123,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#divider}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:divider
+          @attr name io.github.gtf.easyShopping:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7135,11 +7145,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:dividerPadding
+          @attr name io.github.gtf.easyShopping:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7149,11 +7159,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:measureWithLargestChild
+          @attr name io.github.gtf.easyShopping:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -7168,7 +7178,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:showDividers
+          @attr name io.github.gtf.easyShopping:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -7307,9 +7317,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout io.github.gtf.caotaobao:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass io.github.gtf.caotaobao:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass io.github.gtf.caotaobao:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout io.github.gtf.easyShopping:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass io.github.gtf.easyShopping:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass io.github.gtf.easyShopping:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -7323,7 +7333,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction io.github.gtf.caotaobao:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction io.github.gtf.easyShopping:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -7351,17 +7361,17 @@ containing a value of this type.
             0x7f010104
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:actionLayout
+          @attr name io.github.gtf.easyShopping:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7371,11 +7381,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:actionProviderClass
+          @attr name io.github.gtf.easyShopping:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7385,7 +7395,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:actionViewClass
+          @attr name io.github.gtf.easyShopping:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -7467,7 +7477,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -7483,7 +7493,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:showAsAction
+          @attr name io.github.gtf.easyShopping:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -7499,8 +7509,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing io.github.gtf.caotaobao:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow io.github.gtf.caotaobao:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing io.github.gtf.easyShopping:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow io.github.gtf.easyShopping:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -7560,7 +7570,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -7570,17 +7580,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:preserveIconSpacing
+          @attr name io.github.gtf.easyShopping:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:subMenuArrow
+          @attr name io.github.gtf.easyShopping:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -7592,13 +7602,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation io.github.gtf.caotaobao:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout io.github.gtf.caotaobao:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground io.github.gtf.caotaobao:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint io.github.gtf.caotaobao:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance io.github.gtf.caotaobao:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor io.github.gtf.caotaobao:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu io.github.gtf.caotaobao:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation io.github.gtf.easyShopping:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout io.github.gtf.easyShopping:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground io.github.gtf.easyShopping:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint io.github.gtf.easyShopping:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance io.github.gtf.easyShopping:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor io.github.gtf.easyShopping:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu io.github.gtf.easyShopping:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -7635,7 +7645,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#elevation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7647,31 +7657,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:elevation
+          @attr name io.github.gtf.easyShopping:elevation
         */
         public static final int NavigationView_elevation = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:headerLayout
+          @attr name io.github.gtf.easyShopping:headerLayout
         */
         public static final int NavigationView_headerLayout = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:itemBackground
+          @attr name io.github.gtf.easyShopping:itemBackground
         */
         public static final int NavigationView_itemBackground = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7682,21 +7692,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:itemIconTint
+          @attr name io.github.gtf.easyShopping:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:itemTextAppearance
+          @attr name io.github.gtf.easyShopping:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -7707,17 +7717,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:itemTextColor
+          @attr name io.github.gtf.easyShopping:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#menu}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:menu
+          @attr name io.github.gtf.easyShopping:menu
         */
         public static final int NavigationView_menu = 3;
         /** Attributes that can be used with a PopupWindow.
@@ -7728,7 +7738,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor io.github.gtf.caotaobao:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor io.github.gtf.easyShopping:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -7750,7 +7760,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -7760,7 +7770,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:overlapAnchor
+          @attr name io.github.gtf.easyShopping:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -7769,7 +7779,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor io.github.gtf.caotaobao:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor io.github.gtf.easyShopping:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -7777,7 +7787,7 @@ containing a value of this type.
             0x7f010108
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -7787,7 +7797,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:state_above_anchor
+          @attr name io.github.gtf.easyShopping:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -7798,10 +7808,10 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager io.github.gtf.caotaobao:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout io.github.gtf.caotaobao:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount io.github.gtf.caotaobao:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd io.github.gtf.caotaobao:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager io.github.gtf.easyShopping:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout io.github.gtf.easyShopping:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount io.github.gtf.easyShopping:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd io.github.gtf.easyShopping:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -7827,7 +7837,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7837,11 +7847,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:layoutManager
+          @attr name io.github.gtf.easyShopping:layoutManager
         */
         public static final int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7851,11 +7861,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:reverseLayout
+          @attr name io.github.gtf.easyShopping:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7865,11 +7875,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:spanCount
+          @attr name io.github.gtf.easyShopping:spanCount
         */
         public static final int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -7879,7 +7889,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:stackFromEnd
+          @attr name io.github.gtf.easyShopping:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -7888,7 +7898,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground io.github.gtf.caotaobao:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground io.github.gtf.easyShopping:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -7896,7 +7906,7 @@ containing a value of this type.
             0x7f010035
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -7904,7 +7914,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name io.github.gtf.caotaobao:insetForeground
+          @attr name io.github.gtf.easyShopping:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -7913,7 +7923,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop io.github.gtf.caotaobao:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop io.github.gtf.easyShopping:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -7921,7 +7931,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010036
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -7933,7 +7943,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:behavior_overlapTop
+          @attr name io.github.gtf.easyShopping:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -7946,19 +7956,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon io.github.gtf.caotaobao:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon io.github.gtf.caotaobao:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint io.github.gtf.caotaobao:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon io.github.gtf.caotaobao:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault io.github.gtf.caotaobao:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout io.github.gtf.caotaobao:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground io.github.gtf.caotaobao:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint io.github.gtf.caotaobao:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon io.github.gtf.caotaobao:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon io.github.gtf.caotaobao:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground io.github.gtf.caotaobao:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout io.github.gtf.caotaobao:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon io.github.gtf.caotaobao:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon io.github.gtf.easyShopping:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon io.github.gtf.easyShopping:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint io.github.gtf.easyShopping:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon io.github.gtf.easyShopping:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault io.github.gtf.easyShopping:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout io.github.gtf.easyShopping:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground io.github.gtf.easyShopping:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint io.github.gtf.easyShopping:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon io.github.gtf.easyShopping:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon io.github.gtf.easyShopping:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground io.github.gtf.easyShopping:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout io.github.gtf.easyShopping:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon io.github.gtf.easyShopping:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -8010,27 +8020,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:closeIcon
+          @attr name io.github.gtf.easyShopping:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:commitIcon
+          @attr name io.github.gtf.easyShopping:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8040,21 +8050,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:defaultQueryHint
+          @attr name io.github.gtf.easyShopping:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:goIcon
+          @attr name io.github.gtf.easyShopping:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8064,31 +8074,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:iconifiedByDefault
+          @attr name io.github.gtf.easyShopping:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#layout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:layout
+          @attr name io.github.gtf.easyShopping:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:queryBackground
+          @attr name io.github.gtf.easyShopping:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -8098,57 +8108,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:queryHint
+          @attr name io.github.gtf.easyShopping:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:searchHintIcon
+          @attr name io.github.gtf.easyShopping:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:searchIcon
+          @attr name io.github.gtf.easyShopping:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:submitBackground
+          @attr name io.github.gtf.easyShopping:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:suggestionRowLayout
+          @attr name io.github.gtf.easyShopping:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:voiceIcon
+          @attr name io.github.gtf.easyShopping:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -8158,8 +8168,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation io.github.gtf.caotaobao:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth io.github.gtf.caotaobao:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation io.github.gtf.easyShopping:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth io.github.gtf.easyShopping:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -8175,7 +8185,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#elevation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8187,11 +8197,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:elevation
+          @attr name io.github.gtf.easyShopping:elevation
         */
         public static final int SnackbarLayout_elevation = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -8203,7 +8213,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:maxActionInlineWidth
+          @attr name io.github.gtf.easyShopping:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 1;
         /** Attributes that can be used with a Spinner.
@@ -8216,7 +8226,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme io.github.gtf.caotaobao:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme io.github.gtf.easyShopping:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -8253,13 +8263,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:popupTheme
+          @attr name io.github.gtf.easyShopping:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -8271,17 +8281,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText io.github.gtf.caotaobao:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack io.github.gtf.caotaobao:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth io.github.gtf.caotaobao:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding io.github.gtf.caotaobao:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance io.github.gtf.caotaobao:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding io.github.gtf.caotaobao:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint io.github.gtf.caotaobao:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode io.github.gtf.caotaobao:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track io.github.gtf.caotaobao:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint io.github.gtf.caotaobao:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode io.github.gtf.caotaobao:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText io.github.gtf.easyShopping:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack io.github.gtf.easyShopping:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth io.github.gtf.easyShopping:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding io.github.gtf.easyShopping:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance io.github.gtf.easyShopping:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding io.github.gtf.easyShopping:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint io.github.gtf.easyShopping:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode io.github.gtf.easyShopping:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track io.github.gtf.easyShopping:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint io.github.gtf.easyShopping:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode io.github.gtf.easyShopping:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -8323,7 +8333,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#showText}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8333,11 +8343,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:showText
+          @attr name io.github.gtf.easyShopping:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8347,11 +8357,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:splitTrack
+          @attr name io.github.gtf.easyShopping:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8363,11 +8373,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:switchMinWidth
+          @attr name io.github.gtf.easyShopping:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8379,21 +8389,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:switchPadding
+          @attr name io.github.gtf.easyShopping:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:switchTextAppearance
+          @attr name io.github.gtf.easyShopping:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8405,11 +8415,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:thumbTextPadding
+          @attr name io.github.gtf.easyShopping:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8420,11 +8430,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:thumbTint
+          @attr name io.github.gtf.easyShopping:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8441,21 +8451,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:thumbTintMode
+          @attr name io.github.gtf.easyShopping:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#track}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:track
+          @attr name io.github.gtf.easyShopping:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8466,11 +8476,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:trackTint
+          @attr name io.github.gtf.easyShopping:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -8487,7 +8497,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:trackTintMode
+          @attr name io.github.gtf.easyShopping:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -8531,22 +8541,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground io.github.gtf.caotaobao:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart io.github.gtf.caotaobao:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity io.github.gtf.caotaobao:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor io.github.gtf.caotaobao:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight io.github.gtf.caotaobao:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth io.github.gtf.caotaobao:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth io.github.gtf.caotaobao:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode io.github.gtf.caotaobao:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding io.github.gtf.caotaobao:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom io.github.gtf.caotaobao:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd io.github.gtf.caotaobao:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart io.github.gtf.caotaobao:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop io.github.gtf.caotaobao:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor io.github.gtf.caotaobao:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance io.github.gtf.caotaobao:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor io.github.gtf.caotaobao:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground io.github.gtf.easyShopping:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart io.github.gtf.easyShopping:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity io.github.gtf.easyShopping:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor io.github.gtf.easyShopping:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight io.github.gtf.easyShopping:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth io.github.gtf.easyShopping:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth io.github.gtf.easyShopping:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode io.github.gtf.easyShopping:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding io.github.gtf.easyShopping:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom io.github.gtf.easyShopping:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd io.github.gtf.easyShopping:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart io.github.gtf.easyShopping:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop io.github.gtf.easyShopping:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor io.github.gtf.easyShopping:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance io.github.gtf.easyShopping:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor io.github.gtf.easyShopping:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -8572,17 +8582,17 @@ containing a value of this type.
             0x7f010044, 0x7f010045, 0x7f010046, 0x7f010047
         };
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:tabBackground
+          @attr name io.github.gtf.easyShopping:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8594,11 +8604,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabContentStart
+          @attr name io.github.gtf.easyShopping:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8611,11 +8621,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:tabGravity
+          @attr name io.github.gtf.easyShopping:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8626,11 +8636,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabIndicatorColor
+          @attr name io.github.gtf.easyShopping:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8642,11 +8652,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabIndicatorHeight
+          @attr name io.github.gtf.easyShopping:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8658,11 +8668,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabMaxWidth
+          @attr name io.github.gtf.easyShopping:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8674,11 +8684,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabMinWidth
+          @attr name io.github.gtf.easyShopping:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8691,11 +8701,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:tabMode
+          @attr name io.github.gtf.easyShopping:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8707,11 +8717,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabPadding
+          @attr name io.github.gtf.easyShopping:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8723,11 +8733,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabPaddingBottom
+          @attr name io.github.gtf.easyShopping:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8739,11 +8749,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabPaddingEnd
+          @attr name io.github.gtf.easyShopping:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8755,11 +8765,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabPaddingStart
+          @attr name io.github.gtf.easyShopping:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8771,11 +8781,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabPaddingTop
+          @attr name io.github.gtf.easyShopping:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8786,21 +8796,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabSelectedTextColor
+          @attr name io.github.gtf.easyShopping:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:tabTextAppearance
+          @attr name io.github.gtf.easyShopping:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -8811,7 +8821,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:tabTextColor
+          @attr name io.github.gtf.easyShopping:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -8828,7 +8838,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps io.github.gtf.caotaobao:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps io.github.gtf.easyShopping:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -8894,14 +8904,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name io.github.gtf.caotaobao:textAllCaps
+          @attr name io.github.gtf.easyShopping:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -8912,20 +8922,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled io.github.gtf.caotaobao:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength io.github.gtf.caotaobao:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance io.github.gtf.caotaobao:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance io.github.gtf.caotaobao:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled io.github.gtf.caotaobao:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance io.github.gtf.caotaobao:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled io.github.gtf.caotaobao:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled io.github.gtf.caotaobao:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance io.github.gtf.caotaobao:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription io.github.gtf.caotaobao:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable io.github.gtf.caotaobao:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled io.github.gtf.caotaobao:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint io.github.gtf.caotaobao:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode io.github.gtf.caotaobao:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled io.github.gtf.easyShopping:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength io.github.gtf.easyShopping:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance io.github.gtf.easyShopping:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance io.github.gtf.easyShopping:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled io.github.gtf.easyShopping:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance io.github.gtf.easyShopping:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled io.github.gtf.easyShopping:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled io.github.gtf.easyShopping:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance io.github.gtf.easyShopping:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription io.github.gtf.easyShopping:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable io.github.gtf.easyShopping:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled io.github.gtf.easyShopping:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint io.github.gtf.easyShopping:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode io.github.gtf.easyShopping:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -8963,7 +8973,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8973,11 +8983,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:counterEnabled
+          @attr name io.github.gtf.easyShopping:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -8987,31 +8997,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:counterMaxLength
+          @attr name io.github.gtf.easyShopping:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:counterOverflowTextAppearance
+          @attr name io.github.gtf.easyShopping:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:counterTextAppearance
+          @attr name io.github.gtf.easyShopping:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9021,21 +9031,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:errorEnabled
+          @attr name io.github.gtf.easyShopping:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:errorTextAppearance
+          @attr name io.github.gtf.easyShopping:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9045,11 +9055,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:hintAnimationEnabled
+          @attr name io.github.gtf.easyShopping:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9059,21 +9069,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:hintEnabled
+          @attr name io.github.gtf.easyShopping:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:hintTextAppearance
+          @attr name io.github.gtf.easyShopping:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9083,21 +9093,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:passwordToggleContentDescription
+          @attr name io.github.gtf.easyShopping:passwordToggleContentDescription
         */
         public static final int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:passwordToggleDrawable
+          @attr name io.github.gtf.easyShopping:passwordToggleDrawable
         */
         public static final int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9107,11 +9117,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:passwordToggleEnabled
+          @attr name io.github.gtf.easyShopping:passwordToggleEnabled
         */
         public static final int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9122,11 +9132,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:passwordToggleTint
+          @attr name io.github.gtf.easyShopping:passwordToggleTint
         */
         public static final int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -9142,7 +9152,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:passwordToggleTintMode
+          @attr name io.github.gtf.easyShopping:passwordToggleTintMode
         */
         public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -9153,33 +9163,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity io.github.gtf.caotaobao:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription io.github.gtf.caotaobao:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon io.github.gtf.caotaobao:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd io.github.gtf.caotaobao:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions io.github.gtf.caotaobao:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft io.github.gtf.caotaobao:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight io.github.gtf.caotaobao:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart io.github.gtf.caotaobao:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation io.github.gtf.caotaobao:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo io.github.gtf.caotaobao:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription io.github.gtf.caotaobao:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight io.github.gtf.caotaobao:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription io.github.gtf.caotaobao:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon io.github.gtf.caotaobao:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme io.github.gtf.caotaobao:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle io.github.gtf.caotaobao:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance io.github.gtf.caotaobao:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor io.github.gtf.caotaobao:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title io.github.gtf.caotaobao:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin io.github.gtf.caotaobao:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom io.github.gtf.caotaobao:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd io.github.gtf.caotaobao:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart io.github.gtf.caotaobao:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop io.github.gtf.caotaobao:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins io.github.gtf.caotaobao:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance io.github.gtf.caotaobao:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor io.github.gtf.caotaobao:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity io.github.gtf.easyShopping:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription io.github.gtf.easyShopping:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon io.github.gtf.easyShopping:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd io.github.gtf.easyShopping:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions io.github.gtf.easyShopping:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft io.github.gtf.easyShopping:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight io.github.gtf.easyShopping:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart io.github.gtf.easyShopping:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation io.github.gtf.easyShopping:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo io.github.gtf.easyShopping:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription io.github.gtf.easyShopping:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight io.github.gtf.easyShopping:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription io.github.gtf.easyShopping:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon io.github.gtf.easyShopping:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme io.github.gtf.easyShopping:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle io.github.gtf.easyShopping:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance io.github.gtf.easyShopping:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor io.github.gtf.easyShopping:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title io.github.gtf.easyShopping:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin io.github.gtf.easyShopping:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom io.github.gtf.easyShopping:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd io.github.gtf.easyShopping:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart io.github.gtf.easyShopping:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop io.github.gtf.easyShopping:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins io.github.gtf.easyShopping:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance io.github.gtf.easyShopping:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor io.github.gtf.easyShopping:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -9234,7 +9244,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9247,11 +9257,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:buttonGravity
+          @attr name io.github.gtf.easyShopping:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9261,21 +9271,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:collapseContentDescription
+          @attr name io.github.gtf.easyShopping:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:collapseIcon
+          @attr name io.github.gtf.easyShopping:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9287,11 +9297,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetEnd
+          @attr name io.github.gtf.easyShopping:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9303,11 +9313,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetEndWithActions
+          @attr name io.github.gtf.easyShopping:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9319,11 +9329,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetLeft
+          @attr name io.github.gtf.easyShopping:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9335,11 +9345,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetRight
+          @attr name io.github.gtf.easyShopping:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9351,11 +9361,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetStart
+          @attr name io.github.gtf.easyShopping:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9367,21 +9377,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:contentInsetStartWithNavigation
+          @attr name io.github.gtf.easyShopping:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#logo}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:logo
+          @attr name io.github.gtf.easyShopping:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9391,11 +9401,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:logoDescription
+          @attr name io.github.gtf.easyShopping:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9407,11 +9417,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:maxButtonHeight
+          @attr name io.github.gtf.easyShopping:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9421,31 +9431,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:navigationContentDescription
+          @attr name io.github.gtf.easyShopping:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:navigationIcon
+          @attr name io.github.gtf.easyShopping:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:popupTheme
+          @attr name io.github.gtf.easyShopping:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9455,21 +9465,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:subtitle
+          @attr name io.github.gtf.easyShopping:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:subtitleTextAppearance
+          @attr name io.github.gtf.easyShopping:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9480,11 +9490,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:subtitleTextColor
+          @attr name io.github.gtf.easyShopping:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#title}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9494,11 +9504,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:title
+          @attr name io.github.gtf.easyShopping:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9510,11 +9520,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMargin
+          @attr name io.github.gtf.easyShopping:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9526,11 +9536,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMarginBottom
+          @attr name io.github.gtf.easyShopping:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9542,11 +9552,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMarginEnd
+          @attr name io.github.gtf.easyShopping:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9558,11 +9568,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMarginStart
+          @attr name io.github.gtf.easyShopping:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9574,11 +9584,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMarginTop
+          @attr name io.github.gtf.easyShopping:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9590,21 +9600,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleMargins
+          @attr name io.github.gtf.easyShopping:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:titleTextAppearance
+          @attr name io.github.gtf.easyShopping:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -9615,7 +9625,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:titleTextColor
+          @attr name io.github.gtf.easyShopping:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -9626,9 +9636,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd io.github.gtf.caotaobao:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart io.github.gtf.caotaobao:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme io.github.gtf.caotaobao:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd io.github.gtf.easyShopping:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart io.github.gtf.easyShopping:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme io.github.gtf.easyShopping:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -9653,7 +9663,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9665,11 +9675,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:paddingEnd
+          @attr name io.github.gtf.easyShopping:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -9681,17 +9691,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:paddingStart
+          @attr name io.github.gtf.easyShopping:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#theme}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name io.github.gtf.caotaobao:theme
+          @attr name io.github.gtf.easyShopping:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -9701,8 +9711,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint io.github.gtf.caotaobao:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode io.github.gtf.caotaobao:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint io.github.gtf.easyShopping:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode io.github.gtf.easyShopping:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -9718,7 +9728,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9729,11 +9739,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name io.github.gtf.caotaobao:backgroundTint
+          @attr name io.github.gtf.easyShopping:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link io.github.gtf.caotaobao.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link io.github.gtf.easyShopping.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -9749,7 +9759,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name io.github.gtf.caotaobao:backgroundTintMode
+          @attr name io.github.gtf.easyShopping:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

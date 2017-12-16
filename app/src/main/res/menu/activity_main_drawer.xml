@@ -31,14 +31,11 @@
 	<item android:title="其他选项">
         <menu>
             <item
-                android:id="@+id/nav_mTabaoTypeChange"
-                android:title="国际版/标准版" />
+                android:id="@+id/nav_settings"
+                android:title="设置" />
 			<item
-                android:id="@+id/nav_updata"
-                android:title="获取最新版" />
-            <item
-                android:id="@+id/nav_Github"
-                android:title="开源项目主页" />
+                android:id="@+id/nav_exit"
+                android:title="退出" />
         </menu>
     </item>
 

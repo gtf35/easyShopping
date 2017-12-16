@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="主页：">
+        <CheckBoxPreference
+            android:key="check_xianyu"
+            android:title="咸鱼"
+            android:summary="将主页替换为咸鱼网页版： \n由于咸鱼网页版去掉了搜索框，所以首页由第三方提供，但是搜索结果由咸鱼官方提供。 \n缩放可能会有问题，有待优化。只提供有限的支持！！">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="check_jingdong"
+            android:title="京东"
+            android:summary="将主页替换为京东： \n只是主页更改，侧滑菜单仍然可以访问淘宝。只提供有限的支持！！">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="其他：">
+        <CheckBoxPreference
+            android:key="taobaoLite"
+            android:title="切换到淘宝国际版"
+            android:summary="使用淘宝国际版">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="autoUpdata"
+			android:defaultValue="true"
+            android:title="启动时检测更新"
+            android:summary="在每次启动时检测程序更新，不想更新的话可以关闭。">
+        </CheckBoxPreference>
+	<!--	<CheckBoxPreference
+            android:key="check_jingdong"
+            android:title="京东"
+            android:summary="将主页替换为京东： \n只是主页更改，侧滑菜单仍然可以访问淘宝。只提供有限的支持！！"
+			android:disableDependentsState="true"
+			android:dependency="check_xianyu" >
+        </CheckBoxPreference> -->
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="关于：">
+		<Preference android:key="pay"
+					android:title="捐赠"
+			        android:summary="作者gtf35只是一名高中生，零花钱不多，觉得应用不错的话，请我吃碗泡面吧。 \n注：捐赠后会启用特权：淘宝原生图标。">
+		</Preference>
+		<Preference android:key="joinQQGroup"
+					android:title="加QQ群"
+					android:summary="和我们一起讨论吧。">
+		</Preference>
+		<Preference android:key="goGithub"
+			android:title="开源项目主页"
+			android:summary="向开源致敬，本程序以MIT协议公开源代码。">
+		</Preference>
+		<Preference android:key="feedBack"
+			android:title="反馈"
+			android:summary="将问题反馈给我。">
+		</Preference>
+		<Preference android:key="updata"
+			android:title="手动检测更新"
+			android:summary="更新到最新版。">
+		</Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

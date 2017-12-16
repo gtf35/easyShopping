@@ -23,7 +23,7 @@
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		android:layout_width="wrap_content"
-		android:text="草 宝"
+		android:text="小购物"
 		android:id="@+id/Logo1"
 		android:layout_centerInParent="true"
 		android:textSize="39sp"/>
@@ -32,7 +32,7 @@
 		android:layout_height="wrap_content"
 		android:textAppearance="?android:attr/textAppearanceSmall"
 		android:layout_width="wrap_content"
-		android:text="---Writed by 草老师(gtf35)"
+		android:text="--简单的购物APP"
 		android:layout_toRightOf="@id/Logo1"
 		android:layout_below="@id/Logo1"
 		android:id="@+id/Logo2"/>

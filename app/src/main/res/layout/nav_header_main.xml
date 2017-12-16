@@ -25,7 +25,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:paddingTop="@dimen/nav_header_vertical_spacing"
-		android:text="草 宝"
+		android:text="小购物"
 		android:textAppearance="@style/TextAppearance.AppCompat.Body1"
 		android:layout_marginLeft="45dp"/>
 
@@ -33,7 +33,7 @@
 		android:id="@+id/textView"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="----套壳淘宝客户端"
+		android:text="一个简单的购物APP"
 		android:layout_marginLeft="45dp"/>
 
 </LinearLayout>

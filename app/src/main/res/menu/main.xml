@@ -12,14 +12,19 @@
         android:title="刷新"
         app:showAsAction="never" />
 	<item
-        android:id="@+id/action_exit"
+        android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="退出"
+        android:title="设置"
         app:showAsAction="never" />
 	<item
         android:id="@+id/share"
         android:orderInCategory="100"
         android:title="分享"
+        app:showAsAction="never" />
+	<item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="退出"
         app:showAsAction="never" />
 	<item
         android:id="@+id/home"
