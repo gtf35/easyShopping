@@ -27,6 +27,17 @@
             android:title="启动时检测更新"
             android:summary="在每次启动时检测程序更新，不想更新的话可以关闭。">
         </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="check_TaoKey"
+            android:title="淘口令"
+            android:summary="在APP启动时或后台切换到前台时从剪贴板检测淘口令，可以解析标题。 \n注意只支持标准的带http链接的淘口令。"
+			android:defaultValue="true" >
+        </CheckBoxPreference> 	<CheckBoxPreference
+            android:key="check_TaoUrlKey"
+            android:title="口令广谱识别"
+            android:summary="这个将识别所有带有手机淘宝字样的口令，可以兼容淘宝客口令，但是无法解析标题。 \n注：该选项不包括淘口令识别。"
+			android:defaultValue="true" >
+        </CheckBoxPreference> 
 	<!--	<CheckBoxPreference
             android:key="check_jingdong"
             android:title="京东"

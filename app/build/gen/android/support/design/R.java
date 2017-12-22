@@ -2612,15 +2612,15 @@ containing a value of this type.
         public static final int action_bar_title=0x7f09003d;
         public static final int action_context_bar=0x7f09005f;
         public static final int action_divider=0x7f090087;
-        public static final int action_exit=0x7f09009e;
-        public static final int action_home=0x7f09009a;
+        public static final int action_exit=0x7f0900a0;
+        public static final int action_home=0x7f09009c;
         public static final int action_menu_divider=0x7f090004;
         public static final int action_menu_presenter=0x7f090005;
         public static final int action_mode_bar=0x7f09005b;
         public static final int action_mode_bar_stub=0x7f09005a;
         public static final int action_mode_close_button=0x7f09003f;
-        public static final int action_reload=0x7f09009b;
-        public static final int action_settings=0x7f09009c;
+        public static final int action_reload=0x7f09009d;
+        public static final int action_settings=0x7f09009e;
         public static final int activity_chooser_view_content=0x7f090040;
         public static final int add=0x7f090034;
         public static final int alertTitle=0x7f09004c;
@@ -2670,6 +2670,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f09003a;
         public static final int image=0x7f090042;
         public static final int imageView=0x7f090081;
+        public static final int img=0x7f090091;
         public static final int info=0x7f09008e;
         public static final int item_longclicked_saveImage=0x7f09007e;
         public static final int item_longclicked_viewImage=0x7f09007d;
@@ -2685,23 +2686,24 @@ containing a value of this type.
         public static final int middle=0x7f090037;
         public static final int mini=0x7f090023;
         public static final int multiply=0x7f090027;
-        public static final int nav_dingdan=0x7f090093;
-        public static final int nav_exit=0x7f090099;
-        public static final int nav_gouwuche=0x7f090091;
-        public static final int nav_kajuanbao=0x7f090096;
-        public static final int nav_myTaobao=0x7f090090;
-        public static final int nav_settings=0x7f090098;
-        public static final int nav_soucangjia=0x7f090094;
+        public static final int nav_dingdan=0x7f090095;
+        public static final int nav_exit=0x7f09009b;
+        public static final int nav_gouwuche=0x7f090093;
+        public static final int nav_kajuanbao=0x7f090098;
+        public static final int nav_myTaobao=0x7f090092;
+        public static final int nav_settings=0x7f09009a;
+        public static final int nav_soucangjia=0x7f090096;
         public static final int nav_view=0x7f090080;
-        public static final int nav_wangwang=0x7f090097;
-        public static final int nav_wuliu=0x7f090092;
-        public static final int nav_zuji=0x7f090095;
+        public static final int nav_wangwang=0x7f090099;
+        public static final int nav_wuliu=0x7f090094;
+        public static final int nav_zuji=0x7f090097;
         public static final int navigation_header_container=0x7f090077;
         public static final int never=0x7f09003b;
         public static final int none=0x7f09001b;
         public static final int normal=0x7f090024;
         public static final int parallax=0x7f09001c;
         public static final int parentPanel=0x7f090049;
+        public static final int photoview_progressbar=0x7f090090;
         public static final int pin=0x7f09001d;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
@@ -2724,7 +2726,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f090067;
         public static final int search_voice_btn=0x7f09006b;
         public static final int select_dialog_listview=0x7f09006c;
-        public static final int share=0x7f09009d;
+        public static final int share=0x7f09009f;
         public static final int shortcut=0x7f090056;
         public static final int showCustom=0x7f090030;
         public static final int showHome=0x7f090031;
@@ -2823,10 +2825,11 @@ containing a value of this type.
         public static final int notification_template_media=0x7f040032;
         public static final int notification_template_part_chronometer=0x7f040033;
         public static final int notification_template_part_time=0x7f040034;
-        public static final int select_dialog_item_material=0x7f040035;
-        public static final int select_dialog_multichoice_material=0x7f040036;
-        public static final int select_dialog_singlechoice_material=0x7f040037;
-        public static final int support_simple_spinner_dropdown_item=0x7f040038;
+        public static final int photoview=0x7f040035;
+        public static final int select_dialog_item_material=0x7f040036;
+        public static final int select_dialog_multichoice_material=0x7f040037;
+        public static final int select_dialog_singlechoice_material=0x7f040038;
+        public static final int support_simple_spinner_dropdown_item=0x7f040039;
     }
     public static final class menu {
         public static final int activity_main_drawer=0x7f0f0000;
@@ -2836,6 +2839,7 @@ containing a value of this type.
         public static final int home=0x7f030000;
         public static final int ic_launcher=0x7f030001;
         public static final int icon=0x7f030002;
+        public static final int main=0x7f030003;
     }
     public static final class raw {
         public static final int pay_weixin=0x7f070000;

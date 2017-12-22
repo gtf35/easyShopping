@@ -8,8 +8,8 @@ android {
         applicationId "io.github.gtf.easyShopping"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 7
-        versionName "1.6.beta"
+        versionCode 12
+        versionName "2.1.beta"
     }
     buildTypes {
         release {
@@ -23,4 +23,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 	compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'
+	compile 'com.bm.photoview:library:1.4.1'
 }

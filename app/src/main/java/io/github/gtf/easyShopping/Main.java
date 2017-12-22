@@ -35,6 +35,7 @@ import android.content.res.*;
 import com.pgyersdk.*;
 import android.*;
 import android.annotation.*;
+import android.content.pm.PackageManager.*;
 
 
 public class Main extends BaseActivity
@@ -49,6 +50,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	TextView Logo1;
 	TextView Logo2;
 	View mainView;
+	String UPDATA_LOG;
 	ClipboardManager manager;
 
 	String mTaobaoUrl = "https://m.taobao.com/";
@@ -78,10 +80,13 @@ implements NavigationView.OnNavigationItemSelectedListener
 	private boolean xianyuOK;
 	private boolean jingdongOK;
 	private boolean autoUpdata;
+	private boolean findTaoKey;
+	private boolean findUrlKey;
 	private GestureDetector gestureDetector;
 	private int downX, downY;
 	private String imgurl = "";
-	
+	private TaokeyTool taokey;
+	private String PACKAGE_NAME = "io.github.gtf.easyShopping";
 	private static final int REQUEST_CODE_READ_EXTERNAL_STORAGE_PERMISSIONS = 1;
     private static final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 2;
 	
@@ -92,7 +97,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-		PgyCrashManager.register(getApplication());
+		PgyCrashManager.register(MyApplication.getContext());
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 		Logo1 = (TextView) findViewById(R.id.Logo1);
 		Logo2 = (TextView) findViewById(R.id.Logo2);
@@ -123,6 +128,8 @@ implements NavigationView.OnNavigationItemSelectedListener
 		xianyuOK = shp.getBoolean("check_xianyu", false);
 		jingdongOK = shp.getBoolean("check_jingdong",false);
 		autoUpdata = shp.getBoolean("autoUpdata",true);
+		findTaoKey = shp.getBoolean("check_TaoKey",true);
+		findUrlKey = shp.getBoolean("check_TaoUrlKey",true);
 		
 		
         /*fab.setOnClickListener(new View.OnClickListener() {
@@ -174,13 +181,17 @@ implements NavigationView.OnNavigationItemSelectedListener
 		initWebView();
 		loadHomePage();
 		if(autoUpdata){
-			runUpdata();
+			mUpdata();
 		}
 		mWebView.setVisibility(View.GONE);
 		if (startTime == 1){
 			noticeDialog();
 		}
-		IshaveTaoKey();
+		if(onFirstStart()){
+			UPDATA_LOG = "2017/12/22 \n \n加入功能：长按查看大图与保存图片。 \n使用方法：长按图片便会看到悬浮菜单，即可选择查看或者保存。 \n \n修复：自动检测更新时发现新版本，更新日志乱码的bug。 \n \n感谢捐赠我的宝宝们，我爱你们";
+			Updata();
+		}
+		ToKey();
 		mHandler = new Handler(){  
 			@Override  
 			public void handleMessage(Message msg)
@@ -454,8 +465,9 @@ implements NavigationView.OnNavigationItemSelectedListener
 						.setOnClickListener(new View.OnClickListener() {
 							@Override
 							public void onClick(View v) {
-								Toast.makeText(MyApplication.getContext(),"正在开发 敬请期待！",Toast.LENGTH_SHORT).show();
+								Toast.makeText(MyApplication.getContext(),"正在加载...",Toast.LENGTH_SHORT).show();
 								itemLongClickedPopWindow.dismiss();
+								loadPicture(imgurl);
 							}
 						});
 					itemLongClickedPopWindow.getView(R.id.item_longclicked_saveImage)
@@ -494,7 +506,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 					super.onPageFinished(view, url);
 					mProgressDialog.hide();
 					toolbar.setTitle(toolbarTitle);
-					IshaveTaoKey();
+					ToKey();
 					if (HideLogo)
 					{
 						Timer timer = new Timer();
@@ -565,17 +577,24 @@ implements NavigationView.OnNavigationItemSelectedListener
 
 	String getClipbord()
 	{
-		// 获取 剪切板数据
-		ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
-		ClipData cd2 = cm.getPrimaryClip();
 		String str2 = "null";
-		if (cd2 != null)
-		{
-			str2 = cd2.getItemAt(0).getText().toString();
+		try{
+			// 获取 剪切板数据
+		ClipboardManager cm = (ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+		if(cm != null){
+			ClipData cd2 = cm.getPrimaryClip();
+			if (cd2 != null)
+			{
+				str2 = cd2.getItemAt(0).getText().toString();
+			}
+			else
+			{
+				str2 = "null";
+			}
 		}
-		else
-		{
-			str2 = "null";
+		}catch(NullPointerException e){
+			Toast.makeText(Main.this,"哦哟，获取剪贴板出错了。 \n如果该提示频繁出现，请关闭淘口令相关的开关并等待开发者更新，抱歉。",Toast.LENGTH_SHORT).show();
+			PgyCrashManager.reportCaughtException(Main.this, e); 
 		}
 		return str2;
 	}
@@ -589,174 +608,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		super.onDestroy();
 	}
 
-	String getTaoKeyTitle(String taoKey)
-	{
-		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
-		double textLong1 =getLength(taoKey);
-		int textLong = (int)textLong1;
-		if (textLong < 1)
-		{
-			textLong = 1;
-			taoKey = "To fix a bug";
-		}
-		String[] tempArray = new String[textLong];
-		int i = 0;
-		while (i <= textLong - 1)
-		{
-			tempArray[i] = taoKey.substring(i, i + 1);
-			i = i + 1;
-		}
-		int start = 0;
-		int end = 0;
-		String finallyString = "";
-		int time = 0 ;
-		while (time < textLong)
-		{
-			String tempText = tempArray[time];
-			if (tempText.contains("【"))
-			{
-				start = time + 1;
-			}
-			if (tempText.contains("】"))
-			{
-				end = time - 1;
-			}
-			time = time + 1;
-		}
-
-		int a = start ;
-
-		while (a <= end)
-		{
-			finallyString = finallyString + tempArray[a];
-			a = a + 1;
-		}
-		//System.out.println(finallyString);
-		return finallyString;
-	}
-
-	String getTaoKeyUrl(String taoKey)
-	{
-		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
-		double textLong1 =getLength(taoKey);
-		int textLong = (int)textLong1;
-		if (textLong < 1)
-		{
-			textLong = 1;
-			taoKey = "To fix a bug";
-		}
-		String[] tempArray = new String[textLong];
-		int i = 0;
-		while (i <= textLong - 1)
-		{
-			tempArray[i] = taoKey.substring(i, i + 1);
-			i = i + 1;
-		}
-		int start = 0;
-		int end = 0;
-		String finallyString = "";
-		int time = 0 ;
-		while (time < textLong)
-		{
-			String tempText = tempArray[time];
-			if (tempText.contains("】"))
-			{
-				start = time + 1;
-			}
-			if (tempText.contains("点"))
-			{
-				end = time - 2;
-			}
-			time = time + 1;
-		}
-
-		int a = start ;
-
-		while (a <= end)
-		{
-			finallyString = finallyString + tempArray[a];
-			a = a + 1;
-		}
-		//System.out.println(finallyString);
-		return finallyString;
-	}
-
-	public static boolean isLetter(char c)
-	{ 
-        int k = 0x80; 
-        return c / k == 0 ? true : false; 
-    }
-
-	/**
-	 * 判断字符串是否为空
-	 * @param str
-	 * @return
-	 */
-	public static boolean isNull(String str)
-	{
-		if (str == null || str.trim().equals("") || str.trim().equalsIgnoreCase("null"))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	/** 
-     * 得到一个字符串的长度,显示的长度,一个汉字或日韩文长度为2,英文字符长度为1 
-     * @param String s 需要得到长度的字符串 
-     * @return int 得到的字符串长度 
-     */ 
-    public static int length(String s)
-	{
-        if (s == null)
-            return 0;
-        char[] c = s.toCharArray();
-        int len = 0;
-        for (int i = 0; i < c.length; i++)
-		{
-            len++;
-            if (!isLetter(c[i]))
-			{
-                len++;
-            }
-        }
-        return len;
-    }
-
-
-    /** 
-     * 得到一个字符串的长度,显示的长度,一个汉字或日韩文长度为1,英文字符长度为0.5 
-     * @param String s 需要得到长度的字符串 
-     * @return int 得到的字符串长度 
-     */ 
-    public static double getLength(String s)
-	{
-    	double valueLength = 0;  
-        String chinese = "[\u4e00-\u9fa5]";  
-        // 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1  
-        for (int i = 0; i < s.length(); i++)
-		{  
-            // 获取一个字符  
-            String temp = s.substring(i, i + 1);  
-            // 判断是否为中文字符  
-            if (temp.matches(chinese))
-			{  
-                // 中文字符长度为1  
-                valueLength += 1;  
-            }
-			else
-			{  
-                // 其他字符长度为0.5  
-                valueLength += 0.5;  
-            }  
-        }  
-        //进位取整  
-        return  Math.ceil(valueLength);  
-    }
-
+	
 	/** 
 	 * 实现文本复制功能 
 	 * add by wangqianzhou 
@@ -764,26 +616,39 @@ implements NavigationView.OnNavigationItemSelectedListener
 	 */  
 	public static void copy(String content, Context context)  
 	{  
+	try{
 // 得到剪贴板管理器  
 		ClipboardManager cmb = (ClipboardManager)context.getSystemService(Context.CLIPBOARD_SERVICE);  
 		cmb.setText(content.trim());  
+		}catch(NullPointerException e){
+			PgyCrashManager.reportCaughtException(MyApplication.getContext(), e); 
+			Toast.makeText(MyApplication.getContext(),"哦哟，获取剪贴板出错了。 \n如果该提示频繁出现，请关闭淘口令相关的开关并等待开发者更新，抱歉。",Toast.LENGTH_SHORT).show();
+		}
 	}  
 
-	public void IshaveTaoKey()
+	
+	public void ToKey()
 	{
 		final String originalClipboard = getClipbord();
+		boolean IsTaoKey = originalClipboard.contains("后打开👉手淘👈");
+		boolean IsUrlKey = originalClipboard.contains("手机淘宝");
 		//Toast.makeText(Main.this, getTaoKeyUrl(originalClipboard), Toast.LENGTH_SHORT).show();
 		//Toast.makeText(Main.this, getTaoKeyTitle(originalClipboard), Toast.LENGTH_SHORT).show();
 		//提示dialog
 		Dialog.setCancelable(false);
 		Dialog.setTitle("淘口令：");
-		Dialog.setMessage("检测到有一个淘口令:" + getTaoKeyTitle(originalClipboard) + "\n 是否马上打开？");
+		if(IsTaoKey){
+			Dialog.setMessage("检测到有一个淘口令:" +taokey.getTaoKeyTitle(originalClipboard) + "\n 是否马上打开？");
+		}
+		if(IsUrlKey){
+			Dialog.setMessage("检测到有一个淘宝客口令,是否马上打开？");
+		}
 		Dialog.setPositiveButton("打开",  new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which)
 				{
 					copy("", Main.this);
-					mWebView.loadUrl(getTaoKeyUrl(originalClipboard));
+					mWebView.loadUrl(taokey.getUrl(originalClipboard));
 				}
 			});
 		Dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
@@ -794,16 +659,17 @@ implements NavigationView.OnNavigationItemSelectedListener
 				}
 			});
 		//Toast.makeText(Main.this,originalClipboard,Toast.LENGTH_SHORT).show();
-		boolean IsTaoKey = originalClipboard.contains("后打开👉手淘👈");
-		if (IsTaoKey)
+		if (IsTaoKey && findTaoKey)
 		{
+			copy("", Main.this);
 			Toast.makeText(Main.this, "检测到有一个淘口令，是否马上打开？", Toast.LENGTH_SHORT).show();
 			Dialog.show();
-			copy("", Main.this);
 		}
-		else
+		else if(IsUrlKey && findUrlKey)
 		{
-
+			copy("", Main.this);
+			Toast.makeText(Main.this, "检测到有一个淘宝客口令，是否马上打开？", Toast.LENGTH_SHORT).show();
+			Dialog.show();
 		}
 	}
 	
@@ -825,7 +691,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	@Override
 	protected void onRestart()
 	{
-		IshaveTaoKey();
+		ToKey();
 		// TODO: Implement this method
 		super.onRestart();
 	}
@@ -833,7 +699,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	@Override
 	protected void onResume()
 	{
-		IshaveTaoKey();
+		ToKey();
 		// TODO: Implement this method
 		super.onResume();
 	}
@@ -855,43 +721,15 @@ implements NavigationView.OnNavigationItemSelectedListener
 		
 	}
 	
-	public void runUpdata(){
-		PgyUpdateManager.register(Main.this,
-			new UpdateManagerListener() {
-
-				@Override
-				public void onUpdateAvailable(final String result) {
-
-					// 将新版本信息封装到AppBean中
-					final AppBean appBean = getAppBeanFromString(result);
-					new AlertDialog.Builder(Main.this)
-						.setTitle("更新")
-						.setMessage("欧呦~发现新版本啦，是否下载？")
-						.setNegativeButton(
-						"确定",
-						new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(
-								DialogInterface dialog,
-								int which) {
-								startDownloadTask(
-									Main.this,
-									appBean.getDownloadURL());
-							}
-						})
-						.setPositiveButton("取消", new DialogInterface.OnClickListener() {
-							@Override
-							public void onClick(DialogInterface dialog, int which)
-							{
-							}
-						}).show();
-				}
-
-				@Override
-				public void onNoUpdateAvailable() {
-				}
-			});
+	private void loadPicture(String url){
+		try{
+			Intent intent = new Intent(Main.this,PhotoView.class);
+			intent.putExtra("URL",url);
+			startActivity(intent);
+		}catch(Exception e){
+			PgyCrashManager.reportCaughtException(MyApplication.getContext(),e);
+			Toast.makeText(MyApplication.getContext(),"加载PhotoView Activity出错，请等待开发者修复，抱歉。",Toast.LENGTH_SHORT).show();
+		}
 	}
 	
 	
@@ -958,6 +796,53 @@ implements NavigationView.OnNavigationItemSelectedListener
 		return  (dipValue * scale + 0.5f);
 	}
 	
+	
+	public boolean onFirstStart(){
+		boolean firstTime = false;
+		try
+		{   PackageInfo info = getPackageManager().getPackageInfo(PACKAGE_NAME, 0);
+			int currentVersion = info.versionCode;
+			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+			int lastVersion = prefs.getInt("VERSION_KEY", 0);
+			if (currentVersion > lastVersion) {
+				firstTime = true;
+				//如果当前版本大于上次版本，该版本属于第一次启动
+				//将当前版本写入preference中，则下次启动的时候，据此判断，不再为首次启动
+				prefs.edit().putInt("VERSION_KEY",currentVersion).commit();
+			}
+		}
+		catch (PackageManager.NameNotFoundException e)
+		{
+			Toast.makeText(MyApplication.getContext(),"抱歉啦~获取版本信息失败，请等待更新修复，大人原谅呢~",Toast.LENGTH_SHORT).show();
+		}
+		return firstTime;
+	}
+		
+
+	public void mUpdata(){
+		PgyUpdateManager.setIsForced(false); //设置是否强制更新。true为强制更新；false为不强制更新（默认值）。
+		PgyUpdateManager.register(this);
+	}
+	
+	public void Updata(){
+					new AlertDialog.Builder(Main.this)
+						.setTitle("欢迎使用，这个版本有以下特性！")
+						.setMessage(UPDATA_LOG)
+						.setNegativeButton(
+						"确定",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(
+								DialogInterface dialog,
+								int which) {
+								
+							}
+						}).show();
+				}
+
+			
+	
 	@SuppressLint("NewApi")
     @Override
     public void onRequestPermissionsResult(int requestCode,
@@ -991,5 +876,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 				}
         }
     }
+	
+	
 	
 	}
