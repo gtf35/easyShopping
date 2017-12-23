@@ -39,6 +39,16 @@ public class SettingsActivity extends BaseActivity
 	private Toolbar toolbar;
 	private AlertDialog.Builder Dialog;
 	private AlertDialog.Builder Dialog2;
+	private AlertDialog.Builder logInDialog;
+	private AlertDialog.Builder logInDialog2;
+	private String miPassword;
+	private String miUsername;
+	private boolean AutoLogin;
+	private String key;
+	SharedPreferences shp;
+	String NewmiPassword;
+	String NewmiUserName;
+	
 
 	@Override
     protected void onCreate(Bundle savedInstanceState)
@@ -47,9 +57,14 @@ public class SettingsActivity extends BaseActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 	    Dialog = new AlertDialog.Builder(this);
 		Dialog2 = new AlertDialog.Builder(this);
-        
+        logInDialog = new AlertDialog.Builder(this);
+		logInDialog2 = new AlertDialog.Builder(this);
 	
-	
+		shp = PreferenceManager.getDefaultSharedPreferences(SettingsActivity.this);
+		miUsername = shp.getString("miUsername","null");
+		miPassword = shp.getString("miPassword","null");
+		AutoLogin = shp.getBoolean("check_AutoLogin",true);
+		key = shp.getString("key",null);
 		this.getFragmentManager().beginTransaction()
 			.replace(android.R.id.content, new SettingsFragment())
 			.commit();	
@@ -60,9 +75,11 @@ public class SettingsActivity extends BaseActivity
     @Override
     public void onBackPressed()
 	{
-		SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(SettingsActivity.this);
+		
 		xianyuOK = shp.getBoolean("check_xianyu", false);
 		jingdongOK = shp.getBoolean("check_jingdong",false);
+
+		
 		//Toast.makeText(MyApplication.getContext(),"咸鱼："+xianyuOK+" \n京东："+jingdongOK,Toast.LENGTH_LONG).show();
 		if(xianyuOK && jingdongOK){
 			Toast.makeText(MyApplication.getContext(),"两个选项只能选一个哟,检查一下啦~",Toast.LENGTH_SHORT).show();
@@ -92,6 +109,11 @@ public class SettingsActivity extends BaseActivity
 	public void pay(){
 		Dialoginit();
 		Dialog.show();
+	}
+	
+	public void setAutoLogin(){
+		LoginDialoginit();
+		logInDialog.show();
 	}
 	
 	/**
@@ -159,7 +181,99 @@ public class SettingsActivity extends BaseActivity
 				}
 			});
 	}
+	
+	private void LoginDialoginit(){
+		final View LoginAlertDialogView = View.inflate(getApplicationContext(), R.layout.textview_dialog, null);
+		logInDialog.setCancelable(false);
+	    logInDialog.setTitle("请输入淘宝账户的用户名：");
+		logInDialog.setView( LoginAlertDialogView);
+		logInDialog.setPositiveButton("下一步",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					EditText userusername = (EditText)LoginAlertDialogView.findViewById(R.id.textviewdialogEditText);
+					final String username = userusername.getText().toString();
+					logInDialog2.setTitle("请输入淘宝账户的密码：");
+					logInDialog2.setCancelable(false);
+					final View LoginMimaAlertDialogView = View.inflate(getApplicationContext(), R.layout.textview_mima_dialog, null);
+					logInDialog2.setView(LoginMimaAlertDialogView);
+					logInDialog2.setPositiveButton("保存",  new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which)
+							{
+								SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+								EditText passwordEditView = (EditText)LoginMimaAlertDialogView.findViewById(R.id.mimaDialog);
+								final String password = passwordEditView.getText().toString();
+								if(key == null){
+									key = getRandomString(8);
+									prefs.edit().putString("key",key).commit();
+								}
+								NewmiPassword = jiami(password,key);
+								NewmiUserName = jiami(username,key);
+								//String NewmiPassword = miPassword;
+								//String NewmiUserName = miUsername;
+								prefs.edit().putString("miPassword",NewmiPassword).commit();
+								prefs.edit().putString("miUsername",NewmiUserName).commit();
+								Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
+								
+							}
+						});
+					logInDialog2.show();
 
+				}
+			});
+
+		logInDialog.setNegativeButton("取消",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+				
+				}
+			});
+	}
+	
+	private String jiemi(String miwen , String key){
+		String jiemihou = null;
+		try {
+			EncryptionDecryption des = new EncryptionDecryption(key);// 自定义密钥
+			//加密后的字符
+			//jiamihou = des.encrypt(mingwen);
+			//解密后的字符：
+			jiemihou = des.decrypt(miwen);
+
+		} catch (Exception e) {
+			Toast.makeText(SettingsActivity.this,"字符解密失败",Toast.LENGTH_SHORT).show();
+		}
+		return jiemihou;
+	}
+
+	private String jiami(String mingwen , String key){
+		String jiamihou = null;
+		try {
+			EncryptionDecryption des = new EncryptionDecryption(key);// 自定义密钥
+			//加密后的字符
+			jiamihou = des.encrypt(mingwen);
+			//解密后的字符：
+			//jiemihou = des.decrypt(miwen);
+
+		} catch (Exception e) {
+			Toast.makeText(SettingsActivity.this,"字符加密失败",Toast.LENGTH_SHORT).show();
+		}
+		return jiamihou;
+	}
+
+	
+	public static String getRandomString(int length) { //length表示生成字符串的长度
+		String base = "abcdefghijklmnopqrstuvwxyz0123456789";   
+		Random random = new Random();   
+		StringBuffer sb = new StringBuffer();   
+		for (int i = 0; i < length; i++) {   
+			int number = random.nextInt(base.length());   
+			sb.append(base.charAt(number));   
+		}   
+		return sb.toString();   
+	}  
+	
 	private void back(){
 		Intent back = new Intent(SettingsActivity.this,Main.class);
 		startActivity(back);
@@ -234,5 +348,10 @@ public class SettingsActivity extends BaseActivity
         mainIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物");
 		disableVip();
     }
+	
+	
+	public void saveLogin(){
+		
+	}
 	
 }

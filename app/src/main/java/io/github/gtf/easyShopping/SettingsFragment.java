@@ -7,6 +7,7 @@ import android.net.*;
 import com.pgyersdk.feedback.*;
 import com.pgyersdk.activity.*;
 import com.pgyersdk.update.PgyUpdateManager;
+import javax.security.auth.*;
 
 public class SettingsFragment extends PreferenceFragment
 {
@@ -15,11 +16,16 @@ public class SettingsFragment extends PreferenceFragment
 	private Preference goGithub;
 	private Preference updata;
 	private Preference feedBack;
+	private Preference setAutoLogin;
 	private CheckBoxPreference xianyu;
 	private CheckBoxPreference jingdong;
+	private CheckBoxPreference autoLogin;
 	private boolean xianyuOK;
 	private boolean jingdongOK;
 	private CheckBoxPreference autoUpdata;
+	private String miPassword;
+	private String miUsername;
+	private boolean AutoLogin;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -30,6 +36,8 @@ public class SettingsFragment extends PreferenceFragment
 		joinQQGroup = (Preference)findPreference("joinQQGroup");
 		xianyu = (CheckBoxPreference)findPreference("check_xianyu");
 		jingdong = (CheckBoxPreference)findPreference("check_jingdong");
+		autoLogin = (CheckBoxPreference)findPreference("check_AutoLogin");
+		setAutoLogin = (Preference)findPreference("setAutoLogin");
 		goGithub = (Preference)findPreference("goGithub");
 		updata = (Preference)findPreference("updata");
 		feedBack = (Preference)findPreference("feedBack");
@@ -38,6 +46,9 @@ public class SettingsFragment extends PreferenceFragment
 		SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(getActivity());
 		xianyuOK = shp.getBoolean("check_xianyu", false);
 		jingdongOK = shp.getBoolean("check_jingdong",false);
+		miUsername = shp.getString("miUsername","null");
+		miPassword = shp.getString("miPassword","null");
+		AutoLogin = shp.getBoolean("check_AutoLogin",true);
 		
 		pay.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 				@Override
@@ -86,6 +97,16 @@ public class SettingsFragment extends PreferenceFragment
 					Toast.makeText(getActivity(), "正在检测更新，请稍后。。。。", Toast.LENGTH_SHORT).show();
 					SettingsActivity sa = (SettingsActivity)getActivity();
 					sa.mUpdata();
+					return true;
+				}
+			});
+		setAutoLogin.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				@Override
+				public boolean onPreferenceClick(Preference preference)
+				{
+					Toast.makeText(getActivity(), "请务必输入正确的用户名和密码", Toast.LENGTH_SHORT).show();
+					SettingsActivity sa = (SettingsActivity)getActivity();
+					sa.setAutoLogin();
 					return true;
 				}
 			});

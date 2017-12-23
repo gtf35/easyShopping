@@ -2612,15 +2612,15 @@ containing a value of this type.
         public static final int action_bar_title=0x7f09003d;
         public static final int action_context_bar=0x7f09005f;
         public static final int action_divider=0x7f090087;
-        public static final int action_exit=0x7f0900a0;
-        public static final int action_home=0x7f09009c;
+        public static final int action_exit=0x7f0900a2;
+        public static final int action_home=0x7f09009e;
         public static final int action_menu_divider=0x7f090004;
         public static final int action_menu_presenter=0x7f090005;
         public static final int action_mode_bar=0x7f09005b;
         public static final int action_mode_bar_stub=0x7f09005a;
         public static final int action_mode_close_button=0x7f09003f;
-        public static final int action_reload=0x7f09009d;
-        public static final int action_settings=0x7f09009e;
+        public static final int action_reload=0x7f09009f;
+        public static final int action_settings=0x7f0900a0;
         public static final int activity_chooser_view_content=0x7f090040;
         public static final int add=0x7f090034;
         public static final int alertTitle=0x7f09004c;
@@ -2684,19 +2684,20 @@ containing a value of this type.
         public static final int mWebView=0x7f090070;
         public static final int media_actions=0x7f090086;
         public static final int middle=0x7f090037;
+        public static final int mimaDialog=0x7f090093;
         public static final int mini=0x7f090023;
         public static final int multiply=0x7f090027;
-        public static final int nav_dingdan=0x7f090095;
-        public static final int nav_exit=0x7f09009b;
-        public static final int nav_gouwuche=0x7f090093;
-        public static final int nav_kajuanbao=0x7f090098;
-        public static final int nav_myTaobao=0x7f090092;
-        public static final int nav_settings=0x7f09009a;
-        public static final int nav_soucangjia=0x7f090096;
+        public static final int nav_dingdan=0x7f090097;
+        public static final int nav_exit=0x7f09009d;
+        public static final int nav_gouwuche=0x7f090095;
+        public static final int nav_kajuanbao=0x7f09009a;
+        public static final int nav_myTaobao=0x7f090094;
+        public static final int nav_settings=0x7f09009c;
+        public static final int nav_soucangjia=0x7f090098;
         public static final int nav_view=0x7f090080;
-        public static final int nav_wangwang=0x7f090099;
-        public static final int nav_wuliu=0x7f090094;
-        public static final int nav_zuji=0x7f090097;
+        public static final int nav_wangwang=0x7f09009b;
+        public static final int nav_wuliu=0x7f090096;
+        public static final int nav_zuji=0x7f090099;
         public static final int navigation_header_container=0x7f090077;
         public static final int never=0x7f09003b;
         public static final int none=0x7f09001b;
@@ -2726,7 +2727,7 @@ containing a value of this type.
         public static final int search_src_text=0x7f090067;
         public static final int search_voice_btn=0x7f09006b;
         public static final int select_dialog_listview=0x7f09006c;
-        public static final int share=0x7f09009f;
+        public static final int share=0x7f0900a1;
         public static final int shortcut=0x7f090056;
         public static final int showCustom=0x7f090030;
         public static final int showHome=0x7f090031;
@@ -2749,6 +2750,7 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f090050;
         public static final int textView=0x7f090082;
         public static final int text_input_password_toggle=0x7f09007c;
+        public static final int textviewdialogEditText=0x7f090092;
         public static final int time=0x7f090089;
         public static final int title=0x7f090046;
         public static final int title_template=0x7f09004b;
@@ -2830,6 +2832,8 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040037;
         public static final int select_dialog_singlechoice_material=0x7f040038;
         public static final int support_simple_spinner_dropdown_item=0x7f040039;
+        public static final int textview_dialog=0x7f04003a;
+        public static final int textview_mima_dialog=0x7f04003b;
     }
     public static final class menu {
         public static final int activity_main_drawer=0x7f0f0000;

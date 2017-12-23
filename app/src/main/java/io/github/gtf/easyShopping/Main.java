@@ -73,19 +73,29 @@ implements NavigationView.OnNavigationItemSelectedListener
 	String mXianyuUrl = "http://www.xianyuso.com";
 	
 	int startTime = 0;
+	int loginTry = 0;
 	String toolbarTitle = "Taobao";
 	boolean HideLogo = true;
 	boolean IsAtHome = true;
 	boolean IsTaobaoLite = false;
+	private boolean AutoLogin;
 	private boolean xianyuOK;
 	private boolean jingdongOK;
 	private boolean autoUpdata;
 	private boolean findTaoKey;
 	private boolean findUrlKey;
+	private boolean AutoClick;
 	private GestureDetector gestureDetector;
 	private int downX, downY;
 	private String imgurl = "";
+	private String key;
+	private String miUsername;
+	private String miPassword;
 	private TaokeyTool taokey;
+	SharedPreferences settingsRead;
+	SharedPreferences settings;
+	SharedPreferences.Editor editor;
+	SharedPreferences shp;
 	private String PACKAGE_NAME = "io.github.gtf.easyShopping";
 	private static final int REQUEST_CODE_READ_EXTERNAL_STORAGE_PERMISSIONS = 1;
     private static final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 2;
@@ -109,29 +119,32 @@ implements NavigationView.OnNavigationItemSelectedListener
 
 		
 		//获取Preferences
-		SharedPreferences settingsRead = getSharedPreferences("data", 0);
+		settingsRead = getSharedPreferences("data", 0);
 //取出数据
 	    //IsTaobaoLite = settingsRead.getBoolean("IsTaobaoLite" , false);
 		startTime = settingsRead.getInt("startTime", 0) + 1;
 //打开数据库
-		SharedPreferences settings = getSharedPreferences("data", 0);
+		settings = getSharedPreferences("data", 0);
 //处于编辑状态
-		SharedPreferences.Editor editor = settings.edit();
+		editor = settings.edit();
 //存放数据
 		editor.putInt("startTime", startTime);
 		editor.putBoolean("IsTaobaoLite", false);
 //完成提交
 		editor.commit();
 
-		SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(this);
+		shp = PreferenceManager.getDefaultSharedPreferences(this);
 		IsTaobaoLite = shp.getBoolean("taobaoLite", false);
 		xianyuOK = shp.getBoolean("check_xianyu", false);
 		jingdongOK = shp.getBoolean("check_jingdong",false);
 		autoUpdata = shp.getBoolean("autoUpdata",true);
 		findTaoKey = shp.getBoolean("check_TaoKey",true);
 		findUrlKey = shp.getBoolean("check_TaoUrlKey",true);
-		
-		
+		key = shp.getString("key",null);
+		miUsername = shp.getString("miUsername","null");
+		miPassword = shp.getString("miPassword","null");
+		AutoLogin = shp.getBoolean("check_AutoLogin",true);
+		AutoClick = shp.getBoolean("check_AutoClick",false);
         /*fab.setOnClickListener(new View.OnClickListener() {
 		 @Override
 		 public void onClick(View view)
@@ -188,7 +201,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 			noticeDialog();
 		}
 		if(onFirstStart()){
-			UPDATA_LOG = "2017/12/22 \n \n加入功能：长按查看大图与保存图片。 \n使用方法：长按图片便会看到悬浮菜单，即可选择查看或者保存。 \n \n修复：自动检测更新时发现新版本，更新日志乱码的bug。 \n \n感谢捐赠我的宝宝们，我爱你们";
+			UPDATA_LOG = "2017/12/23 \n \n你们的泡面我收到了，好吃，，哈哈哈";
 			Updata();
 		}
 		ToKey();
@@ -202,7 +215,14 @@ implements NavigationView.OnNavigationItemSelectedListener
 					Logo1.setVisibility(View.GONE);
 					Logo2.setVisibility(View.GONE);
 					mWebView.setVisibility(View.VISIBLE);
-				}  
+				}  else if (msg.what == 0x124){
+					mWebView.loadUrl("javascript: {" +
+
+									 "document.getElementById('btn-submit').click();"+
+
+									 " };");
+					mProgressDialog.hide();
+				}
 			}  
 		};  
 		
@@ -496,8 +516,11 @@ implements NavigationView.OnNavigationItemSelectedListener
 				public void onPageStarted(WebView view, String url, Bitmap favicon)
 				{
 					super.onPageStarted(view, url, favicon);
-					//mProgressDialog.show();
-					//mProgressDialog.setMessage("加载中……😂😂😂");
+					String loginUrl = "login.m.taobao.com";
+					if(url.contains(loginUrl)&&AutoClick){
+						mProgressDialog.show();
+						mProgressDialog.setMessage("正在登录……");
+					}
 					toolbar.setTitle("加载中……");
 				}
 				@Override
@@ -506,6 +529,16 @@ implements NavigationView.OnNavigationItemSelectedListener
 					super.onPageFinished(view, url);
 					mProgressDialog.hide();
 					toolbar.setTitle(toolbarTitle);
+					String loginUrl = "login.m.taobao.com";
+					try{
+						if(url.contains(loginUrl) && toolbarTitle.contains("安全") == false && toolbarTitle.contains("验证") == false){
+							loginTry = loginTry + 1;
+							AutoLogin(loginTry);
+						}
+					}catch(Exception e){
+						Toast.makeText(Main.this,"判断登录界面出错",Toast.LENGTH_SHORT).show();
+						PgyCrashManager.reportCaughtException(Main.this,e);
+					}
 					ToKey();
 					if (HideLogo)
 					{
@@ -732,6 +765,109 @@ implements NavigationView.OnNavigationItemSelectedListener
 		}
 	}
 	
+	private void AutoLogin(int loginTime){
+		if(AutoLogin == true){
+			if(miPassword.contains("null") || miUsername.contains("null") || key == null){
+				new AlertDialog.Builder(Main.this)
+					.setTitle("无用户信息")
+					.setCancelable(false)
+					.setMessage("您已经开启自动登录但尚未配置登录信息，请到设置里配置信息或取消自动登录。")
+					.setNegativeButton(
+					"去设置",
+					new DialogInterface.OnClickListener() {
+
+						@Override
+						public void onClick(
+							DialogInterface dialog,
+							int which) {
+							Intent intent = new Intent(Main.this,SettingsActivity.class);
+							startActivity(intent);
+						}
+					}).show();
+			}else if(loginTime <= 4){
+				//用户名
+				String user=jiemi(miUsername,key);
+				//String user = miUsername;
+				//密码
+				String pwd=jiemi(miPassword,key);
+				//String pwd = miPassword;
+				//把用户名密码填充到表单
+				mWebView.loadUrl("javascript: {" +            
+
+								 "document.getElementById('username').value = '"+user +"';" +            
+
+								 "document.getElementById('password').value = '"+pwd+"';" +            
+
+								 "var frms = document.getElementsByName('loginForm');" +            
+
+								 "frms[0].submit();" +
+									
+								 " };");
+				if(AutoClick){
+					Timer timer = new Timer();// 实例化Timer类
+					timer.schedule(new TimerTask() {
+							public void run()
+							{	
+								mHandler.sendEmptyMessage(0x124);	
+							}
+						}, 1500);// 这里百毫秒		
+				}
+					 
+								 
+				
+			}else if(loginTime > 4){
+				new AlertDialog.Builder(Main.this)
+					.setTitle("登录错误次数过多")
+					.setCancelable(false)
+					.setMessage("自动登录多次失败，可能是用户名或密码错误，去设置重新配置一下吧。")
+					.setNegativeButton(
+					"去设置",
+					new DialogInterface.OnClickListener() {
+
+						@Override
+						public void onClick(
+							DialogInterface dialog,
+							int which) {
+							Intent intent = new Intent(Main.this,SettingsActivity.class);
+							startActivity(intent);
+						}
+					}).show();
+			}
+		}
+		
+	}
+	
+	private String jiemi(String miwen , String key){
+		String jiemihou = null;
+		try {
+			EncryptionDecryption des = new EncryptionDecryption(key);// 自定义密钥
+			//加密后的字符
+			//jiamihou = des.encrypt(mingwen);
+			//解密后的字符：
+			jiemihou = des.decrypt(miwen);
+
+		} catch (Exception e) {
+			Toast.makeText(Main.this,"字符解密失败",Toast.LENGTH_SHORT).show();
+		}
+		return jiemihou;
+	}
+	
+	private String jiami(String mingwen , String key){
+		String jiamihou = null;
+		try {
+			EncryptionDecryption des = new EncryptionDecryption(key);// 自定义密钥
+			//加密后的字符
+			  jiamihou = des.encrypt(mingwen);
+			//解密后的字符：
+			//jiemihou = des.decrypt(miwen);
+
+		} catch (Exception e) {
+			Toast.makeText(Main.this,"字符加密失败",Toast.LENGTH_SHORT).show();
+		}
+		return jiamihou;
+	}
+	
+	
 	
 	/***
      * 功能：用线程保存图片
@@ -782,6 +918,17 @@ implements NavigationView.OnNavigationItemSelectedListener
 			Toast.makeText(MyApplication.getContext(),result,Toast.LENGTH_SHORT).show();
 		}
     }
+	
+	public static String getRandomString(int length) { //length表示生成字符串的长度
+		String base = "abcdefghijklmnopqrstuvwxyz0123456789";   
+		Random random = new Random();   
+		StringBuffer sb = new StringBuffer();   
+		for (int i = 0; i < length; i++) {   
+			int number = random.nextInt(base.length());   
+			sb.append(base.charAt(number));   
+		}   
+		return sb.toString();   
+	}  
 	
 	public static int px2dip(int pxValue)
 	{
