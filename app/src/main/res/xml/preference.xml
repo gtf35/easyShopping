@@ -5,8 +5,8 @@
         android:title="主页：">
         <CheckBoxPreference
             android:key="check_xianyu"
-            android:title="咸鱼"
-            android:summary="将主页替换为咸鱼网页版： \n由于咸鱼网页版去掉了搜索框，所以首页由第三方提供，但是搜索结果由咸鱼官方提供。 \n缩放可能会有问题，有待优化。只提供有限的支持！！">
+            android:title="闲鱼"
+            android:summary="将主页替换为闲鱼网页版： \n由于咸鱼网页版去掉了搜索框，所以首页由第三方提供，但是搜索结果由咸鱼官方提供。 \n缩放可能会有问题，有待优化。只提供有限的支持！！">
         </CheckBoxPreference>
 		<CheckBoxPreference
             android:key="check_jingdong"

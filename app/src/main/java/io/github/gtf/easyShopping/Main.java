@@ -201,7 +201,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 			noticeDialog();
 		}
 		if(onFirstStart()){
-			UPDATA_LOG = "2017/12/23 \n \n你们的泡面我收到了，好吃，，哈哈哈";
+			UPDATA_LOG = "2017/12/29 \n \n优化提示 \n在手动刷新时清理缓存 \n提示：在天猫页面遇到无法点击登录按钮时，点一下密码输入框就好了。";
 			Updata();
 		}
 		ToKey();
@@ -304,6 +304,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		else if (id == R.id.action_reload)
 		{
 			showSnackBar("刷新ing........", " ", 0);
+			mWebView.clearCache(true);
 			mWebView.reload();
 			return true;
 		}
@@ -801,7 +802,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 								 "var frms = document.getElementsByName('loginForm');" +            
 
 								 "frms[0].submit();" +
-									
+
 								 " };");
 				if(AutoClick){
 					Timer timer = new Timer();// 实例化Timer类
@@ -976,7 +977,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 						.setTitle("欢迎使用，这个版本有以下特性！")
 						.setMessage(UPDATA_LOG)
 						.setNegativeButton(
-						"确定",
+						"我了解了",
 						new DialogInterface.OnClickListener() {
 
 							@Override

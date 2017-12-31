@@ -22,7 +22,7 @@
             android:title="足迹" />
 		<item
             android:id="@+id/nav_kajuanbao"
-            android:title="卡卷包" />
+            android:title="卡劵包" />
 		<item
             android:id="@+id/nav_wangwang"
             android:title="旺旺" />

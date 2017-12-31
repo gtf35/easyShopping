@@ -20,6 +20,7 @@ public class SettingsFragment extends PreferenceFragment
 	private CheckBoxPreference xianyu;
 	private CheckBoxPreference jingdong;
 	private CheckBoxPreference autoLogin;
+	private CheckBoxPreference autoWrite;
 	private boolean xianyuOK;
 	private boolean jingdongOK;
 	private CheckBoxPreference autoUpdata;
@@ -36,7 +37,8 @@ public class SettingsFragment extends PreferenceFragment
 		joinQQGroup = (Preference)findPreference("joinQQGroup");
 		xianyu = (CheckBoxPreference)findPreference("check_xianyu");
 		jingdong = (CheckBoxPreference)findPreference("check_jingdong");
-		autoLogin = (CheckBoxPreference)findPreference("check_AutoLogin");
+		autoWrite = (CheckBoxPreference)findPreference("check_AutoLogin");
+		autoLogin = (CheckBoxPreference)findPreference("check_AutoClick");
 		setAutoLogin = (Preference)findPreference("setAutoLogin");
 		goGithub = (Preference)findPreference("goGithub");
 		updata = (Preference)findPreference("updata");
@@ -48,7 +50,7 @@ public class SettingsFragment extends PreferenceFragment
 		jingdongOK = shp.getBoolean("check_jingdong",false);
 		miUsername = shp.getString("miUsername","null");
 		miPassword = shp.getString("miPassword","null");
-		AutoLogin = shp.getBoolean("check_AutoLogin",true);
+		AutoLogin = shp.getBoolean("check_AutoClick",true);
 		
 		pay.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 				@Override
@@ -125,16 +127,6 @@ public class SettingsFragment extends PreferenceFragment
 			}
 		});
 		
-		/*xianyu.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-				@Override
-				public boolean onPreferenceClick(Preference preference)
-				{
-					if(!xianyuCanBeClick){
-						Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT);
-					}
-					return true;
-				}
-			});*/
 		
 		jingdong.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
 				@Override
@@ -150,17 +142,33 @@ public class SettingsFragment extends PreferenceFragment
 					return true;
 				}
 			});
-			
-		/*jingdong.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+		
+		autoWrite.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
+
 				@Override
-				public boolean onPreferenceClick(Preference preference)
+				public boolean onPreferenceChange(Preference p1, Object p2)
 				{
-					if(!jingdongCanBeClick){
-						Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT);
+					if(AutoLogin == false){
+						SettingsActivity sa = (SettingsActivity)getActivity();
+						sa.noticeAutoWritePasswordDialog();
 					}
 					return true;
 				}
-			});*/
+				
+			
+		});
+		
+		autoLogin.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
+
+				@Override
+				public boolean onPreferenceChange(Preference p1, Object p2)
+				{
+
+					return true;
+				}
+
+
+			});
 			
 		}
 		

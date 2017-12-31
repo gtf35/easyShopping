@@ -350,8 +350,22 @@ public class SettingsActivity extends BaseActivity
     }
 	
 	
-	public void saveLogin(){
-		
+	public void noticeAutoWritePasswordDialog(){
+		new AlertDialog.Builder(SettingsActivity.this)
+			.setTitle("小提示：")
+			.setCancelable(false)
+			.setMessage("由于天猫的安全保护，在登录天猫时可能会出现登录按钮无法点击的情况，这时点击下密码输入框再点击登录就可以了。")
+			.setNegativeButton(
+			"了解",
+			new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(
+					DialogInterface dialog,
+					int which) {
+						
+					}
+			}).show();
 	}
 	
 }
