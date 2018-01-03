@@ -8,6 +8,8 @@ import com.pgyersdk.feedback.*;
 import com.pgyersdk.activity.*;
 import com.pgyersdk.update.PgyUpdateManager;
 import javax.security.auth.*;
+import android.view.*;
+import android.support.v7.app.*;
 
 public class SettingsFragment extends PreferenceFragment
 {

@@ -48,18 +48,23 @@ public class SettingsActivity extends BaseActivity
 	SharedPreferences shp;
 	String NewmiPassword;
 	String NewmiUserName;
+
+	private LinearLayout rootLayout;
 	
 
 	@Override
     protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.settings);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setVisibility(View.VISIBLE);
+		rootLayout = (LinearLayout) findViewById(R.id.root_layout);
+		rootLayout.removeView(toolbar);
 	    Dialog = new AlertDialog.Builder(this);
 		Dialog2 = new AlertDialog.Builder(this);
         logInDialog = new AlertDialog.Builder(this);
 		logInDialog2 = new AlertDialog.Builder(this);
-	
 		shp = PreferenceManager.getDefaultSharedPreferences(SettingsActivity.this);
 		miUsername = shp.getString("miUsername","null");
 		miPassword = shp.getString("miPassword","null");

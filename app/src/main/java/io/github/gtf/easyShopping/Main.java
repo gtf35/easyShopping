@@ -36,10 +36,11 @@ import com.pgyersdk.*;
 import android.*;
 import android.annotation.*;
 import android.content.pm.PackageManager.*;
+import android.widget.AdapterView.*;
+import android.graphics.drawable.*;
 
 
 public class Main extends BaseActivity
-implements NavigationView.OnNavigationItemSelectedListener
 {
 	WebView mWebView;
 	Toolbar toolbar;
@@ -51,6 +52,9 @@ implements NavigationView.OnNavigationItemSelectedListener
 	TextView Logo2;
 	View mainView;
 	String UPDATA_LOG;
+	TextView nav_title;
+	TextView nav_change;
+	ImageView nav_btn;
 	ClipboardManager manager;
 
 	String mTaobaoUrl = "https://m.taobao.com/";
@@ -68,8 +72,17 @@ implements NavigationView.OnNavigationItemSelectedListener
 	String mTaobaoLiteDengluUrl = "https://login.m.taobao.com/login_oversea.htm";
 	String mTaobaoLiteWodedingdan = "https://h5.m.taobao.com/mlapp/olist.html";
 	String mTaobaoLiteSoucangjia = "https://h5.m.taobao.com/fav/index.htm";
-
+	
 	String mJDUrl = "https://www.jd.com";
+	String mMyJD = "https://home.m.jd.com/myJd/newhome.action";
+	String mJDGouwuce = "https://p.m.jd.com/cart/cart.action";
+	String mJDFenlei = "https://so.m.jd.com/category/all.html";
+	String mJDFaxian = "https://h5.m.jd.com/active/faxian/list/article-list.html";
+	String mJDDingdan = "https://wqs.jd.com/order/orderlist_merge.shtml";
+	String mJDGuanzhushangpin = "https://home.m.jd.com/myJd/myFocus/newFocusWare.actionv2";
+	String mJDGuanzhudianpu = "https://wqs.jd.com/my/fav/shop_fav.shtml";
+	String mJDHistory = "https://home.m.jd.com/myJd/history/wareHistory.action";
+	
 	String mXianyuUrl = "http://www.xianyuso.com";
 	
 	int startTime = 0;
@@ -99,20 +112,56 @@ implements NavigationView.OnNavigationItemSelectedListener
 	private String PACKAGE_NAME = "io.github.gtf.easyShopping";
 	private static final int REQUEST_CODE_READ_EXTERNAL_STORAGE_PERMISSIONS = 1;
     private static final int REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 2;
+	private int MODE = 1;
+	private int TAOMALL = 1;
+	private int JINGDONG = 2;
 	
 	String mUA ="User-Agent: MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
 
+	ListView lv;
+	
+	private static final String[] Taobaolist = new String[] {
+		"我的淘宝",	//0
+		"购物车",	//1
+		"物流", 	//2
+		"订单",		//3
+		"收藏夹",	//4
+		"足迹",		//5
+		"卡劵包",	//6
+		"旺旺",		//7
+		"设置",		//8
+		"退出"		//9
+    };//定义一个String数组用来显示ListView的内容private ListView lv;
+	
+	private static final String[] Jingdonglist = new String[] {
+		"我的京东",	//0
+		"购物车",	 	//1
+		"分类", 	//2
+		"发现",		//3
+		"订单",		//4
+		"关注的商品",	//5
+		"关注的店铺",	//6
+		"浏览记录",		//7
+		"设置",			//8
+		"退出"			//9
+    };//定义一个String数组用来显示ListView的内容private ListView lv;
+	
+	
+	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState)
 	{
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
 		PgyCrashManager.register(MyApplication.getContext());
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
 		Logo1 = (TextView) findViewById(R.id.Logo1);
 		Logo2 = (TextView) findViewById(R.id.Logo2);
+		nav_title = (TextView) findViewById(R.id.nav_title);
+		nav_change = (TextView)findViewById(R.id.nav_change);
+		nav_btn = (ImageView)findViewById(R.id.imageView);
 		Dialog = new AlertDialog.Builder(this);
-        setSupportActionBar(toolbar);
         mWebView = (WebView)findViewById(R.id.mWebView);
 		mProgressDialog = new ProgressDialog(this);
         //fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -145,6 +194,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 		miPassword = shp.getString("miPassword","null");
 		AutoLogin = shp.getBoolean("check_AutoLogin",true);
 		AutoClick = shp.getBoolean("check_AutoClick",false);
+		MODE = shp.getInt("MODE",1);
         /*fab.setOnClickListener(new View.OnClickListener() {
 		 @Override
 		 public void onClick(View view)
@@ -168,8 +218,8 @@ implements NavigationView.OnNavigationItemSelectedListener
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //navigationView.setNavigationItemSelectedListener(this);
 		
 		//动态请求权限
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -191,17 +241,27 @@ implements NavigationView.OnNavigationItemSelectedListener
 					Toast.makeText(Main.this,downX+downY,Toast.LENGTH_SHORT).show();
 				}
 			});	*/
+				
+		mWebView.setVisibility(View.GONE);
 		initWebView();
+		initList();
+		initNavHead();
+		
 		loadHomePage();
 		if(autoUpdata){
 			mUpdata();
 		}
-		mWebView.setVisibility(View.GONE);
+		
+		
+			   
+											   
+											   
+											   
 		if (startTime == 1){
 			noticeDialog();
 		}
 		if(onFirstStart()){
-			UPDATA_LOG = "2017/12/29 \n \n优化提示 \n在手动刷新时清理缓存 \n提示：在天猫页面遇到无法点击登录按钮时，点一下密码输入框就好了。";
+			UPDATA_LOG = "2018/01/02 \n \n祝大家新年快乐！ \n滑动菜单彻底重写，新年新体验，拓展性大大增强。 \n完善京东支持，支持度堪比淘宝，点击滑动菜单的logo一键切换京东淘宝，滑动菜单项也会变哟！";
 			Updata();
 		}
 		ToKey();
@@ -316,91 +376,16 @@ implements NavigationView.OnNavigationItemSelectedListener
 
         return super.onOptionsItemSelected(item);
     }
-
+/*
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item)
 	{
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_myTaobao)
-		{
-            if (IsTaobaoLite == false)
-			{
-				mWebView.loadUrl(mMyTaobaoUrl);
-			}
-			else
-			{
-				showSnackBar("该选项在淘宝国际版中仅用作登录", "登录", 2);
-			}
-        }
-		else if (id == R.id.nav_gouwuche)
-		{
-			if (IsTaobaoLite == false)
-			{
-				mWebView.loadUrl(mTaobaoGouwuche);
-			}
-			else
-			{
-				mWebView.loadUrl(mTaobaoLiteGouwuche);
-			}
-        }
-		else if (id == R.id.nav_dingdan)
-		{
-			if (IsTaobaoLite == false)
-			{
-				mWebView.loadUrl(mTaobaoDingdan);
-			}
-			else
-			{
-				mWebView.loadUrl(mTaobaoLiteWodedingdan);
-			}
-        }
-		else if (id == R.id.nav_kajuanbao)
-		{
-			mWebView.loadUrl(mTaobaoKajuanbao);
-        }
-		else if (id == R.id.nav_soucangjia)
-		{
-			if (IsTaobaoLite == false)
-			{
-				mWebView.loadUrl(mTaobaoSoucangjia);
-			}
-			else
-			{
-				mWebView.loadUrl(mTaobaoLiteSoucangjia);
-			}
-        }
-		else if (id == R.id.nav_wuliu)
-		{
-			mWebView.loadUrl(mTaobaoWuliuUrl);
-        }
-		else if (id == R.id.nav_zuji)
-		{
-			mWebView.loadUrl(mTaobaoZuji);
-		}
-		else if (id == R.id.nav_wangwang)
-		{
-			mWebView.loadUrl(mTaobaoWW);
-		}
-		else if (id == R.id.nav_settings)
-		{
-			Intent intent = new Intent(Main.this,SettingsActivity.class);
-			startActivity(intent);
-		}
-		else if (id == R.id.nav_exit)
-		{
-			exitProgrames();
-		}
-		
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+      
 
     }
-
+*/
 	public void exitProgrames()
 	{
 		ActivityCollector.finishAll();
@@ -739,7 +724,7 @@ implements NavigationView.OnNavigationItemSelectedListener
 	}
 	
 	void loadHomePage(){
-		if(xianyuOK == false && jingdongOK == false){
+		if(xianyuOK == false && jingdongOK == false && MODE == 1){
 			if(IsTaobaoLite){
 				mWebView.loadUrl(mTaobaoLiteUrl);
 			}else{
@@ -752,7 +737,9 @@ implements NavigationView.OnNavigationItemSelectedListener
 		if(jingdongOK){
 			mWebView.loadUrl(mJDUrl);
 		}
-		
+		if(MODE == 2){
+			mWebView.loadUrl(mJDUrl);
+		}
 	}
 	
 	private void loadPicture(String url){
@@ -989,7 +976,200 @@ implements NavigationView.OnNavigationItemSelectedListener
 						}).show();
 				}
 
+	
+	public void initList(){
+		String[] list = Taobaolist;
+		if(MODE == 1){
+			list = Taobaolist;
+		}else if(MODE == 2){
+			list = Jingdonglist;
+		}
+		lv = (ListView) findViewById(R.id.lv);//得到ListView对象的引用 /*为ListView设置Adapter来绑定数据*/ 
+		final ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+		lv.setAdapter(mAdapter);
+		lv.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+										long arg3) {
+                    String a = ("你点击了第"+arg2+"行");
+					//mAdapter.add("第"+arg2);
+					//Toast.makeText(Main.this,a,Toast.LENGTH_SHORT).show();
+					int id = arg2;
+					if(MODE == 1){
+						if (id == 0)
+						{
+							if (IsTaobaoLite == false)
+							{
+								mWebView.loadUrl(mMyTaobaoUrl);
+							}
+							else
+							{
+								showSnackBar("该选项在淘宝国际版中仅用作登录", "登录", 2);
+							}
+						}
+						else if (id == 1)
+						{
+							if (IsTaobaoLite == false)
+							{
+								mWebView.loadUrl(mTaobaoGouwuche);
+							}
+							else
+							{
+								mWebView.loadUrl(mTaobaoLiteGouwuche);
+							}
+						}
+						else if (id == 3)
+						{
+							if (IsTaobaoLite == false)
+							{
+								mWebView.loadUrl(mTaobaoDingdan);
+							}
+							else
+							{
+								mWebView.loadUrl(mTaobaoLiteWodedingdan);
+							}
+						}
+						else if (id == 6)
+						{
+							mWebView.loadUrl(mTaobaoKajuanbao);
+						}
+						else if (id == 4)
+						{
+							if (IsTaobaoLite == false)
+							{
+								mWebView.loadUrl(mTaobaoSoucangjia);
+							}
+							else
+							{
+								mWebView.loadUrl(mTaobaoLiteSoucangjia);
+							}
+						}
+						else if (id == 2)
+						{
+							mWebView.loadUrl(mTaobaoWuliuUrl);
+						}
+						else if (id == 5)
+						{
+							mWebView.loadUrl(mTaobaoZuji);
+						}
+						else if (id == 7)
+						{
+							mWebView.loadUrl(mTaobaoWW);
+						}
+						else if (id == 8)
+						{
+							Intent intent = new Intent(Main.this,SettingsActivity.class);
+							startActivity(intent);
+						}
+						else if (id == 9)
+						{
+							exitProgrames();
+						}
+					}
+					
+					if(MODE == 2){
+						if (id == 0)
+						{
+							mWebView.loadUrl(mMyJD);
+						}
+						else if (id == 1)
+						{
+							mWebView.loadUrl(mJDGouwuce);
+						}
+						else if (id == 2)
+						{
+							mWebView.loadUrl(mJDFenlei);
+						}
+						else if (id == 3)
+						{
+							mWebView.loadUrl(mJDFaxian);
+						}
+						else if (id == 4)
+						{
+							
+							mWebView.loadUrl(mJDDingdan);
+						}
+						else if (id == 5)
+						{
+							mWebView.loadUrl(mJDGuanzhushangpin);
+						}
+						else if (id == 5)
+						{
+							mWebView.loadUrl(mJDGuanzhudianpu);
+						}
+						else if (id == 7)
+						{
+							mWebView.loadUrl(mJDHistory);
+						}
+						else if (id == 8)
+						{
+							Intent intent = new Intent(Main.this,SettingsActivity.class);
+							startActivity(intent);
+						}
+						else if (id == 9)
+						{
+							exitProgrames();
+						}
+					}
+
+
+					DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+					drawer.closeDrawer(GravityCompat.START);
+
+				}
+			});
+	}
+	
+	public void initNavHead(){
+		if(MODE == 1){
+			nav_title.setText("淘宝");
+			nav_change.setText("   点击切换京东");
+			nav_btn.setImageResource(R.drawable.tb_icon);
+		} else if(MODE == 2){
+			nav_title.setText("京东");
+	   		nav_change.setText("   点击切换淘宝");
+			nav_btn.setImageResource(R.drawable.jd_icon);
+		}
+
+		nav_btn.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					change_nav_mode();
+				}
+			});
 			
+		nav_title.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					change_nav_mode();
+				}
+			});
+		nav_change.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					change_nav_mode();
+				}
+			});
+	}
+	
+	public void change_nav_mode(){
+		if(MODE == 1){
+			MODE = 2;
+		}else{
+			MODE = 1;
+		}
+		shp.edit().putInt("MODE",MODE).commit();
+		initNavHead();
+		initList();
+		loadHomePage();
+	}
 	
 	@SuppressLint("NewApi")
     @Override
