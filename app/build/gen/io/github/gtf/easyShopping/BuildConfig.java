@@ -1,6 +1,6 @@
-/** 自动生成的文件，不要修改 */
+/** Automatically generated file. DO NOT MODIFY */
 package io.github.gtf.easyShopping;
 
 public final class BuildConfig {
-    public final static boolean DEBUG = false;
+    public final static boolean DEBUG = true;
 }

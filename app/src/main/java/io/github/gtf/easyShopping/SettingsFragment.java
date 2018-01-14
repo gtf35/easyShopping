@@ -19,8 +19,9 @@ public class SettingsFragment extends PreferenceFragment
 	private Preference updata;
 	private Preference feedBack;
 	private Preference setAutoLogin;
-	private CheckBoxPreference xianyu;
-	private CheckBoxPreference jingdong;
+	private Preference setLeftHomepage;
+	private Preference leftWebviewAbout;
+	private CheckBoxPreference autoLeftWebViewHomePage;
 	private CheckBoxPreference autoLogin;
 	private CheckBoxPreference autoWrite;
 	private boolean xianyuOK;
@@ -37,14 +38,15 @@ public class SettingsFragment extends PreferenceFragment
 		this.addPreferencesFromResource(R.xml.preference);
 		pay = (Preference)findPreference("pay");
 		joinQQGroup = (Preference)findPreference("joinQQGroup");
-		xianyu = (CheckBoxPreference)findPreference("check_xianyu");
-		jingdong = (CheckBoxPreference)findPreference("check_jingdong");
+		autoLeftWebViewHomePage = (CheckBoxPreference)findPreference("autoLeftWebview");
+		setLeftHomepage = (Preference)findPreference("setLeftWebViewHomePage");
 		autoWrite = (CheckBoxPreference)findPreference("check_AutoLogin");
 		autoLogin = (CheckBoxPreference)findPreference("check_AutoClick");
 		setAutoLogin = (Preference)findPreference("setAutoLogin");
 		goGithub = (Preference)findPreference("goGithub");
 		updata = (Preference)findPreference("updata");
 		feedBack = (Preference)findPreference("feedBack");
+		leftWebviewAbout = (Preference)findPreference("leftWebviewAbout");
 		autoUpdata = (CheckBoxPreference)findPreference("autoUpdata");
 		
 		SharedPreferences shp = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -104,6 +106,26 @@ public class SettingsFragment extends PreferenceFragment
 					return true;
 				}
 			});
+		setLeftHomepage.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				@Override
+				public boolean onPreferenceClick(Preference preference)
+				{
+					Toast.makeText(getActivity(), "宝宝很累的，使用此功能求波捐赠~~~", Toast.LENGTH_SHORT).show();
+					SettingsActivity sa = (SettingsActivity)getActivity();
+					sa.setLeftWebviewHomePage();
+					return true;
+				}
+			});
+		leftWebviewAbout.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				@Override
+				public boolean onPreferenceClick(Preference preference)
+				{
+					Toast.makeText(getActivity(), "认真看哟~~", Toast.LENGTH_SHORT).show();
+					SettingsActivity sa = (SettingsActivity)getActivity();
+					sa.setLeftWebviewAbout();
+					return true;
+				}
+			});
 		setAutoLogin.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 				@Override
 				public boolean onPreferenceClick(Preference preference)
@@ -114,36 +136,7 @@ public class SettingsFragment extends PreferenceFragment
 					return true;
 				}
 			});
-		xianyu.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
-			@Override
-			public boolean onPreferenceChange(Preference preference,Object newValue){
-				if(jingdongOK){
-					Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT).show();
-				}
-				if (xianyuOK){
-					xianyuOK = false;
-				} else{
-					xianyuOK = true;
-				}
-				return true;
-			}
-		});
 		
-		
-		jingdong.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
-				@Override
-				public boolean onPreferenceChange(Preference preference,Object newValue){
-					if(xianyuOK){
-						Toast.makeText(getActivity(),"两个选项只能选一个哟",Toast.LENGTH_SHORT).show();
-						if(jingdongOK){
-							jingdongOK = false;
-						}else{
-							jingdongOK = true;
-						}
-					}
-					return true;
-				}
-			});
 		
 		autoWrite.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
 

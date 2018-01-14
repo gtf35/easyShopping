@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+
+	<RadioGroup
+		android:id="@+id/rgroup"
+		android:orientation="vertical"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<RadioButton
+			android:id="@+id/radioButton_jingdong"
+			android:text="京东"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:checked="true"
+			android:textColor="#000000"/>
+
+		<RadioButton
+			android:id="@+id/radioButton_taobao"
+			android:text="淘宝"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:checked="false"/>
+
+		<RadioButton
+			android:id="@+id/radioButton_baidu"
+			android:text="百度"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:checked="false"/>
+
+		<RadioButton
+			android:id="@+id/radioButton_bing"
+			android:text="必应"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:checked="false"/>
+
+		<RadioButton
+			android:id="@+id/radioButton_google"
+			android:text="谷歌"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:checked="false"/>
+
+		<RadioButton
+			android:id="@+id/radioButton_juan"
+			android:text="颜少优惠券"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="#000000"
+			android:checked="false"/>
+		
+	</RadioGroup>
+
+</LinearLayout>
+

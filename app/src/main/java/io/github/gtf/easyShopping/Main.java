@@ -42,7 +42,8 @@ import android.graphics.drawable.*;
 
 public class Main extends BaseActivity
 {
-	WebView mWebView;
+	WebView mWebView , mWebViewLeft;
+	Button btn_leftWebview_back , btn_leftWebview_home , btn_leftWebview_exchange;
 	Toolbar toolbar;
 	FloatingActionButton fab;
 	ProgressDialog mProgressDialog;
@@ -57,7 +58,7 @@ public class Main extends BaseActivity
 	ImageView nav_btn;
 	ClipboardManager manager;
 
-	String mTaobaoUrl = "https://m.taobao.com/";
+	String mTaobaoUrl = "https://m.taobao.com/ ";
 	String mMyTaobaoUrl = "https://h5.m.taobao.com/mlapp/mytaobao.html";
 	String mTaobaoWuliuUrl = "https://h5.m.taobao.com/awp/mtb/olist.htm?sta=5#!/awp/mtb/olist.htm?sta=5";
 	String mTaobaoGouwuche = "https://h5.m.taobao.com/mlapp/cart.html";
@@ -83,7 +84,8 @@ public class Main extends BaseActivity
 	String mJDGuanzhudianpu = "https://wqs.jd.com/my/fav/shop_fav.shtml";
 	String mJDHistory = "https://home.m.jd.com/myJd/history/wareHistory.action";
 	
-	String mXianyuUrl = "http://www.xianyuso.com";
+	String mXianyuUrl;
+	String leftWebviewHomeUrl = "http://yanshao.meizhevip.cn";
 	
 	int startTime = 0;
 	int loginTry = 0;
@@ -98,6 +100,7 @@ public class Main extends BaseActivity
 	private boolean findTaoKey;
 	private boolean findUrlKey;
 	private boolean AutoClick;
+	private boolean SetUserHomePage;
 	private GestureDetector gestureDetector;
 	private int downX, downY;
 	private String imgurl = "";
@@ -116,6 +119,7 @@ public class Main extends BaseActivity
 	private int TAOMALL = 1;
 	private int JINGDONG = 2;
 	
+	String outsideUrl;
 	String mUA ="User-Agent: MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
 
 	ListView lv;
@@ -147,7 +151,7 @@ public class Main extends BaseActivity
     };//定义一个String数组用来显示ListView的内容private ListView lv;
 	
 	
-	
+	//"".equals(text.getText().toString().trim())
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -163,7 +167,11 @@ public class Main extends BaseActivity
 		nav_btn = (ImageView)findViewById(R.id.imageView);
 		Dialog = new AlertDialog.Builder(this);
         mWebView = (WebView)findViewById(R.id.mWebView);
+		mWebViewLeft = (WebView)findViewById(R.id.mWebViewLeft);
 		mProgressDialog = new ProgressDialog(this);
+		btn_leftWebview_back = (Button) findViewById(R.id.btn_leftwebview_back);
+		btn_leftWebview_home = (Button) findViewById(R.id.btn_leftwebview_home);
+		btn_leftWebview_exchange = (Button) findViewById(R.id.btn_leftwebview_exchange);
         //fab = (FloatingActionButton) findViewById(R.id.fab);
 
 		
@@ -189,12 +197,14 @@ public class Main extends BaseActivity
 		autoUpdata = shp.getBoolean("autoUpdata",true);
 		findTaoKey = shp.getBoolean("check_TaoKey",true);
 		findUrlKey = shp.getBoolean("check_TaoUrlKey",true);
+		SetUserHomePage = shp.getBoolean("autoLeftWebview",false);
 		key = shp.getString("key",null);
 		miUsername = shp.getString("miUsername","null");
 		miPassword = shp.getString("miPassword","null");
 		AutoLogin = shp.getBoolean("check_AutoLogin",true);
 		AutoClick = shp.getBoolean("check_AutoClick",false);
 		MODE = shp.getInt("MODE",1);
+		leftWebviewHomeUrl = shp.getString("leftWebViewPage","");
         /*fab.setOnClickListener(new View.OnClickListener() {
 		 @Override
 		 public void onClick(View view)
@@ -243,11 +253,14 @@ public class Main extends BaseActivity
 			});	*/
 				
 		mWebView.setVisibility(View.GONE);
-		initWebView();
+		initWebView(mWebView , true);
+		initWebView(mWebViewLeft , false);
+		initLeftWebviewBtn();
 		initList();
 		initNavHead();
 		
 		loadHomePage();
+		loadLeftHomePage();
 		if(autoUpdata){
 			mUpdata();
 		}
@@ -294,9 +307,14 @@ public class Main extends BaseActivity
     public void onBackPressed()
 	{
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START))
+	    if (drawer.isDrawerOpen(GravityCompat.START) || drawer.isDrawerOpen(GravityCompat.END))
 		{
-            drawer.closeDrawer(GravityCompat.START);
+			if (drawer.isDrawerOpen(GravityCompat.START)){
+         	   drawer.closeDrawer(GravityCompat.START);
+			  } 
+			if (drawer.isDrawerOpen(GravityCompat.END)){
+				drawer.closeDrawer(GravityCompat.END);
+			}
         }
 		else
 		{
@@ -392,9 +410,9 @@ public class Main extends BaseActivity
 	}
 
 	
-	void initWebView()
+	void initWebView(final WebView initWebview , final boolean changeTitle)
 	{
-		WebSettings mWebViewSettings = mWebView.getSettings();
+		WebSettings mWebViewSettings = initWebview.getSettings();
 		mWebViewSettings.setJavaScriptEnabled(true);  
 		//mWebViewSettings.setRenderPriority(RenderPriority.HIGH);
 		mWebViewSettings.setAppCacheEnabled(true);
@@ -419,7 +437,7 @@ public class Main extends BaseActivity
 		mWebViewSettings.setUserAgentString(mUA);
 		//mWebViewSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
 		
-		mWebView.setOnTouchListener(new View.OnTouchListener() {
+		initWebview.setOnTouchListener(new View.OnTouchListener() {
 
 				@Override
 				public boolean onTouch(View arg0, MotionEvent arg1) {
@@ -432,7 +450,7 @@ public class Main extends BaseActivity
 // 获取手指点击事件的xy坐标
 		
 		
-		mWebView.setOnLongClickListener(new View.OnLongClickListener() {
+		initWebview.setOnLongClickListener(new View.OnLongClickListener() {
 				@Override
 				public boolean onLongClick(View v) {
 					WebView.HitTestResult result = ((WebView)v).getHitTestResult();
@@ -488,16 +506,18 @@ public class Main extends BaseActivity
 				}
 			});
 		
-		mWebView.setWebChromeClient(new WebChromeClient(){
+		initWebview.setWebChromeClient(new WebChromeClient(){
 				@Override
 				public void onReceivedTitle(WebView view, String title)
 				{
-					toolbarTitle = title;
-					toolbar.setTitle(toolbarTitle);
+					if(changeTitle){
+						toolbarTitle = title;
+						toolbar.setTitle(toolbarTitle);
+					}
 				}
 			});
 		//复写WebViewClient类的shouldOverrideUrlLoading方法
-		mWebView.setWebViewClient(new WebViewClient() {
+		initWebview.setWebViewClient(new WebViewClient() {
 				@Override
 				public void onPageStarted(WebView view, String url, Bitmap favicon)
 				{
@@ -546,11 +566,13 @@ public class Main extends BaseActivity
 					try {
 						if (url.startsWith("http:") || url.startsWith("https:"))
 						{
-							mWebView.loadUrl(url);
+							initWebview.loadUrl(url);
 							return true;
 						}
 						else
 						{
+							outsideUrl = url;
+							showSnackBar("页面试图打开本地APP，已阻止","允许一次",3);
 							//Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 							//startActivity(intent);
 							return true;
@@ -589,6 +611,11 @@ public class Main extends BaseActivity
 					else if (action_number == 2)
 					{
 						mWebView.loadUrl(mTaobaoLiteDengluUrl);
+					}
+					else if (action_number == 3){
+						Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(outsideUrl));
+						startActivity(intent);
+						outsideUrl = null;
 					}
 				}
 			}).show();
@@ -1159,16 +1186,74 @@ public class Main extends BaseActivity
 			});
 	}
 	
+	public void loadLeftHomePage(){
+		//Toast.makeText(Main.this,leftWebviewHomeUrl,Toast.LENGTH_SHORT).show();
+		boolean haveUserHomePage = "".equals(leftWebviewHomeUrl.trim());
+		//Toast.makeText(Main.this,haveUserHomePage + "",Toast.LENGTH_SHORT).show();
+		if(SetUserHomePage == false && haveUserHomePage == false){
+			if(MODE == TAOMALL){
+				mWebViewLeft.loadUrl(mJDUrl);
+			}else if (MODE == JINGDONG){
+				mWebViewLeft.loadUrl(mTaobaoUrl);
+			}
+		} else if (SetUserHomePage == true && haveUserHomePage == false){
+			mWebViewLeft.loadUrl(leftWebviewHomeUrl);
+		} else {
+			Toast.makeText(Main.this,"自定义网址为空！！",Toast.LENGTH_LONG).show();
+			Toast.makeText(Main.this,"自定义网址为空！！",Toast.LENGTH_LONG).show();
+		}
+		
+	}
+	
+	public void initLeftWebviewBtn(){
+		btn_leftWebview_back.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					mWebViewLeft.goBack();
+				}
+				
+		});
+		
+		btn_leftWebview_home.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					loadLeftHomePage();
+				}
+
+			});
+			
+		btn_leftWebview_exchange.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View p1)
+				{
+					String tempUrl1 , tempUrl2;
+					tempUrl1 = mWebViewLeft.getUrl();
+					tempUrl2 = mWebView.getUrl();
+					mWebViewLeft.loadUrl(tempUrl2);
+					mWebView.loadUrl(tempUrl1);
+					tempUrl1 = null;
+					tempUrl2 = null;
+				}
+
+			});
+	}
+	
 	public void change_nav_mode(){
-		if(MODE == 1){
-			MODE = 2;
+		if(MODE == TAOMALL){
+			MODE = JINGDONG;
 		}else{
-			MODE = 1;
+			MODE = TAOMALL;
 		}
 		shp.edit().putInt("MODE",MODE).commit();
 		initNavHead();
 		initList();
 		loadHomePage();
+		loadLeftHomePage();
 	}
 	
 	@SuppressLint("NewApi")

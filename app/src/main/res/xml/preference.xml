@@ -8,11 +8,6 @@
             android:title="闲鱼"
             android:summary="将主页替换为闲鱼网页版： \n由于咸鱼网页版去掉了搜索框，所以首页由第三方提供，但是搜索结果由咸鱼官方提供。 \n缩放可能会有问题，有待优化。只提供有限的支持！！">
         </CheckBoxPreference>
-		<CheckBoxPreference
-            android:key="check_jingdong"
-            android:title="京东"
-            android:summary="将主页替换为京东： \n只是主页更改，侧滑菜单仍然可以访问淘宝。只提供有限的支持！！">
-        </CheckBoxPreference>
     </PreferenceCategory>
 	<PreferenceCategory
         android:title="其他：">
@@ -50,7 +45,8 @@
             android:title="淘口令"
             android:summary="在APP启动时或后台切换到前台时从剪贴板检测淘口令，可以解析标题。 \n注意只支持标准的带http链接的淘口令。"
 			android:defaultValue="true" >
-        </CheckBoxPreference> 	<CheckBoxPreference
+        </CheckBoxPreference> 	
+		<CheckBoxPreference
             android:key="check_TaoUrlKey"
             android:title="口令广谱识别"
             android:summary="这个将识别所有带有手机淘宝字样的口令，可以兼容淘宝客口令，但是无法解析标题。 \n注：该选项不包括淘口令识别。"
@@ -64,6 +60,24 @@
 			android:disableDependentsState="true"
 			android:dependency="check_xianyu" >
         </CheckBoxPreference> -->
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="滑动对比窗口：">
+        <CheckBoxPreference
+            android:key="autoLeftWebview"
+            android:title="自定义主页"
+            android:summary="默认在主界面为淘宝是自动切换为京东，在主页面为京东时切换为淘宝。 \n如果需要自定义，请勾选此项。">
+        </CheckBoxPreference>
+		<Preference 
+			android:key="setLeftWebViewHomePage"
+			android:title="主页"
+			android:dependency="autoLeftWebview"
+			android:disableDependentsState="false"
+			android:summary="设置对比页面的主页。">
+		</Preference>
+		<Preference android:key="leftWebviewAbout"
+		android:title="滑动对比窗口说明">
+		</Preference>
     </PreferenceCategory>
 	<PreferenceCategory
         android:title="关于：">

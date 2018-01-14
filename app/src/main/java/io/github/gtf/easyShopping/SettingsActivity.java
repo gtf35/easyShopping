@@ -30,6 +30,8 @@ import com.pgyersdk.update.*;
 import android.preference.*;
 import com.pgyersdk.feedback.*;
 import com.pgyersdk.activity.*;
+import android.app.AlertDialog.*;
+import android.widget.RadioGroup.*;
 
 public class SettingsActivity extends BaseActivity
 {
@@ -48,9 +50,14 @@ public class SettingsActivity extends BaseActivity
 	SharedPreferences shp;
 	String NewmiPassword;
 	String NewmiUserName;
+	String homePage;
 
 	private LinearLayout rootLayout;
-	
+
+	private AlertDialog.Builder SetUrlDialog;
+
+	private AlertDialog.Builder SetUrlDialog2;
+
 
 	@Override
     protected void onCreate(Bundle savedInstanceState)
@@ -58,13 +65,15 @@ public class SettingsActivity extends BaseActivity
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
-		toolbar.setVisibility(View.VISIBLE);
+		//toolbar.setVisibility(View.VISIBLE);
 		rootLayout = (LinearLayout) findViewById(R.id.root_layout);
-		rootLayout.removeView(toolbar);
+		//rootLayout.removeView(toolbar);
 	    Dialog = new AlertDialog.Builder(this);
 		Dialog2 = new AlertDialog.Builder(this);
         logInDialog = new AlertDialog.Builder(this);
 		logInDialog2 = new AlertDialog.Builder(this);
+		SetUrlDialog = new AlertDialog.Builder(this);
+		SetUrlDialog2 = new AlertDialog.Builder(this);
 		shp = PreferenceManager.getDefaultSharedPreferences(SettingsActivity.this);
 		miUsername = shp.getString("miUsername","null");
 		miPassword = shp.getString("miPassword","null");
@@ -73,18 +82,17 @@ public class SettingsActivity extends BaseActivity
 		this.getFragmentManager().beginTransaction()
 			.replace(android.R.id.content, new SettingsFragment())
 			.commit();	
-			
 	}
 
-	
+//app:layout_behavior="@string/appbar_scrolling_view_behavior"
     @Override
     public void onBackPressed()
 	{
-		
+
 		xianyuOK = shp.getBoolean("check_xianyu", false);
 		jingdongOK = shp.getBoolean("check_jingdong",false);
 
-		
+
 		//Toast.makeText(MyApplication.getContext(),"咸鱼："+xianyuOK+" \n京东："+jingdongOK,Toast.LENGTH_LONG).show();
 		if(xianyuOK && jingdongOK){
 			Toast.makeText(MyApplication.getContext(),"两个选项只能选一个哟,检查一下啦~",Toast.LENGTH_SHORT).show();
@@ -95,7 +103,7 @@ public class SettingsActivity extends BaseActivity
 		}
 		System.out.println("按下了back键   onBackPressed()");    	
     }
-	
+
 	public void mFeedBack(){
 			// 以对话框的形式弹出
 			PgyFeedback.getInstance().showDialog(SettingsActivity.this);
@@ -105,22 +113,22 @@ public class SettingsActivity extends BaseActivity
 			//FeedbackActivity.setBarImmersive(true);
 			//PgyFeedback.getInstance().showActivity(SettingsActivity.this);
 	}
-	
+
 	public void mUpdata(){
 		PgyUpdateManager.setIsForced(false); //设置是否强制更新。true为强制更新；false为不强制更新（默认值）。
 		PgyUpdateManager.register(this);
 	}
-	
+
 	public void pay(){
 		Dialoginit();
 		Dialog.show();
 	}
-	
+
 	public void setAutoLogin(){
 		LoginDialoginit();
 		logInDialog.show();
 	}
-	
+
 	/**
      * 支付宝支付
      * @param payCode 收款码后面的字符串；例如：收款二维码里面的字符串为 https://qr.alipay.com/stx00187oxldjvyo3ofaw60 ，则
@@ -173,7 +181,7 @@ public class SettingsActivity extends BaseActivity
 				@Override
 				public void onClick(DialogInterface dialog, int which)
 				{
-					
+
 				}
 			});
 
@@ -186,7 +194,7 @@ public class SettingsActivity extends BaseActivity
 				}
 			});
 	}
-	
+
 	private void LoginDialoginit(){
 		final View LoginAlertDialogView = View.inflate(getApplicationContext(), R.layout.textview_dialog, null);
 		logInDialog.setCancelable(false);
@@ -220,7 +228,7 @@ public class SettingsActivity extends BaseActivity
 								prefs.edit().putString("miPassword",NewmiPassword).commit();
 								prefs.edit().putString("miUsername",NewmiUserName).commit();
 								Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
-								
+
 							}
 						});
 					logInDialog2.show();
@@ -232,11 +240,11 @@ public class SettingsActivity extends BaseActivity
 				@Override
 				public void onClick(DialogInterface dialog, int which)
 				{
-				
+
 				}
 			});
 	}
-	
+
 	private String jiemi(String miwen , String key){
 		String jiemihou = null;
 		try {
@@ -267,7 +275,7 @@ public class SettingsActivity extends BaseActivity
 		return jiamihou;
 	}
 
-	
+
 	public static String getRandomString(int length) { //length表示生成字符串的长度
 		String base = "abcdefghijklmnopqrstuvwxyz0123456789";   
 		Random random = new Random();   
@@ -278,7 +286,7 @@ public class SettingsActivity extends BaseActivity
 		}   
 		return sb.toString();   
 	}  
-	
+
 	private void back(){
 		Intent back = new Intent(SettingsActivity.this,Main.class);
 		startActivity(back);
@@ -353,8 +361,8 @@ public class SettingsActivity extends BaseActivity
         mainIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物");
 		disableVip();
     }
-	
-	
+
+
 	public void noticeAutoWritePasswordDialog(){
 		new AlertDialog.Builder(SettingsActivity.this)
 			.setTitle("小提示：")
@@ -368,9 +376,95 @@ public class SettingsActivity extends BaseActivity
 				public void onClick(
 					DialogInterface dialog,
 					int which) {
-						
+
 					}
 			}).show();
 	}
 	
+	public void setLeftWebviewHomePage(){
+		final View setHomeView = View.inflate(getApplicationContext(), R.layout.set_leftwebview_homepage, null);
+		SetUrlDialog.setCancelable(false);
+	    SetUrlDialog.setTitle("请选择主页：");
+		SetUrlDialog.setView(setHomeView);
+		RadioGroup rgroup = (RadioGroup)setHomeView.findViewById(R.id.rgroup);
+ 		rgroup.setOnCheckedChangeListener(new OnCheckedChangeListener(){
+				@Override
+				public void onCheckedChanged(RadioGroup rg,int checkedId)
+				{
+						if(checkedId == R.id.radioButton_taobao){
+							homePage = "https://m.taobao.com";
+						} else if(checkedId == R.id.radioButton_jingdong){
+							homePage = "https://m.jd.com";
+						}else if (checkedId == R.id.radioButton_google){
+							homePage = "https://www.google.com";
+						} else if (checkedId == R.id.radioButton_bing){
+							homePage = "https://cn.bing.com";
+						} else if (checkedId == R.id.radioButton_baidu){
+							homePage = "https://m.baidu.com";
+						} else if (checkedId == R.id.radioButton_juan){
+							homePage = "http://yanshao.meizhevip.cn";
+						}
+					SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+					prefs.edit().putString("leftWebViewPage",homePage).commit();
+				}
+			});
+		SetUrlDialog.setNeutralButton("保存", new DialogInterface.OnClickListener(){
+
+				@Override
+				public void onClick(DialogInterface p1, int p2)
+				{
+					SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+					prefs.edit().putString("leftWebViewPage",homePage).commit();
+				}
+		});
+		SetUrlDialog.setPositiveButton("自定义",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					Toast.makeText(SettingsActivity .this,"请以http://或https://开头",Toast.LENGTH_LONG).show();
+					SetUrlDialog2.setTitle("请输入主页地址：");
+					SetUrlDialog2.setCancelable(false);
+					final View inputView = View.inflate(getApplicationContext(), R.layout.textview_url, null);
+					SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+					EditText EditView = (EditText)inputView.findViewById(R.id.editText_url);
+					String temp = prefs.getString("leftWebViewPage","");
+					EditView.setText(temp);
+					SetUrlDialog2.setView(inputView);
+					SetUrlDialog2.setPositiveButton("保存",  new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which)
+							{
+								SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+								EditText EditView = (EditText)inputView.findViewById(R.id.editText_url);
+								final String homePageUrl = EditView.getText().toString();
+								prefs.edit().putString("leftWebViewPage",homePageUrl).commit();
+								Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
+
+							}
+						});
+					SetUrlDialog2.setNegativeButton("取消",  new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which)
+							{
+
+							}
+						});
+				SetUrlDialog2.show();
+				}
+			});
+
+		SetUrlDialog.setNegativeButton("取消",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+
+				}
+			});
+		SetUrlDialog.show();
+	}
+	
+
+	public void setLeftWebviewAbout(){
+		
+	}
 }
