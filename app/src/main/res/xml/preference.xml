@@ -17,6 +17,12 @@
             android:summary="使用淘宝国际版">
         </CheckBoxPreference>
 		<CheckBoxPreference
+            android:key="supportLocalAPP"
+            android:title="启用本地APP唤醒"
+			android:defaultValue="false"
+            android:summary="开启后在唤醒时会弹出提示询问。">
+        </CheckBoxPreference>
+		<CheckBoxPreference
             android:key="autoUpdata"
 			android:defaultValue="true"
             android:title="启动时检测更新"

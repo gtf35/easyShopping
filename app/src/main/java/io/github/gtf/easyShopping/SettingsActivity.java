@@ -67,7 +67,7 @@ public class SettingsActivity extends BaseActivity
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
 		//toolbar.setVisibility(View.VISIBLE);
 		rootLayout = (LinearLayout) findViewById(R.id.root_layout);
-		//rootLayout.removeView(toolbar);
+		rootLayout.removeView(toolbar);
 	    Dialog = new AlertDialog.Builder(this);
 		Dialog2 = new AlertDialog.Builder(this);
         logInDialog = new AlertDialog.Builder(this);
@@ -442,29 +442,32 @@ public class SettingsActivity extends BaseActivity
 
 							}
 						});
-					SetUrlDialog2.setNegativeButton("取消",  new DialogInterface.OnClickListener() {
-							@Override
-							public void onClick(DialogInterface dialog, int which)
-							{
-
-							}
-						});
 				SetUrlDialog2.show();
 				}
 			});
 
-		SetUrlDialog.setNegativeButton("取消",  new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which)
-				{
-
-				}
-			});
+		
 		SetUrlDialog.show();
 	}
 	
 
 	public void setLeftWebviewAbout(){
-		
+		String HELP = "试试从屏幕右侧向左侧滑动，就会划出对比窗口啦，默认是智能模式即 \n主页面为淘宝，对比窗口就是京东， \n主页面是京东，对比页面就是淘宝。\n在设置中可自定义主页。交换按钮可以将主页面和对比页面互换，主页键可以返回对比窗口的主页\n这么棒，还不捐赠一波？\n〃∀〃 ";
+		Toast.makeText(SettingsActivity.this,"〃∀〃",Toast.LENGTH_SHORT).show();
+		new AlertDialog.Builder(SettingsActivity.this)
+			.setTitle("羞羞〃∀〃的说明：")
+			.setCancelable(false)
+			.setMessage(HELP)
+			.setNegativeButton(
+			"了解",
+			new DialogInterface.OnClickListener() {
+
+				@Override
+				public void onClick(
+					DialogInterface dialog,
+					int which) {
+
+				}
+			}).show();
 	}
 }
