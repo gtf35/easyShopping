@@ -26,9 +26,12 @@
         android:orderInCategory="100"
         android:title="退出"
         app:showAsAction="never" />
-	<item
-        android:id="@+id/home"
-		app:srcCompat="@mipmap/home" 
-        android:title="主页"
-        app:showAsAction="ifRoom" />
+	<!--新版本v4包内部提供了SearchView点创建工具类，不需要使用actionViewClass属性了-->
+   <!-- <item 
+		android:id="@+id/action_search"
+        android:title="搜索"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+	/>-->
 </menu>

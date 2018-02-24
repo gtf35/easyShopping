@@ -1,46 +1,80 @@
 package io.github.gtf.easyShopping;
 
+import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
+import android.app.AlertDialog.Builder;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Build.VERSION;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.view.View;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SearchViewCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.webkit.*;
-import java.net.*;
-import android.app.*;
-import android.graphics.*;
-import android.view.*;
-import android.content.*;
-import android.os.*;
-import android.widget.*;
-import java.util.*;
-import android.renderscript.*;
-import android.net.*;
-import android.content.pm.*;
-import android.preference.*;
-import com.pgyersdk.crash.*;
-import com.pgyersdk.javabean.AppBean;
-import com.pgyersdk.update.PgyUpdateManager;
-import com.pgyersdk.update.UpdateManagerListener;
-import android.view.View.*;
-import java.io.*;
-import android.content.res.*;
-import com.pgyersdk.*;
-import android.*;
-import android.annotation.*;
-import android.content.pm.PackageManager.*;
-import android.widget.AdapterView.*;
-import android.graphics.drawable.*;
-import java.nio.channels.*;
-import android.support.annotation.*;
-import android.opengl.*;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebView.HitTestResult;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
+import java.util.Random;
+import java.util.Timer;
+import android.os.Message;
+import android.os.AsyncTask;
+import android.widget.Toast;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.content.DialogInterface;
+import android.content.Intent;
+import java.util.TimerTask;
+import android.net.Uri;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
+import android.view.MotionEvent;
+import android.view.View.OnTouchListener;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.Manifest;
+import android.support.v4.view.GravityCompat;
+import android.widget.SearchView.*;
+import android.view.Gravity;
+import android.webkit.WebChromeClient;
+import android.webkit.WebViewClient;
+import android.graphics.Bitmap;
+import android.content.ClipData;
+import android.os.Environment;
+import java.io.File;
+import java.util.Date;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.HttpURLConnection;
+import java.io.FileOutputStream;
+import android.content.pm.PackageInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.view.KeyEvent;
+import android.view.inputmethod.EditorInfo;
+import com.tencent.bugly.beta.*;
+import com.tencent.bugly.crashreport.*;
+
 
 
 public class Main extends BaseActivity
@@ -54,15 +88,23 @@ public class Main extends BaseActivity
 	Handler mHandler;
 	TextView Logo1;
 	TextView Logo2;
+	Button search_button;
+	EditText search_editText , search_editText_toolbar;
+	Button search_button_toolbar;
+	TextView title_toolbar;
 	View mainView;
 	String UPDATA_LOG;
 	TextView nav_title;
 	TextView nav_change;
 	ImageView nav_btn;
 	ClipboardManager manager;
+	SearchView searchView;
 
-
-
+	String HistoryMainUrl , HistoryLeftUrl;
+	boolean backFromSetting = false , exitByCrash = true , savePage ;
+	boolean noPic;
+	boolean DEBUG;
+	
 	String mTaobaoUrl = "https://m.taobao.com/ ";
 	String mMyTaobaoUrl = "https://h5.m.taobao.com/mlapp/mytaobao.html";
 	String mTaobaoWuliuUrl = "https://h5.m.taobao.com/awp/mtb/olist.htm?sta=5#!/awp/mtb/olist.htm?sta=5";
@@ -89,7 +131,7 @@ public class Main extends BaseActivity
 	String mJDGuanzhudianpu = "https://wqs.jd.com/my/fav/shop_fav.shtml";
 	String mJDHistory = "https://home.m.jd.com/myJd/history/wareHistory.action";
 
-	String mXianyuUrl;
+	String mXianyuUrl = "http://www.xianyuso.com/";
 	String leftWebviewHomeUrl = "http://yanshao.meizhevip.cn";
 
 	int startTime = 0;
@@ -137,7 +179,7 @@ public class Main extends BaseActivity
 		"订单",		//3
 		"收藏夹",	//4
 		"足迹",		//5
-		"卡劵包",	//6
+		"卡券包",	//6
 		"旺旺",		//7
 		"设置",		//8
 		"退出"		//9
@@ -166,10 +208,14 @@ public class Main extends BaseActivity
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		PgyCrashManager.register(MyApplication.getContext());
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
 		Logo1 = (TextView) findViewById(R.id.Logo1);
 		Logo2 = (TextView) findViewById(R.id.Logo2);
+		search_button_toolbar = (Button)findViewById(R.id.search_toolbar_Button);
+		search_editText_toolbar = (EditText)findViewById(R.id.search_toolbar_edittext);
+		search_editText = (EditText)findViewById(R.id.search_editText);
+		search_button = (Button)findViewById(R.id.search_button);
+		title_toolbar = (TextView)findViewById(R.id.title_toolbar);
 		nav_title = (TextView) findViewById(R.id.nav_title);
 		nav_change = (TextView)findViewById(R.id.nav_change);
 		nav_btn = (ImageView)findViewById(R.id.imageView);
@@ -185,19 +231,23 @@ public class Main extends BaseActivity
 
 		//获取Preferences
 		settingsRead = getSharedPreferences("data", 0);
-//取出数据
+		//取出数据
 	    //IsTaobaoLite = settingsRead.getBoolean("IsTaobaoLite" , false);
+		exitByCrash = settingsRead.getBoolean("exitByCrash",true);
+		backFromSetting = settingsRead.getBoolean("backFromSetting",false);
+		HistoryMainUrl = settingsRead.getString("HistoryMainUrl",null);
+		HistoryLeftUrl = settingsRead.getString("HistoryLeftUrl",null);
 		startTime = settingsRead.getInt("startTime", 0) + 1;
-//打开数据库
+		//打开数据库
 		settings = getSharedPreferences("data", 0);
-//处于编辑状态
+		//处于编辑状态
 		editor = settings.edit();
-//存放数据
+		//存放数据
 		editor.putInt("startTime", startTime);
 		editor.putBoolean("IsTaobaoLite", false);
-//完成提交
+		//完成提交
 		editor.commit();
-
+		
 		shp = PreferenceManager.getDefaultSharedPreferences(this);
 		IsTaobaoLite = shp.getBoolean("taobaoLite", false);
 		xianyuOK = shp.getBoolean("check_xianyu", false);
@@ -214,6 +264,10 @@ public class Main extends BaseActivity
 		AutoClick = shp.getBoolean("check_AutoClick", false);
 		MODE = shp.getInt("MODE", 1);
 		leftWebviewHomeUrl = shp.getString("leftWebViewPage", "");
+		noPic = shp.getBoolean("noPic",false);
+		savePage = shp.getBoolean("savePage",true);
+		DEBUG = shp.getBoolean("debug",false);
+
         /*fab.setOnClickListener(new View.OnClickListener() {
 		 @Override
 		 public void onClick(View view)
@@ -252,6 +306,7 @@ public class Main extends BaseActivity
 		 }
 		 });	*/
 		mWebView.setVisibility(View.GONE);
+		toolbar.setTitle("");
 		initWebView(mWebView , true);
 		initWebView(mWebViewLeft , false);
 		initLeftWebviewBtn();
@@ -259,19 +314,46 @@ public class Main extends BaseActivity
 		initNavHead();
 		loadHomePage();
 		loadLeftHomePage();
+		initsearch();
+		initsearchToolbar();
 		if (autoUpdata)
 		{
 			mUpdata();
 		}
-
-
+		boolean theFirstStart = onFirstStart();
+		debugToast("main："+HistoryMainUrl+"  left：" + HistoryLeftUrl);
+		debugToast("第一次启动："+onFirstStart());
+		debugToast("恢复页面开关："+savePage);
+		debugToast("exitbycrash: "+exitByCrash + " \n backFromSetting: " + backFromSetting); 
+		if( HistoryMainUrl!= null && HistoryLeftUrl != null){
+			if(theFirstStart == false){
+				debugToast("不是第一次启动");
+				if(exitByCrash && savePage){
+					debugToast("因为意外退出加载");
+					Toast.makeText(MyApplication.getContext(),"恢复页面中。。。。。",Toast.LENGTH_SHORT).show();
+					mWebView.loadUrl(HistoryMainUrl);
+					mWebViewLeft.loadUrl(HistoryLeftUrl);
+				} else if(backFromSetting){
+					debugToast("因为从设置返回加载");
+					Toast.makeText(MyApplication.getContext(),"恢复页面中。。。。。",Toast.LENGTH_SHORT).show();
+					mWebView.loadUrl(HistoryMainUrl);
+					mWebViewLeft.loadUrl(HistoryLeftUrl);
+				}
+			}	
+		}
+		
+		SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",false);
+		e.commit();
+		SharedPreferences.Editor f = getSharedPreferences("data",0).edit().putBoolean("exitByCrash",true);
+		f.commit();
+		
 		if (startTime == 1)
 		{
 			noticeDialog();
 		}
-		if (onFirstStart())
+		if (theFirstStart)
 		{
-			UPDATA_LOG = "2018/01/25 \n \n哈喽，3.0正式版来啦！\n 这个版本首次加入了滑动对比菜单便于对比价格！什么是滑动对比菜单呢？一会试试从屏幕右侧向左侧滑动，就会划出对比窗口啦，设置里有详细说明哟！ \n 小购物可以唤醒本地APP啦，默认关闭，可在设置自行开启，开启后在唤醒时会弹出提示。 \n 这么棒，还不捐赠一波？〃∀〃 ";
+			UPDATA_LOG = "2018/02/24 \n \n哈喽，V3.2来啦！\n 这个版本首次加入了快速搜索！！ \n 可以摘抽屉和标题栏快速搜索\n 爱你哟 ＾3＾ ";
 			Updata();
 		}
 		ToKey();
@@ -331,6 +413,71 @@ public class Main extends BaseActivity
 	{
 // Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+
+       /* //设置搜索输入框的步骤
+
+        //1.查找指定的MemuItem
+        MenuItem menuItem = menu.findItem(R.id.action_search);
+
+		//2.设置SearchView v4 包方式
+		 View view = SearchViewCompat.newSearchView(this);
+		       menuItem.setActionView(view);
+		 MenuItemCompat.setActionView(menuItem, view);
+
+        //2.设置SearchView v7包方式
+       // View view = MenuItemCompat.getActionView(menuItem);
+        if (view != null) {
+         	searchView = (SearchView) view;
+			searchView.setBackgroundColor(R.color.WHITE);
+			searchView.setOnSearchClickListener(new View.OnClickListener(){
+
+					@Override
+					public void onClick(View p1)
+					{
+						InputMethodManager inputMethodManager = null;
+						if(inputMethodManager == null) {
+							inputMethodManager = (InputMethodManager)Main.this.getSystemService(Context.INPUT_METHOD_SERVICE);
+						}
+						inputMethodManager.showSoftInput(searchView,0);
+						searchView.setFocusable(true);
+						searchView.setFocusableInTouchMode(true);
+						searchView.requestFocus();
+						searchView.findFocus();
+					}
+					
+				
+			});
+			//searchView.setIconified(false);
+            //4.设置SearchView 的查询回调接口
+            searchView.setOnQueryTextListener(new OnQueryTextListener(){
+
+					@Override
+					public boolean onQueryTextSubmit(String keyword)
+					{
+						runsearch(keyword);
+						searchView.clearFocus();
+						return false;
+					}
+
+					@Override
+					public boolean onQueryTextChange(String p1)
+					{
+						// TODO: Implement this method
+						return false;
+					}
+
+				
+			});
+
+            //在搜索输入框没有显示的时候 点击Action ,回调这个接口，并且显示输入框
+//            searchView.setOnSearchClickListener();
+            //当自动补全的内容被选中的时候回调接口
+//            searchView.setOnSuggestionListener();
+
+            //可以设置搜索的自动补全，或者实现搜索历史
+//            searchView.setSuggestionsAdapter();
+
+        }*/
 		return true;
 	}
 
@@ -350,6 +497,8 @@ public class Main extends BaseActivity
 		}
 		else if (id == R.id.action_settings)
 		{
+			SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",true);
+			e.commit();
 			Intent intent = new Intent(Main.this, SettingsActivity.class);
 			startActivity(intent);
 		}
@@ -404,13 +553,178 @@ public class Main extends BaseActivity
 	 */
 	public void exitProgrames()
 	{
+		SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("exitByCrash",false);
+		e.commit();
 		ActivityCollector.finishAll();
 	}
 
 
+	void initsearch(){
+		search_button.setOnClickListener(new OnClickListener(){
+			
+				@Override
+				public void onClick(View p1)
+				{
+					if(!search_editText.getText().toString().equals("")){
+						runsearch(search_editText.getText().toString());
+					}
+					hidesoftkey(search_editText);
+					search_editText.setText("");
+					DrawerLayout drawer =  (DrawerLayout)findViewById(R.id.drawer_layout);
+					drawer.closeDrawer(GravityCompat.START);
+				}
+			
+		});
+		
+				search_editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					//当actionId == XX_SEND 或者 XX_DONE时都触发
+					//或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
+					//注意，这是一定要判断event != null。因为在某些输入法上会返回null。
+					if (actionId == EditorInfo.IME_ACTION_SEND
+						|| actionId == EditorInfo.IME_ACTION_DONE
+						|| (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
+						if(!search_editText_toolbar.getText().toString().equals("")){
+							runsearch(search_editText_toolbar.getText().toString());
+						}
+						runsearch(search_editText.getText().toString());
+						search_editText.setText("");
+						DrawerLayout drawer =  (DrawerLayout)findViewById(R.id.drawer_layout);
+						drawer.closeDrawer(GravityCompat.START);
+						hidesoftkey(search_editText);
+						//处理事件
+					}
+					return false;
+				}
+			});
+						
+	}
+	
+	void hidesoftkey(EditText a){
+		InputMethodManager inputMethodManager = null;
+		if(inputMethodManager == null) {
+			inputMethodManager = (InputMethodManager)Main.this.getSystemService(Context.INPUT_METHOD_SERVICE);
+		}
+		inputMethodManager.hideSoftInputFromWindow(a.getWindowToken(),0);
+		
+	}
+	
+	void setToolbarTitle(String title){
+		search_editText_toolbar.setVisibility(View.GONE);
+		title_toolbar.setVisibility(View.VISIBLE);
+		title_toolbar.setText(title);
+	}
+	
+	void initsearchToolbar(){
+		title_toolbar.setVisibility(View.VISIBLE);
+		search_editText_toolbar.setVisibility(View.GONE);
+		search_button_toolbar.setOnClickListener(new OnClickListener(){
+		int WHITE = 1 , ON = 2;
+		int MODE = WHITE;
+				@Override
+				public void onClick(View p1)
+				{
+					if(MODE == WHITE){
+						title_toolbar.setVisibility(View.GONE);
+						search_editText_toolbar.setVisibility(View.VISIBLE);
+						search_button_toolbar.setText("GO");
+						search_editText_toolbar.requestFocus();
+						InputMethodManager inputMethodManager = null;
+						if(inputMethodManager == null) {
+							inputMethodManager = (InputMethodManager)Main.this.getSystemService(Context.INPUT_METHOD_SERVICE);
+						}
+						inputMethodManager.showSoftInput(search_editText_toolbar,0);
+						MODE = ON;
+					} 
+					else if(MODE == ON)
+					{
+						search_editText_toolbar.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+								@Override
+								public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+									//当actionId == XX_SEND 或者 XX_DONE时都触发
+									//或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
+									//注意，这是一定要判断event != null。因为在某些输入法上会返回null。
+									if (actionId == EditorInfo.IME_ACTION_SEND
+										|| actionId == EditorInfo.IME_ACTION_DONE
+										|| (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
+										if(!search_editText_toolbar.getText().toString().equals("")){
+											runsearch(search_editText_toolbar.getText().toString());
+										}
+										InputMethodManager inputMethodManager = null;
+										if(inputMethodManager == null) {
+											inputMethodManager = (InputMethodManager)Main.this.getSystemService(Context.INPUT_METHOD_SERVICE);
+										}
+										inputMethodManager.hideSoftInputFromWindow(search_editText_toolbar.getWindowToken(),0);
+										search_editText_toolbar.setText("");
+										title_toolbar.setVisibility(View.VISIBLE);
+										search_editText_toolbar.setVisibility(View.GONE);
+										search_button_toolbar.setText("搜索");
+										MODE = WHITE;
+										//处理事件
+									}
+									return false;
+								}
+							});
+						if(!search_editText_toolbar.getText().toString().equals("")){
+							runsearch(search_editText_toolbar.getText().toString());
+						}
+						InputMethodManager inputMethodManager = null;
+						if(inputMethodManager == null) {
+							inputMethodManager = (InputMethodManager)Main.this.getSystemService(Context.INPUT_METHOD_SERVICE);
+						}
+						inputMethodManager.hideSoftInputFromWindow(search_editText_toolbar.getWindowToken(),0);
+						search_editText_toolbar.setText("");
+						title_toolbar.setVisibility(View.VISIBLE);
+						search_editText_toolbar.setVisibility(View.GONE);
+						search_button_toolbar.setText("搜索");
+						MODE = WHITE;
+					}
+				}
+				
+		});
+	}
+	
+	
+	void runsearch(String keyword){
+		String text = keyword;
+		String url_tb = "https://s.m.taobao.com/h5?event_submit_do_new_search_auction=1&_input_charset=utf-8&topSearch=1&atype=b&searchfrom=1&action=home%3Aredirect_app_action&from=1&q="+text+"&sst=1&n=20&buying=buyitnow";
+		String url_jd = "https://so.m.jd.com/ware/search.action?keyword="+text+"&searchFrom=home";
+		if (xianyuOK == false && MODE == 1)
+		{
+			if (IsTaobaoLite)
+			{
+				Toast.makeText(Main.this,"暂不支持在国际版下进行快速搜索！",Toast.LENGTH_SHORT).show();
+			}
+			else
+			{
+				mWebView.loadUrl(url_tb);
+			}
+		}
+		if (xianyuOK)
+		{
+			Toast.makeText(Main.this,"暂不支持在咸鱼下进行快速搜索！",Toast.LENGTH_SHORT).show();
+		}
+		if (MODE == 2)
+		{
+			mWebView.loadUrl(url_jd);
+		}
+
+		
+	}
+	
+	
 	void initWebView(final WebView initWebview , final boolean changeTitle)
 	{
 		WebSettings mWebViewSettings = initWebview.getSettings();
+		if(noPic){
+			mWebViewSettings.setLoadsImagesAutomatically(false); //支持自动加载图片
+			mWebViewSettings.setBlockNetworkImage(true);
+		} else {
+			mWebViewSettings.setLoadsImagesAutomatically(true); //支持自动加载图片
+		}
 		mWebViewSettings.setJavaScriptEnabled(true);  
 //mWebViewSettings.setRenderPriority(RenderPriority.HIGH);
 		mWebViewSettings.setAppCacheEnabled(true);
@@ -425,7 +739,6 @@ public class Main extends BaseActivity
 		mWebViewSettings.setDisplayZoomControls(false); //隐藏原生的缩放控件	
 		mWebViewSettings.setAllowFileAccess(true); //设置可以访问文件 
 		mWebViewSettings.setJavaScriptCanOpenWindowsAutomatically(true); //支持通过JS打开新窗口 
-		mWebViewSettings.setLoadsImagesAutomatically(true); //支持自动加载图片
 		mWebViewSettings.setDefaultTextEncodingName("utf-8");//设置编码格式
 //优先使用缓存: 
 		mWebViewSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); 
@@ -517,23 +830,34 @@ public class Main extends BaseActivity
 					if (changeTitle)
 					{
 						toolbarTitle = title;
-						toolbar.setTitle(toolbarTitle);
+						//toolbar.setTitle(toolbarTitle);
+						setToolbarTitle(toolbarTitle);
 					}
 				}
 			});
 //复写WebViewClient类的shouldOverrideUrlLoading方法
 		initWebview.setWebViewClient(new WebViewClient() {
+
+				private Bitmap favicon;
 				@Override
 				public void onPageStarted(WebView view, String url, Bitmap favicon)
 				{
 					super.onPageStarted(view, url, favicon);
+					if (changeTitle){
+						SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putString("HistoryMainUrl",url);
+						e.commit();
+					} else {
+						SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putString("HistoryLeftUrl",url);
+						e.commit();
+					}
 					String loginUrl = "login.m.taobao.com";
 					if (url.contains(loginUrl) && AutoClick)
 					{
 						mProgressDialog.show();
 						mProgressDialog.setMessage("正在登录……");
 					}
-					toolbar.setTitle("加载中……");
+					//toolbar.setTitle("加载中……");
+					setToolbarTitle("加载中……");
 				}
 				@Override
 				public void onPageFinished(WebView view, String url)
@@ -544,7 +868,8 @@ public class Main extends BaseActivity
 					{
 						toolbarTitle = "首页";
 					}
-					toolbar.setTitle(toolbarTitle);
+					//toolbar.setTitle(toolbarTitle);
+					setToolbarTitle(toolbarTitle);
 					String loginUrl = "login.m.taobao.com";
 					try
 					{
@@ -557,7 +882,7 @@ public class Main extends BaseActivity
 					catch (Exception e)
 					{
 						Toast.makeText(Main.this, "判断登录界面出错", Toast.LENGTH_SHORT).show();
-						PgyCrashManager.reportCaughtException(Main.this, e);
+						CrashReport.postCatchedException(e);
 					}
 					ToKey();
 					if (HideLogo)
@@ -606,6 +931,13 @@ public class Main extends BaseActivity
 
 			});
 	}
+	
+	void debugToast(String context){
+		if(DEBUG){
+			Toast.makeText(MyApplication.getContext(),context,Toast.LENGTH_LONG).show();
+		}
+	}
+	
 	/**
 	 * 展示一个SnackBar
 	 */
@@ -672,7 +1004,7 @@ public class Main extends BaseActivity
 		catch (NullPointerException e)
 		{
 			Toast.makeText(Main.this, "哦哟，获取剪贴板出错了。 \n如果该提示频繁出现，请关闭淘口令相关的开关并等待开发者更新，抱歉。", Toast.LENGTH_SHORT).show();
-			PgyCrashManager.reportCaughtException(Main.this, e); 
+			CrashReport.postCatchedException(e);
 		}
 		return str2;
 	}
@@ -702,7 +1034,7 @@ public class Main extends BaseActivity
 		}
 		catch (NullPointerException e)
 		{
-			PgyCrashManager.reportCaughtException(MyApplication.getContext(), e); 
+			CrashReport.postCatchedException(e);
 			Toast.makeText(MyApplication.getContext(), "哦哟，获取剪贴板出错了。 \n如果该提示频繁出现，请关闭淘口令相关的开关并等待开发者更新，抱歉。", Toast.LENGTH_SHORT).show();
 		}
 	}  
@@ -821,7 +1153,7 @@ public class Main extends BaseActivity
 		}
 		catch (Exception e)
 		{
-			PgyCrashManager.reportCaughtException(MyApplication.getContext(), e);
+			CrashReport.postCatchedException(e);
 			Toast.makeText(MyApplication.getContext(), "加载PhotoView Activity出错，请等待开发者修复，抱歉。", Toast.LENGTH_SHORT).show();
 		}
 	}
@@ -845,6 +1177,8 @@ public class Main extends BaseActivity
 							DialogInterface dialog,
 							int which)
 						{
+							SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",true);
+							e.commit();
 							Intent intent = new Intent(Main.this, SettingsActivity.class);
 							startActivity(intent);
 						}
@@ -899,6 +1233,8 @@ public class Main extends BaseActivity
 							DialogInterface dialog,
 							int which)
 						{
+							SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",true);
+							e.commit();
 							Intent intent = new Intent(Main.this, SettingsActivity.class);
 							startActivity(intent);
 						}
@@ -1061,8 +1397,7 @@ public class Main extends BaseActivity
 
 	public void mUpdata()
 	{
-		PgyUpdateManager.setIsForced(false); //设置是否强制更新。true为强制更新；false为不强制更新（默认值）。
-		PgyUpdateManager.register(this);
+		Beta.checkUpgrade(false,true);
 	}
 
 	public void Updata()
@@ -1173,6 +1508,8 @@ public class Main extends BaseActivity
 						}
 						else if (id == 8)
 						{
+							SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",true);
+							e.commit();
 							Intent intent = new Intent(Main.this, SettingsActivity.class);
 							startActivity(intent);
 						}
@@ -1219,6 +1556,8 @@ public class Main extends BaseActivity
 						}
 						else if (id == 8)
 						{
+							SharedPreferences.Editor e = getSharedPreferences("data",0).edit().putBoolean("backFromSetting",true);
+							e.commit();
 							Intent intent = new Intent(Main.this, SettingsActivity.class);
 							startActivity(intent);
 						}

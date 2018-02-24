@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:background="@drawable/side_nav_bar"
+	android:layout_height="wrap_content"
 	android:layout_width="match_parent"
-	android:layout_height="?attr/actionBarSize">
+	android:orientation="vertical">
 
-	<ImageView
-		android:id="@+id/imageView"
-		android:layout_alignParentLeft="true"
-		android:layout_width="wrap_content"
-		android:layout_height="match_parent"
-		android:padding="3dp"
-		android:maxWidth="80dp"
-		android:adjustViewBounds="true"/>
-
-	<TextView
+	<RelativeLayout
+		android:background="@drawable/side_nav_bar"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:paddingTop="6dp"
-		android:text="淘宝"
-		android:id="@+id/nav_title"
-		android:layout_toRightOf="@id/imageView"/>
+		android:layout_height="?attr/actionBarSize">
 
-	<TextView
-		android:id="@+id/nav_change"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="    点击切换京东"
-		android:layout_toRightOf="@id/imageView"
-		android:layout_below="@id/nav_title"/>
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="3dp"
+			android:maxWidth="80dp"
+			android:adjustViewBounds="true"/>
 
-</RelativeLayout>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="6dp"
+			android:text="淘宝"
+			android:id="@+id/nav_title"
+			android:layout_toRightOf="@id/imageView"/>
+
+		<TextView
+			android:id="@+id/nav_change"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="    点击切换京东"
+			android:layout_toRightOf="@id/imageView"
+			android:layout_below="@id/nav_title"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/search_LinearLayout">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:ems="10"
+			android:id="@+id/search_editText"
+			android:layout_weight="3.0"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:text="搜索"
+			android:id="@+id/search_button"
+			android:layout_weight="1.0"
+			android:background="#FFDDB6"/>
+
+	</LinearLayout>
+
+</LinearLayout>
 

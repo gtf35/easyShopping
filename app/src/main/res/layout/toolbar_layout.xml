@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
 	xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/toolbar_height"
-    android:paddingTop="@dimen/toolbar_padding_top"
-    android:background="@color/colorPrimary"
-    android:minHeight="?attr/actionBarSize"
-    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/toolbar"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/toolbar_height"
+	android:paddingTop="@dimen/toolbar_padding_top"
+	android:background="@color/colorPrimary"
+	android:minHeight="?attr/actionBarSize"
+	app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+	app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<Button
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:text="搜索"
+			android:layout_alignParentRight="true"
+			android:id="@+id/search_toolbar_Button"
+			android:background="@color/colorPrimary"/>
+
+		<EditText
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_toLeftOf="@id/search_toolbar_Button"
+			android:id="@+id/search_toolbar_edittext"
+			android:imeOptions="actionSearch"
+			android:textColor="#FFFFFF"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_toLeftOf="@id/search_toolbar_Button"
+			android:id="@+id/title_toolbar"
+			android:textColor="#FFFFFF"
+			android:gravity="center_vertical"/>
+
+	</RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+

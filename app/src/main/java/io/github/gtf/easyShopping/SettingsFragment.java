@@ -4,9 +4,6 @@ import android.os.*;
 import android.widget.*;
 import android.content.*;
 import android.net.*;
-import com.pgyersdk.feedback.*;
-import com.pgyersdk.activity.*;
-import com.pgyersdk.update.PgyUpdateManager;
 import javax.security.auth.*;
 import android.view.*;
 import android.support.v7.app.*;
@@ -100,7 +97,7 @@ public class SettingsFragment extends PreferenceFragment
 				@Override
 				public boolean onPreferenceClick(Preference preference)
 				{
-					Toast.makeText(getActivity(), "正在检测更新，请稍后。。。。", Toast.LENGTH_SHORT).show();
+					//Toast.makeText(getActivity(), "正在检测更新，请稍后。。。。", Toast.LENGTH_SHORT).show();
 					SettingsActivity sa = (SettingsActivity)getActivity();
 					sa.mUpdata();
 					return true;

@@ -23,10 +23,22 @@
             android:summary="开启后在唤醒时会弹出提示询问。">
         </CheckBoxPreference>
 		<CheckBoxPreference
+            android:key="noPic"
+            android:title="无图模式"
+			android:defaultValue="false"
+            android:summary="不加载图片，需要查看图片时可长按图片，选择查看图片。">
+        </CheckBoxPreference>
+		<CheckBoxPreference
             android:key="autoUpdata"
 			android:defaultValue="true"
             android:title="启动时检测更新"
             android:summary="在每次启动时检测程序更新，不想更新的话可以关闭。">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="savePage"
+			android:defaultValue="true"
+            android:title="保留页面"
+            android:summary="如果程序意外退出，例如放在后台意外被杀，启动时恢复之前的页面。">
         </CheckBoxPreference>
 		<CheckBoxPreference
             android:key="check_AutoLogin"
@@ -107,5 +119,11 @@
 			android:title="手动检测更新"
 			android:summary="更新到最新版。">
 		</Preference>
+		<CheckBoxPreference
+            android:key="debug"
+            android:title="DEBUG"
+			         android:defaultValue="false"
+            android:summary="To Development Test !!!  \nDon't Open it !!!">
+        </CheckBoxPreference>
     </PreferenceCategory>
 </PreferenceScreen>

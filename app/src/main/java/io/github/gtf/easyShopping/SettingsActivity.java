@@ -26,12 +26,11 @@ import android.net.*;
 import android.content.pm.*;
 import android.view.View.*;
 import java.io.*;
-import com.pgyersdk.update.*;
 import android.preference.*;
-import com.pgyersdk.feedback.*;
-import com.pgyersdk.activity.*;
 import android.app.AlertDialog.*;
 import android.widget.RadioGroup.*;
+import com.tencent.bugly.crashreport.*;
+import com.tencent.bugly.beta.*;
 
 public class SettingsActivity extends BaseActivity
 {
@@ -106,8 +105,8 @@ public class SettingsActivity extends BaseActivity
 
 	public void mFeedBack(){
 			// 以对话框的形式弹出
-			PgyFeedback.getInstance().showDialog(SettingsActivity.this);
-
+			//PgyFeedback.getInstance().showDialog(SettingsActivity.this);
+			Toast.makeText(this,"请在群里，或酷安评论区进行反馈，谢谢.",Toast.LENGTH_LONG).show();
 // 以Activity的形式打开，这种情况下必须在AndroidManifest.xml配置FeedbackActivity
 // 打开沉浸式,默认为false
 			//FeedbackActivity.setBarImmersive(true);
@@ -115,8 +114,7 @@ public class SettingsActivity extends BaseActivity
 	}
 
 	public void mUpdata(){
-		PgyUpdateManager.setIsForced(false); //设置是否强制更新。true为强制更新；false为不强制更新（默认值）。
-		PgyUpdateManager.register(this);
+		Beta.checkUpgrade(true,false);
 	}
 
 	public void pay(){

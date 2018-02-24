@@ -3,7 +3,6 @@ import android.os.*;
 import com.bm.library.PhotoView;
 import android.content.*;
 import java.net.*;
-import com.pgyersdk.crash.*;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -19,6 +18,7 @@ import com.bumptech.glide.request.target.*;
 import android.view.*;
 import java.io.*;
 import java.util.*;
+import com.tencent.bugly.crashreport.*;
 
 
 public class PhotoView extends BaseActivity
@@ -104,7 +104,7 @@ public class PhotoView extends BaseActivity
 	}
 	
 	public static void RepotrCrash(Exception e){
-		PgyCrashManager.reportCaughtException(MyApplication.getContext(), e); 
+		CrashReport.postCatchedException(e);
 		Toast.makeText(MyApplication.getContext(),"哦哟，出错了,抱歉。",Toast.LENGTH_SHORT);
 	}
 	
