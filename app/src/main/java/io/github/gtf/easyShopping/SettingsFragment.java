@@ -13,20 +13,24 @@ public class SettingsFragment extends PreferenceFragment
 	private Preference pay;
 	private Preference joinQQGroup;
 	private Preference goGithub;
+	private Preference setUI;
 	private Preference updata;
 	private Preference feedBack;
-	private Preference setAutoLogin;
+	private Preference setAutoLogin,setAutoLogin_JD;
 	private Preference setLeftHomepage;
 	private Preference leftWebviewAbout;
+	private Preference setTBHomePage,setJDHomePage;
 	private CheckBoxPreference autoLeftWebViewHomePage;
-	private CheckBoxPreference autoLogin;
-	private CheckBoxPreference autoWrite;
+	private CheckBoxPreference autoLogin,autoLogin_JD;
+	private CheckBoxPreference autoWrite,autoWrite_JD;
 	private boolean xianyuOK;
 	private boolean jingdongOK;
 	private CheckBoxPreference autoUpdata;
-	private String miPassword;
-	private String miUsername;
-	private boolean AutoLogin;
+	private String miPassword,miPassword_JD;
+	private String miUsername,miUsername_JD;
+	private boolean AutoLogin,AutoLogin_JD;
+	int TB = 1;
+	int JD = 2;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -39,9 +43,15 @@ public class SettingsFragment extends PreferenceFragment
 		setLeftHomepage = (Preference)findPreference("setLeftWebViewHomePage");
 		autoWrite = (CheckBoxPreference)findPreference("check_AutoLogin");
 		autoLogin = (CheckBoxPreference)findPreference("check_AutoClick");
+		autoWrite_JD = (CheckBoxPreference)findPreference("check_AutoLogin_JD");
+		autoLogin_JD = (CheckBoxPreference)findPreference("check_AutoClick_JD");
 		setAutoLogin = (Preference)findPreference("setAutoLogin");
+		setAutoLogin_JD = (Preference)findPreference("setAutoLogin_JD");
+		setTBHomePage = (Preference)findPreference("setTBHomePage");
+		setJDHomePage = (Preference)findPreference("setJDHomePage");
 		goGithub = (Preference)findPreference("goGithub");
 		updata = (Preference)findPreference("updata");
+		setUI = (Preference)findPreference("setUI");
 		feedBack = (Preference)findPreference("feedBack");
 		leftWebviewAbout = (Preference)findPreference("leftWebviewAbout");
 		autoUpdata = (CheckBoxPreference)findPreference("autoUpdata");
@@ -68,6 +78,31 @@ public class SettingsFragment extends PreferenceFragment
 				public boolean onPreferenceClick(Preference preference)
 				{
 					joinQQGroup("PMbwY58H1nomZYCGmBTCrVHPFHYCnCa4");
+					return true;
+				}
+			});
+		setTBHomePage.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener(){
+			@Override
+			public boolean onPreferenceClick(Preference preference){
+				SettingsActivity sa=  (SettingsActivity)getActivity();
+				sa.setTBHomePage();
+				return true;
+			}
+		});
+		setJDHomePage.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener(){
+				@Override
+				public boolean onPreferenceClick(Preference preference){
+					SettingsActivity sa=  (SettingsActivity)getActivity();
+					sa.setJDHomePage();
+					return true;
+				}
+			});
+		setUI.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				@Override
+				public boolean onPreferenceClick(Preference preference)
+				{
+					Intent goSetUI = new Intent(MyApplication.getContext(),setUI.class);
+					startActivity(goSetUI);
 					return true;
 				}
 			});
@@ -129,7 +164,7 @@ public class SettingsFragment extends PreferenceFragment
 				{
 					Toast.makeText(getActivity(), "请务必输入正确的用户名和密码", Toast.LENGTH_SHORT).show();
 					SettingsActivity sa = (SettingsActivity)getActivity();
-					sa.setAutoLogin();
+					sa.setAutoLogin(TB);
 					return true;
 				}
 			});
@@ -142,13 +177,40 @@ public class SettingsFragment extends PreferenceFragment
 				{
 					if(AutoLogin == false){
 						SettingsActivity sa = (SettingsActivity)getActivity();
-						sa.noticeAutoWritePasswordDialog();
+						sa.noticeAutoWritePasswordDialog(TB);
 					}
 					return true;
 				}
 				
 			
 		});
+		
+		setAutoLogin_JD.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				@Override
+				public boolean onPreferenceClick(Preference preference)
+				{
+					Toast.makeText(getActivity(), "请务必输入正确的用户名和密码", Toast.LENGTH_SHORT).show();
+					SettingsActivity sa = (SettingsActivity)getActivity();
+					sa.setAutoLogin(JD);
+					return true;
+				}
+			});
+
+
+		autoWrite_JD.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
+
+				@Override
+				public boolean onPreferenceChange(Preference p1, Object p2)
+				{
+					if(AutoLogin == false){
+						SettingsActivity sa = (SettingsActivity)getActivity();
+						sa.noticeAutoWritePasswordDialog(JD);
+					}
+					return true;
+				}
+
+
+			});
 		
 		autoLogin.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener(){
 

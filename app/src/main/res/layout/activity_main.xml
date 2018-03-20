@@ -21,7 +21,8 @@
 		android:layout_width="wrap_content"
 		android:orientation="vertical"
 		android:layout_gravity="left"
-		android:background="#FFDDB6"
+		android:id="@+id/right_nav"
+		android:background="?attr/mcolor_list"
 		android:focusable="true">
 
 		<include
@@ -44,16 +45,21 @@
 		android:layout_width="wrap_content"
 		android:orientation="vertical"
 		android:layout_gravity="right"
-		android:background="#FFDDB6"
+		android:background="?attr/mcolor_list"
 		android:focusable="true">
-	
+
 		<include
-			layout="@layout/nav_leftwebviw"
-			/>
-		<WebView
+			layout="@layout/nav_leftwebviw"/>
+
+		<LinearLayout
 			android:layout_height="match_parent"
 			android:layout_width="match_parent"
-			android:id="@+id/mWebViewLeft"/>
+			android:orientation="horizontal"
+			android:id="@+id/leftLinearLayout">
+
+			
+
+		</LinearLayout>
 
 	</LinearLayout>
 

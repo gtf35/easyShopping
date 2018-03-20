@@ -7,6 +7,11 @@
         android:title="主页"
         app:showAsAction="never" />
 	<item
+        android:id="@+id/xianyu"
+        android:orderInCategory="100"
+        android:title="搜闲鱼"
+        app:showAsAction="never" />
+	<item
         android:id="@+id/action_reload"
         android:orderInCategory="100"
         android:title="刷新"
@@ -20,6 +25,11 @@
         android:id="@+id/share"
         android:orderInCategory="100"
         android:title="分享"
+        app:showAsAction="never" />
+	<item
+        android:id="@+id/suofang"
+        android:orderInCategory="100"
+        android:title="缩放"
         app:showAsAction="never" />
 	<item
         android:id="@+id/action_exit"

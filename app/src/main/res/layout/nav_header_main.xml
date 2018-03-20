@@ -6,9 +6,10 @@
 	android:orientation="vertical">
 
 	<RelativeLayout
-		android:background="@drawable/side_nav_bar"
+		android:background="?attr/mcolor_nav"
 		android:layout_width="match_parent"
-		android:layout_height="?attr/actionBarSize">
+		android:layout_height="?attr/actionBarSize"
+		android:id="@+id/nav_layout">
 
 		<ImageView
 			android:id="@+id/imageView"
@@ -56,7 +57,7 @@
 			android:text="搜索"
 			android:id="@+id/search_button"
 			android:layout_weight="1.0"
-			android:background="#FFDDB6"/>
+			android:background="#00000000"/>
 
 	</LinearLayout>
 

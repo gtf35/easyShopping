@@ -42,15 +42,19 @@ public class SettingsActivity extends BaseActivity
 	private AlertDialog.Builder Dialog2;
 	private AlertDialog.Builder logInDialog;
 	private AlertDialog.Builder logInDialog2;
-	private String miPassword;
-	private String miUsername;
-	private boolean AutoLogin;
+	private String miPassword,miPassword_JD;
+	private String miUsername,miUsername_JD;
+	private boolean AutoLogin,AutoLogin_JD;
 	private String key;
 	SharedPreferences shp;
-	String NewmiPassword;
-	String NewmiUserName;
+	String NewmiPassword,NewmiPassword_JD;
+	String NewmiUserName,NewmiUserName_JD;
 	String homePage;
 
+	private int MODE = 1;
+	private int TAOMALL = 1;
+	private int JINGDONG = 2;
+	
 	private LinearLayout rootLayout;
 
 	private AlertDialog.Builder SetUrlDialog;
@@ -61,6 +65,13 @@ public class SettingsActivity extends BaseActivity
 	@Override
     protected void onCreate(Bundle savedInstanceState)
 	{
+		MODE = PreferenceManager.getDefaultSharedPreferences(this).getInt("MODE", 1);
+		if(MODE == JINGDONG){
+			setTheme(R.style.myTheme_jd);
+		} else {
+			setTheme(R.style.myTheme_tb);
+		}
+		
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -77,6 +88,9 @@ public class SettingsActivity extends BaseActivity
 		miUsername = shp.getString("miUsername","null");
 		miPassword = shp.getString("miPassword","null");
 		AutoLogin = shp.getBoolean("check_AutoLogin",true);
+		miUsername_JD = shp.getString("miUsername_JD","null");
+		miPassword_JD = shp.getString("miPassword_JD","null");
+		AutoLogin_JD = shp.getBoolean("check_AutoLogin_JD",true);
 		key = shp.getString("key",null);
 		this.getFragmentManager().beginTransaction()
 			.replace(android.R.id.content, new SettingsFragment())
@@ -104,15 +118,16 @@ public class SettingsActivity extends BaseActivity
     }
 
 	public void mFeedBack(){
-			// 以对话框的形式弹出
-			//PgyFeedback.getInstance().showDialog(SettingsActivity.this);
-			Toast.makeText(this,"请在群里，或酷安评论区进行反馈，谢谢.",Toast.LENGTH_LONG).show();
-// 以Activity的形式打开，这种情况下必须在AndroidManifest.xml配置FeedbackActivity
-// 打开沉浸式,默认为false
-			//FeedbackActivity.setBarImmersive(true);
-			//PgyFeedback.getInstance().showActivity(SettingsActivity.this);
+		Toast.makeText(this,"请在群里，或酷安评论区进行反馈，谢谢.",Toast.LENGTH_LONG).show();
+			}
+	public void setTBHomePage(){
+		String mTaobaoUrl = "https://m.taobao.com/ ";
+		setHomePage("mTaobaoUrl",mTaobaoUrl);
 	}
-
+	public void setJDHomePage(){
+		String mJDUrl = "https://m.jd.com";
+		setHomePage("mJDUrl",mJDUrl);
+	}
 	public void mUpdata(){
 		Beta.checkUpgrade(true,false);
 	}
@@ -122,8 +137,8 @@ public class SettingsActivity extends BaseActivity
 		Dialog.show();
 	}
 
-	public void setAutoLogin(){
-		LoginDialoginit();
+	public void setAutoLogin(int type){
+		LoginDialoginit(type);
 		logInDialog.show();
 	}
 
@@ -154,7 +169,7 @@ public class SettingsActivity extends BaseActivity
 	private void Dialoginit(){
 		Dialog.setCancelable(false);
 	    Dialog.setTitle("感谢有你：");
-		Dialog.setMessage("很高兴你对我作品的肯定。 \n这个作品看起来很简单，但是对于我来说，我付出了大量的心血。 \n金额不限，支持微信支付宝 \n请随(duo)意(duo)捐赠 \n其实不付款装个样子也会有VIP的，有这份心我就知足了。😉");
+		Dialog.setMessage("很高兴你对我作品的肯定。 \n这个作品看起来很简单，但是对于我来说，我付出了大量的心血。 \n金额不限，支持微信支付宝 \n请随(duo)意(duo)捐赠。😉");
 		Dialog.setPositiveButton("微信",  new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface dialog, int which)
@@ -167,7 +182,6 @@ public class SettingsActivity extends BaseActivity
 							@Override
 							public void onClick(DialogInterface dialog, int which)
 							{
-								setVipIcon();
 								donateWeixin();
 							}
 						});
@@ -187,16 +201,21 @@ public class SettingsActivity extends BaseActivity
 				@Override
 				public void onClick(DialogInterface dialog, int which)
 				{
-					setVipIcon();
 					donateAlipay("FKX074315FOSAPU3BB5F7B");
 				}
 			});
 	}
 
-	private void LoginDialoginit(){
+	private void LoginDialoginit(final int MODE){
+		final int TB = 1;
+		final int JD = 2;
 		final View LoginAlertDialogView = View.inflate(getApplicationContext(), R.layout.textview_dialog, null);
+		if (MODE == TB){
+			logInDialog.setTitle("请输入淘宝账户(手机号/邮箱/用户名)：");
+		} else if (MODE == JD){
+			logInDialog.setTitle("请输入京东账户(手机号/邮箱/用户名)：");
+		}
 		logInDialog.setCancelable(false);
-	    logInDialog.setTitle("请输入淘宝账户的用户名：");
 		logInDialog.setView( LoginAlertDialogView);
 		logInDialog.setPositiveButton("下一步",  new DialogInterface.OnClickListener() {
 				@Override
@@ -204,7 +223,12 @@ public class SettingsActivity extends BaseActivity
 				{
 					EditText userusername = (EditText)LoginAlertDialogView.findViewById(R.id.textviewdialogEditText);
 					final String username = userusername.getText().toString();
-					logInDialog2.setTitle("请输入淘宝账户的密码：");
+					if(MODE == TB){
+						logInDialog2.setTitle("请输入淘宝账户的密码：");
+					} else if(MODE == JD){
+						logInDialog2.setTitle("请输入京东账户的密码：");
+					}
+					
 					logInDialog2.setCancelable(false);
 					final View LoginMimaAlertDialogView = View.inflate(getApplicationContext(), R.layout.textview_mima_dialog, null);
 					logInDialog2.setView(LoginMimaAlertDialogView);
@@ -219,13 +243,22 @@ public class SettingsActivity extends BaseActivity
 									key = getRandomString(8);
 									prefs.edit().putString("key",key).commit();
 								}
-								NewmiPassword = jiami(password,key);
-								NewmiUserName = jiami(username,key);
+								if(MODE == TB){
+									NewmiPassword = jiami(password,key);
+									NewmiUserName = jiami(username,key);
+									prefs.edit().putString("miPassword",NewmiPassword).commit();
+									prefs.edit().putString("miUsername",NewmiUserName).commit();
+									
+								} else if(MODE == JD){
+									NewmiPassword_JD = jiami(password,key);
+									NewmiUserName_JD = jiami(username,key);
+									prefs.edit().putString("miPassword_JD",NewmiPassword_JD).commit();
+									prefs.edit().putString("miUsername_JD",NewmiUserName_JD).commit();
+									
+								}
 								//String NewmiPassword = miPassword;
 								//String NewmiUserName = miUsername;
-								prefs.edit().putString("miPassword",NewmiPassword).commit();
-								prefs.edit().putString("miUsername",NewmiUserName).commit();
-								Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
+									Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
 
 							}
 						});
@@ -242,6 +275,8 @@ public class SettingsActivity extends BaseActivity
 				}
 			});
 	}
+	
+	
 
 	private String jiemi(String miwen , String key){
 		String jiemihou = null;
@@ -290,93 +325,45 @@ public class SettingsActivity extends BaseActivity
 		startActivity(back);
 	}
 
-	private PackageManager mPackageManager;
-    //默认组件
-    private ComponentName componentNameDefault;
-    private ComponentName VipIcon;
-    private ComponentName mainIcon;
-
-    /**
-     * 设置VIP图标生效
-     */
-    private void enableVip() {
-        //disableComponent(componentNameDefault);
-        disableComponent(mainIcon);
-        enableComponent(VipIcon);
-    }
-
-    /**
-     * 设置vip图标失效
-     */
-    private void disableVip() {
-        disableComponent(componentNameDefault);
-        disableComponent(VipIcon);
-        enableComponent(mainIcon);
-    }
-
-    /**
-     * 启动组件
-     *
-     * @param componentName 组件名
-     */
-    private void enableComponent(ComponentName componentName) {
-        //此方法用以启用和禁用组件，会覆盖Androidmanifest文件下定义的属性
-        mPackageManager.setComponentEnabledSetting(componentName,
-												   PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-												   PackageManager.DONT_KILL_APP);
-    }
-
-    /**
-     * 禁用组件
-     *
-     * @param componentName 组件名
-     */
-    private void disableComponent(ComponentName componentName) {
-        mPackageManager.setComponentEnabledSetting(componentName,
-												   PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-												   PackageManager.DONT_KILL_APP);
-    }
-
-    //最后调用
-    public void setVipIcon() {
-        //获取到包管理类实例
-        mPackageManager = getPackageManager();
-        //得到此activity的全限定名
-        componentNameDefault = getComponentName();
-        //根据全限定名创建一个组件，即activity-alias 节点下的name：HomeActivity2 对应的组件
-		VipIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物Vip");
-        mainIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物");
-		enableVip();
-    }
-
-	public void setDisableVipIcon() {
-        //获取到包管理类实例
-        mPackageManager = getPackageManager();
-        //得到此activity的全限定名
-        componentNameDefault = getComponentName();
-        //根据全限定名创建一个组件，即activity-alias 节点下的name：HomeActivity2 对应的组件
-        VipIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物Vip");
-        mainIcon = new ComponentName(getBaseContext(), "io.github.gtf.easyShopping.小购物");
-		disableVip();
-    }
+	
 
 
-	public void noticeAutoWritePasswordDialog(){
-		new AlertDialog.Builder(SettingsActivity.this)
-			.setTitle("小提示：")
-			.setCancelable(false)
-			.setMessage("由于天猫的安全保护，在登录天猫时可能会出现登录按钮无法点击的情况，这时点击下密码输入框再点击登录就可以了。")
-			.setNegativeButton(
-			"了解",
-			new DialogInterface.OnClickListener() {
+	public void noticeAutoWritePasswordDialog(int MODE){
+		final int TB = 1;
+		final int JD = 2;
+		if(MODE == TB){
+			new AlertDialog.Builder(SettingsActivity.this)
+				.setTitle("小提示：")
+				.setCancelable(false)
+				.setMessage("由于天猫的安全保护，在登录天猫时可能会出现登录按钮无法点击的情况，这时点击下密码输入框再点击登录就可以了。")
+				.setNegativeButton(
+				"了解",
+				new DialogInterface.OnClickListener() {
 
-				@Override
-				public void onClick(
-					DialogInterface dialog,
-					int which) {
+					@Override
+					public void onClick(
+						DialogInterface dialog,
+						int which) {
 
 					}
-			}).show();
+				}).show();
+		}else if (MODE == JD){
+			new AlertDialog.Builder(SettingsActivity.this)
+				.setTitle("小提示：")
+				.setCancelable(false)
+				.setMessage("由于京东的安全保护，在登录京东时可能会出现登录按钮无法点击的情况，这时点击下密码输入框再点击登录就可以了。")
+				.setNegativeButton(
+				"了解",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(
+						DialogInterface dialog,
+						int which) {
+
+					}
+				}).show();
+		}
 	}
 	
 	public void setLeftWebviewHomePage(){
@@ -449,6 +436,44 @@ public class SettingsActivity extends BaseActivity
 	}
 	
 
+	void setHomePage(final String shpurl,final String defaultshp){
+		Toast.makeText(SettingsActivity .this,"请以http://或https://开头",Toast.LENGTH_LONG).show();
+		final View inputView = View.inflate(getApplicationContext(), R.layout.textview_url, null);
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+		EditText EditView = (EditText)inputView.findViewById(R.id.editText_url);
+		String temp = prefs.getString(shpurl,defaultshp);
+		EditView.setText(temp);
+		new AlertDialog.Builder(SettingsActivity.this)
+			.setTitle("请输入主页地址：")
+			.setCancelable(false)	
+			.setView(inputView)
+			.setPositiveButton("保存",  new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+					EditText EditView = (EditText)inputView.findViewById(R.id.editText_url);
+					final String homePageUrl = EditView.getText().toString();
+					prefs.edit().putString(shpurl,homePageUrl).commit();
+					Toast.makeText(MyApplication.getContext(),"保存成功！",Toast.LENGTH_SHORT).show();
+
+				}
+			})
+			.setNegativeButton("恢复默认", new DialogInterface.OnClickListener(){
+
+				@Override
+				public void onClick(DialogInterface p1, int p2)
+				{
+					SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MyApplication.getContext());
+					prefs.edit().putString(shpurl,defaultshp).commit();
+					Toast.makeText(MyApplication.getContext(),"已恢复默认！",Toast.LENGTH_SHORT).show();
+				}
+				
+				
+			})
+			.show();
+	}
+	
 	public void setLeftWebviewAbout(){
 		String HELP = "试试从屏幕右侧向左侧滑动，就会划出对比窗口啦，默认是智能模式即 \n主页面为淘宝，对比窗口就是京东， \n主页面是京东，对比页面就是淘宝。\n在设置中可自定义主页。交换按钮可以将主页面和对比页面互换，主页键可以返回对比窗口的主页\n这么棒，还不捐赠一波？\n〃∀〃 ";
 		Toast.makeText(SettingsActivity.this,"〃∀〃",Toast.LENGTH_SHORT).show();

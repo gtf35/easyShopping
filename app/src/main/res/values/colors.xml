@@ -5,4 +5,20 @@
     <color name="colorAccent">#FF4081</color>
      <color name="primary_color">#ff4c4b</color>
 	<color name = "WHITE">#FFFFFF</color>
+	<color name = "wel">#FA7800</color>
+	
+	        <!-- TB color -->
+	<color name = "colorTB_main">#FA7800</color>
+	<color name = "colorTB_nav">#FFBA6B</color>
+	<color name = "colorTB_list">#FFDDB6</color>
+	
+	
+	
+			<!-- JD color -->
+	<color name = "colorJD_main">#FE4E42</color>
+	<color name = "colorJD_nav">#FA7E5A</color>
+	<color name = "colorJD_list">#EBA292</color>
+	
+	
+	
 </resources>

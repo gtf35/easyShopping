@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myTheme" parent="AppTheme.NoActionBar" >
+        
+    </style>
+
+    <style name="myTheme.tb" >
+        
+        <item name="mcolor_main">@color/colorTB_main</item>
+        <item name="mcolor_list">@color/colorTB_list</item>
+		<item name="mcolor_nav">@color/colorTB_nav</item>
+		
+    </style>
+
+    <style name="myTheme.jd" >
+        
+        <item name="mcolor_main">@color/colorJD_main</item>
+        <item name="mcolor_list">@color/colorJD_list</item>
+		<item name="mcolor_nav">@color/colorJD_nav</item>
+		
+    </style>
+</resources>

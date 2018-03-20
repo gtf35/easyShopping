@@ -3,13 +3,17 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="match_parent"
 	android:layout_width="match_parent"
-	android:background="@color/colorPrimary"
+	android:background="?attr/mcolor_main"
 	android:id="@+id/mainLayout">
-	
-	<WebView
-		android:layout_width="match_parent"
+
+	<LinearLayout
 		android:layout_height="match_parent"
-		android:id="@+id/mWebView"/>
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/mainLinearLayout">
+
+
+	</LinearLayout>
 
 	<TextView
 		android:layout_height="wrap_content"

@@ -1,20 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory
-        android:title="主页：">
-        <CheckBoxPreference
-            android:key="check_xianyu"
-            android:title="闲鱼"
-            android:summary="将主页替换为闲鱼网页版： \n由于咸鱼网页版去掉了搜索框，所以首页由第三方提供，但是搜索结果由咸鱼官方提供。 \n缩放可能会有问题，有待优化。只提供有限的支持！！">
-        </CheckBoxPreference>
-    </PreferenceCategory>
+   
 	<PreferenceCategory
-        android:title="其他：">
+        android:title="淘宝：">
         <CheckBoxPreference
+            android:key="check_AutoLogin"
+            android:title="自动填写淘宝账户和密码"
+            android:summary="通过下面选项配置好的账户和密码自动填充。"
+			android:defaultValue="true">
+        </CheckBoxPreference> 
+		<CheckBoxPreference
+            android:key="check_AutoClick"
+            android:title="全自动登录"
+            android:summary="实验性功能，如果频繁出现安全认证，请关闭。"
+			android:disableDependentsState="true"
+			android:dependency="check_AutoLogin"
+			android:defaultValue="false">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="QuietLogin"
+            android:title="启动时静默登录淘宝"
+            android:summary="在启动后自动后台登录淘宝"
+			android:disableDependentsState="true"
+			android:dependency="check_AutoLogin"
+			android:defaultValue="false">
+        </CheckBoxPreference>
+		<Preference android:key="setAutoLogin"
+			android:title="配置淘宝用户信息"
+			android:summary="创建或修改需要自动登录的淘宝账户。 \n注：用户名与密码将通过高强度加密保存。">
+		</Preference>
+		<CheckBoxPreference
             android:key="taobaoLite"
             android:title="切换到淘宝国际版"
             android:summary="使用淘宝国际版">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="check_TaoKey"
+            android:title="淘口令"
+            android:summary="在APP启动时或后台切换到前台时从剪贴板检测淘口令，可以解析标题。 \n注意只支持标准的带http链接的淘口令。"
+			android:defaultValue="true" >
+        </CheckBoxPreference> 	
+		<CheckBoxPreference
+            android:key="check_TaoUrlKey"
+            android:title="口令广谱识别"
+            android:summary="这个将识别所有带有手机淘宝字样的口令，可以兼容淘宝客口令，但是无法解析标题。 \n注：该选项不包括淘口令识别。"
+			android:defaultValue="true" >
+        </CheckBoxPreference> 
+		<Preference android:key="setTBHomePage"
+			android:title="自定义淘宝主页"
+			android:summary="定义你自己的主页">
+		</Preference>
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="京东：">
+        <CheckBoxPreference
+            android:key="check_AutoLogin_JD"
+            android:title="自动填写京东账户和密码"
+            android:summary="通过下面选项配置好的账户和密码自动填充。"
+			android:defaultValue="true">
+        </CheckBoxPreference> 
+		<CheckBoxPreference
+            android:key="check_AutoClick_JD"
+            android:title="全自动登录"
+            android:summary="实验性功能，如果频繁出现安全认证，请关闭。"
+			android:disableDependentsState="true"
+			android:dependency="check_AutoLogin_JD"
+			android:defaultValue="false">
+        </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="QuietLogin_JD"
+            android:title="启动时静默登录京东"
+            android:summary="在启动后自动后台登录京东"
+			android:disableDependentsState="true"
+			android:dependency="check_AutoLogin_JD"
+			android:defaultValue="false">
+		</CheckBoxPreference>
+		<Preference android:key="setAutoLogin_JD"
+			android:title="配置京东账户信息"
+			android:summary="创建或修改需要自动登录的京东账户。 \n注：账户与密码将通过高强度加密保存。">
+		</Preference>
+		<Preference android:key="setJDHomePage"
+			android:title="自定义京东主页"
+			android:summary="定义你自己的主页">
+		</Preference>
+    </PreferenceCategory>
+	<PreferenceCategory
+        android:title="其他：">
+		<Preference android:key="setUI"
+			android:title="界面"
+			android:summary="定义你自己的界面">
+		</Preference>
+		<CheckBoxPreference
+            android:key="supportTBS"
+            android:title="使用TBS内核"
+			android:defaultValue="false"
+            android:summary="使用TBS内核代替系统自带内核！可能会解决页面显示不正确的问题。\n警告：如果页面正常，不要开启">
         </CheckBoxPreference>
 		<CheckBoxPreference
             android:key="supportLocalAPP"
@@ -40,36 +121,7 @@
             android:title="保留页面"
             android:summary="如果程序意外退出，例如放在后台意外被杀，启动时恢复之前的页面。">
         </CheckBoxPreference>
-		<CheckBoxPreference
-            android:key="check_AutoLogin"
-            android:title="自动填写用户名和密码"
-            android:summary="通过下面选项配置好的用户名和密码自动填充。"
-			android:defaultValue="true">
-        </CheckBoxPreference> 
-		<CheckBoxPreference
-            android:key="check_AutoClick"
-            android:title="全自动登录"
-            android:summary="实验性功能，如果频繁出现安全认证，请关闭。"
-			android:disableDependentsState="true"
-			android:dependency="check_AutoLogin"
-			android:defaultValue="false">
-        </CheckBoxPreference>
-		<Preference android:key="setAutoLogin"
-			android:title="配置用户信息"
-			android:summary="创建或修改需要自动登录的淘宝账户。 \n注：用户名与密码将通过高强度加密保存。">
-		</Preference>
-		<CheckBoxPreference
-            android:key="check_TaoKey"
-            android:title="淘口令"
-            android:summary="在APP启动时或后台切换到前台时从剪贴板检测淘口令，可以解析标题。 \n注意只支持标准的带http链接的淘口令。"
-			android:defaultValue="true" >
-        </CheckBoxPreference> 	
-		<CheckBoxPreference
-            android:key="check_TaoUrlKey"
-            android:title="口令广谱识别"
-            android:summary="这个将识别所有带有手机淘宝字样的口令，可以兼容淘宝客口令，但是无法解析标题。 \n注：该选项不包括淘口令识别。"
-			android:defaultValue="true" >
-        </CheckBoxPreference> 
+		
 		
 	<!--	<CheckBoxPreference
             android:key="check_jingdong"
@@ -101,7 +153,7 @@
         android:title="关于：">
 		<Preference android:key="pay"
 					android:title="捐赠"
-			        android:summary="作者gtf35只是一名高中生，零花钱不多，觉得应用不错的话，请我吃碗泡面吧。 \n注：捐赠后会启用特权：淘宝原生图标。">
+			        android:summary="作者gtf35只是一名高中生，零花钱不多，觉得应用不错的话，请我吃碗泡面吧。">
 		</Preference>
 		<Preference android:key="joinQQGroup"
 					android:title="加QQ群"
