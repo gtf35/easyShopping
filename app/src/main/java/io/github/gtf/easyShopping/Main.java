@@ -362,7 +362,7 @@ public class Main extends BaseActivity
 		//loadLeftHomePage();
 		initsearch();
 		initsearchToolbar();
-		
+		ad();
 		if (autoUpdata)
 		{
 			mUpdata();
@@ -1057,7 +1057,7 @@ public class Main extends BaseActivity
 	void ad(){
 		AD ad = new AD();
 		ad.initAD(this);
-		Toast.makeText(Main.this,"ad is:" + ad.haveAD + " url is:" + ad.url,Toast.LENGTH_LONG).show();
+		
 	}
 	
 	void hidesoftkey(EditText a){
