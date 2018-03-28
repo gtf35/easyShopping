@@ -19,6 +19,7 @@ import android.view.*;
 import java.io.*;
 import java.util.*;
 import com.tencent.bugly.crashreport.*;
+import android.preference.*;
 
 
 public class PhotoView extends BaseActivity
@@ -29,9 +30,28 @@ public class PhotoView extends BaseActivity
 	ProgressBar mProgressBar;
 	String URL = null;
 	
+	private int MODE = 1;
+	private int COLORMODE = 1;
+	private int TAOMALL = 1;
+	private int JINGDONG = 2;
+	private int AUTO = 3;
+	
 	@Override
     protected void onCreate(Bundle savedInstanceState)
 	{
+		MODE = PreferenceManager.getDefaultSharedPreferences(this).getInt("MODE", TAOMALL);
+		COLORMODE = PreferenceManager.getDefaultSharedPreferences(this).getInt("STYLEMODE", AUTO);
+		if(MODE == JINGDONG && COLORMODE == AUTO){
+			setTheme(R.style.myTheme_jd);
+		} else if (MODE == TAOMALL && COLORMODE == AUTO) {
+			setTheme(R.style.myTheme_tb);
+		} else if (COLORMODE == JINGDONG){
+			setTheme(R.style.myTheme_jd);
+		} else if (COLORMODE == TAOMALL){
+			setTheme(R.style.myTheme_tb);
+		}
+		
+		
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.photoview);
 		setSupportActionBar(toolbar);

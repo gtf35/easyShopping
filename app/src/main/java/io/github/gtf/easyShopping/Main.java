@@ -107,6 +107,7 @@ public class Main extends BaseActivity
 	boolean backFromSetting = false , exitByCrash = true , savePage ;
 	boolean noPic;
 	boolean DEBUG;
+	boolean removeTab;
 	boolean supportTBS;
 	boolean onQuietLogin = false,onQuietLogin_JD = false;
 	
@@ -179,7 +180,7 @@ public class Main extends BaseActivity
 	private int AUTO = 3;
 	LinearLayout mainLinearLayout , leftLinearLayout;
 	
-	String UPDATA_LOG = "新增:主题颜色设定\n更改：启动背景 \n新增：自定义桌面图标 \n新增：临时允许缩放(在右上角菜单里) \n优化搜索栏，粘贴网址可以直接进入 \n最后感谢给我无私画LOGO的小伙伴们，感谢";
+	String UPDATA_LOG = "新增:主题颜色设定\n更改：启动背景 \n新增:自定义桌面图标 \n新增：临时允许缩放(在右上角菜单里) \n优化:搜索栏，粘贴网址可以直接进入 \n修复3.7.3版本长按图片全屏看图的崩溃 \n最后感谢给我无私画LOGO的小伙伴们，感谢";
 	String outsideUrl;
 	String mUA ="User-Agent: MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
 
@@ -316,7 +317,7 @@ public class Main extends BaseActivity
 		AutoClick = shp.getBoolean("check_AutoClick", false);
 		AutoLogin_JD = shp.getBoolean("check_AutoLogin_JD", true);
 		AutoClick_JD = shp.getBoolean("check_AutoClick_JD", false);
-		
+		removeTab = shp.getBoolean("removeTab", true);
 		leftWebviewHomeUrl = shp.getString("leftWebViewPage", "");
 		noPic = shp.getBoolean("noPic",false);
 		savePage = shp.getBoolean("savePage",true);
@@ -576,12 +577,23 @@ public class Main extends BaseActivity
 	}
 	
 	void removeUnderTab(){
-		String js;
-		String Adclass; 
-		//removeClass("bottom-fxied");
-		//removeClass("_2IjaJJcGLxfhZizlEvNf6I");
-		//removeClass("m24dsk");
-		
+		if (removeTab){
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"_1DrF-Ndoxy1b882RZcUtzX _1bKOWZpFDSZMyGm5qZHZAU\");el[0].remove();\n",false);
+			loadUrl("JavaScript:setTimeout(function(){var el = document.getElementsByClassName(\"_1DrF-Ndoxy1b882RZcUtzX _1bKOWZpFDSZMyGm5qZHZAU\");el[0].remove();\n; }, 300);",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"app-download-popup smally show\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"header-wrap\");el[0].remove();\n",false);
+			loadUrl("JavaScript:setTimeout(function(){var el = document.getElementsByClassName(\"mui-sb-box\");el[0].remove();\n; }, 800);",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"buttons\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"bottom-fxied\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"mui-bottom-smart-banner\");el[0].remove();\n",false);
+			loadUrl("JavaScript:setTimeout(function(){var el = document.getElementsByClassName(\"image-class\");el[0].remove();\n; }, 80);",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"e13dsk\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"install-app\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"_2ZhzdhjNG9KBM3ONwOuqC0 wERa5TkG4nQuWvDWt30Qs\");el[0].remove();\n",false);
+			loadUrl("JavaScript:var el = document.getElementsByClassName(\"_3wPMj2-wcRhm5ZXLjBAhPm\");el[0].remove();\n",false);
+
+
+		}
 	}
 	
 	void removeClass(String Adclass){
@@ -708,6 +720,12 @@ public class Main extends BaseActivity
 				}
 			}, 2000);// 这里百毫秒		
 	}
+	
+	void backWebview(){
+		//mWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);  
+		//mWebView.goBack();
+	}
+	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
@@ -1036,6 +1054,12 @@ public class Main extends BaseActivity
 		}
 	}
 	
+	void ad(){
+		AD ad = new AD();
+		ad.initAD(this);
+		Toast.makeText(Main.this,"ad is:" + ad.haveAD + " url is:" + ad.url,Toast.LENGTH_LONG).show();
+	}
+	
 	void hidesoftkey(EditText a){
 		InputMethodManager inputMethodManager = null;
 		if(inputMethodManager == null) {
@@ -1345,6 +1369,11 @@ public class Main extends BaseActivity
 						mProgressDialog.setMessage("正在登录……");
 					}
 					
+					if (toolbarTitle.contains("淘宝网触屏版"))
+					{
+						toolbarTitle = "首页";
+						removeUnderTab();
+					}
 				}
 				@Override
 				public void onPageFinished(android.webkit.WebView view, String url)
@@ -1354,10 +1383,12 @@ public class Main extends BaseActivity
 					if (toolbarTitle.contains("淘宝网触屏版"))
 					{
 						toolbarTitle = "首页";
+						
 					}
+					removeUnderTab();
 					//toolbar.setTitle(toolbarTitle);
 					setToolbarTitle(toolbarTitle);
-					removeUnderTab();
+					
 					String loginUrl = "login.m.taobao.com";
 					String loginUrl_JD = "https://plogin.m.jd.com";
 					try
@@ -1581,6 +1612,12 @@ public class Main extends BaseActivity
 						mProgressDialog.show();
 						mProgressDialog.setMessage("正在登录……");
 					}
+					
+					if (toolbarTitle.contains("淘宝网触屏版"))
+					{
+						toolbarTitle = "首页";
+						removeUnderTab();
+					}
 
 				}
 				@Override
@@ -1592,7 +1629,9 @@ public class Main extends BaseActivity
 					if (toolbarTitle.contains("淘宝网触屏版"))
 					{
 						toolbarTitle = "首页";
+						
 					}
+					removeUnderTab();
 					//toolbar.setTitle(toolbarTitle);
 					setToolbarTitle(toolbarTitle);
 					removeUnderTab();
@@ -2287,7 +2326,7 @@ public class Main extends BaseActivity
 				}
 			}).show();
 	}
-
+	
 
 	public void initList()
 	{

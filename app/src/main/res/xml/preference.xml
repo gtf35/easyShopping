@@ -92,6 +92,12 @@
 			android:summary="定义你自己的界面">
 		</Preference>
 		<CheckBoxPreference
+            android:key="removeTab"
+			android:defaultValue="true"
+            android:title="去除首页底栏"
+            android:summary="去除淘宝首页下方的底栏">
+        </CheckBoxPreference>
+		<CheckBoxPreference
             android:key="supportTBS"
             android:title="使用TBS内核"
 			android:defaultValue="false"
