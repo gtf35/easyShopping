@@ -15,11 +15,14 @@ import android.webkit.*;
 import android.support.v7.app.AlertDialog;
 import android.net.Uri;
 import android.graphics.Bitmap;
+import java.util.Timer;
+import java.util.TimerTask;
+import android.widget.*;
 
 public class AD
 {
 	String ADSetting = "https://gtf35.github.io/easyShopping/ADSetting.json";
-	boolean haveAD = false ;
+	boolean haveAD = false , Cancelable = false;
 
 	 int id;
 
@@ -85,7 +88,8 @@ public class AD
                 name = jsonObject.getString("name");
                 version = jsonObject.getInt("version");
 				url = jsonObject.getString("url");
-                
+                Cancelable = jsonObject.getBoolean("Cancelable");  
+				
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -122,7 +126,8 @@ public class AD
 	
 	void showAD(final Activity activity){
 		final View inputView = View.inflate(activity.getApplicationContext(), R.layout.adwebview, null);
-		WebView adwebview = (WebView)inputView.findViewById(R.id.ad);
+		final WebView adwebview = (WebView)inputView.findViewById(R.id.ad);
+		final ProgressBar adpb = (ProgressBar) inputView.findViewById(R.id.adpb);
 		WebSettings mWebViewSettings = adwebview.getSettings();
 		mWebViewSettings.setLoadsImagesAutomatically(true); //支持自动加载图片
 		mWebViewSettings.setJavaScriptEnabled(true);  
@@ -145,7 +150,14 @@ public class AD
 		adwebview.setWebViewClient(new WebViewClient() {
 				@Override
 				public boolean shouldOverrideUrlLoading(WebView view, String url) {
-					view.loadUrl(url);
+					if (url.startsWith("http:") || url.startsWith("https:"))
+					{
+						view.loadUrl(url);
+						return true;
+					} else {
+						
+					}
+					
 
 					return true;
 				}
@@ -158,40 +170,55 @@ public class AD
 				public void onPageFinished(WebView view, final String url)
 				{
 					if(on){
-						new AlertDialog.Builder(activity)
-
-							.setTitle(name)
-							.setCancelable(false)	
-							.setView(inputView)
-							.setPositiveButton("感兴趣",  new DialogInterface.OnClickListener() {
-								@Override
-								public void onClick(DialogInterface dialog, int which)
-								{
-									//从其他浏览器打开
-									Intent intent = new Intent();
-									intent.setAction(Intent.ACTION_VIEW);
-									Uri content_url = Uri.parse(url);
-									intent.setData(content_url);
-									activity.startActivity(Intent.createChooser(intent, "请选择浏览器"));
-
-								}
-							})
-							.setNegativeButton("取消", new DialogInterface.OnClickListener(){
-
-								@Override
-								public void onClick(DialogInterface p1, int p2)
-								{
-									putADVersion(activity,version);
-								}
-
-
-							})
-							.show();
+						adpb.setVisibility(View.GONE);
+						adwebview.setVisibility(View.VISIBLE);
 					}
 					on = false;
 				}
 			});
 		adwebview.loadUrl(url);
+		Timer timer = new Timer();// 实例化Timer类
+		timer.schedule(new TimerTask() {
+				public void run()
+				{	
+					activity. runOnUiThread(new Runnable() {  
+							public void run() {  
+								Toast.makeText(activity,"开始显示toast",Toast.LENGTH_LONG).show();
+								new AlertDialog.Builder(activity)
+
+									.setTitle(name)
+									.setCancelable(Cancelable)	
+									.setView(inputView)
+									.setPositiveButton("感兴趣",  new DialogInterface.OnClickListener() {
+										@Override
+										public void onClick(DialogInterface dialog, int which)
+										{
+											//从其他浏览器打开
+											Intent intent = new Intent();
+											intent.setAction(Intent.ACTION_VIEW);
+											Uri content_url = Uri.parse(url);
+											intent.setData(content_url);
+											activity.startActivity(Intent.createChooser(intent, "请选择浏览器"));
+
+										}
+									})
+									.setNegativeButton("取消", new DialogInterface.OnClickListener(){
+
+										@Override
+										public void onClick(DialogInterface p1, int p2)
+										{
+											putADVersion(activity,version);
+										}
+
+
+									})
+									.show();
+							}  
+						});
+				}
+			}, 4000);// 这里百毫秒		
+		
+		
 		
 		 
 	}

@@ -151,6 +151,7 @@ public class Main extends BaseActivity
 	boolean supportZoom = false;
 	boolean supportLocalAPP;
 	boolean QuietLogin_JD, QuietLogin;
+	boolean closeAD;
 	private boolean AutoLogin,AutoLogin_JD;
 	private boolean xianyuOK;
 	private boolean jingdongOK;
@@ -322,6 +323,7 @@ public class Main extends BaseActivity
 		noPic = shp.getBoolean("noPic",false);
 		savePage = shp.getBoolean("savePage",true);
 		DEBUG = shp.getBoolean("debug",false);
+		closeAD = shp.getBoolean("closeAD",false);
 		mTaobaoUrl = shp.getString("mTaobaoUrl",mTaobaoUrl);
 		mJDUrl = shp.getString("mJDUrl",mJDUrl);
 		QuietLogin = shp.getBoolean("QuietLogin",false);
@@ -362,7 +364,10 @@ public class Main extends BaseActivity
 		//loadLeftHomePage();
 		initsearch();
 		initsearchToolbar();
-		ad();
+		if(closeAD == false){
+			ad();
+		}
+		
 		if (autoUpdata)
 		{
 			mUpdata();

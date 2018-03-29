@@ -127,6 +127,12 @@
             android:title="保留页面"
             android:summary="如果程序意外退出，例如放在后台意外被杀，启动时恢复之前的页面。">
         </CheckBoxPreference>
+		<CheckBoxPreference
+            android:key="closeAD"
+			android:defaultValue="false"
+            android:title="关闭广告"
+            android:summary="本软件及其小众，广告是招商式，一年也接不到几个广告。\n开发软件不易，恳请不要关闭，谢谢了。">
+        </CheckBoxPreference>
 		
 		
 	<!--	<CheckBoxPreference
