@@ -166,7 +166,7 @@ public class Main extends BaseActivity
 	private String key;
 	private String miUsername ,miUsername_JD;
 	private String miPassword,miPassword_JD;
-	private TaokeyTool taokey;
+	private TaokeyTool taokey = new TaokeyTool();;
 	SharedPreferences settingsRead;
 	SharedPreferences settings;
 	SharedPreferences.Editor editor;
@@ -181,7 +181,7 @@ public class Main extends BaseActivity
 	private int AUTO = 3;
 	LinearLayout mainLinearLayout , leftLinearLayout;
 	
-	String UPDATA_LOG = "新增:主题颜色设定\n更改：启动背景 \n新增:自定义桌面图标 \n新增：临时允许缩放(在右上角菜单里) \n优化:搜索栏，粘贴网址可以直接进入 \n修复3.7.3版本长按图片全屏看图的崩溃 \n最后感谢给我无私画LOGO的小伙伴们，感谢";
+	String UPDATA_LOG = "新增:淘宝首页去底栏\n修复:淘口令打不开\n新增:可关闭的广告 \n现在还没有广告提供商，想投广告的，酷安私信我或加QQ2071077382 \n广告不会太多的，而且可以关闭，大家不必担心哒，我还是那么良心，hhhh";
 	String outsideUrl;
 	String mUA ="User-Agent: MQQBrowser/26 Mozilla/5.0 (Linux; U; Android 2.3.7; zh-cn; MB200 Build/GRJ22; CyanogenMod-7) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1";
 
@@ -1859,11 +1859,15 @@ public class Main extends BaseActivity
 //Toast.makeText(Main.this, getTaoKeyUrl(originalClipboard), Toast.LENGTH_SHORT).show();
 //Toast.makeText(Main.this, getTaoKeyTitle(originalClipboard), Toast.LENGTH_SHORT).show();
 //提示dialog
+		if(originalClipboard.length() > 4){
+			taokey.getUrl(originalClipboard);
+			taokey.getTaoKeyTitle(originalClipboard);
+		}
 		Dialog.setCancelable(false);
 		Dialog.setTitle("淘口令：");
 		if (IsTaoKey)
 		{
-			Dialog.setMessage("检测到有一个淘口令:" + taokey.getTaoKeyTitle(originalClipboard) + "\n 是否马上打开？");
+			Dialog.setMessage("检测到有一个淘口令:" + taokey.title + "\n 是否马上打开？");
 		}
 		if (IsUrlKey)
 		{
@@ -1873,8 +1877,9 @@ public class Main extends BaseActivity
 				@Override
 				public void onClick(DialogInterface dialog, int which)
 				{
+					
+					loadUrl(taokey.url,false);
 					copy("", Main.this);
-					loadUrl(taokey.getUrl(originalClipboard),false);
 				}
 			});
 		Dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
@@ -1888,13 +1893,13 @@ public class Main extends BaseActivity
 		if (IsTaoKey && findTaoKey)
 		{
 			copy("", Main.this);
-			Toast.makeText(Main.this, "检测到有一个淘口令，是否马上打开？", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(Main.this, "检测到有一个淘口令，是否马上打开？", Toast.LENGTH_SHORT).show();
 			Dialog.show();
 		}
 		else if (IsUrlKey && findUrlKey)
 		{
 			copy("", Main.this);
-			Toast.makeText(Main.this, "检测到有一个淘宝客口令，是否马上打开？", Toast.LENGTH_SHORT).show();
+			//Toast.makeText(Main.this, "检测到有一个淘宝客口令，是否马上打开？", Toast.LENGTH_SHORT).show();
 			Dialog.show();
 		}
 	}

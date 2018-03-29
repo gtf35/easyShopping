@@ -5,7 +5,8 @@ import java.util.regex.Pattern;
 
 public class TaokeyTool
 {
-	public static String getTaoKeyTitle(String taoKey)
+	String url ,title;
+	public String getTaoKeyTitle(String taoKey)
 	{
 		
 		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
@@ -45,27 +46,27 @@ public class TaokeyTool
 
 		while (a <= end)
 		{
-			finallyString = finallyString + tempArray[a];
+			title = finallyString = finallyString + tempArray[a];
 			a = a + 1;
 		}
 		//System.out.println(finallyString);
 		return finallyString;
 	}
 
-	public static String getUrl(String key)
+	public String getUrl(String key)
 	{
 		String finallyString = "没有呢";
-		Pattern _pattern = Pattern.compile("(http://.*)\\s+");
+		Pattern _pattern = Pattern.compile("(https://.*)\\s+");
 		Matcher _match   = _pattern.matcher(key);
 		if(_match.find()){
 			System.out.println(_match.group());
 			finallyString = _match.group();
 		}
-
+		url = finallyString;
 		return finallyString;
 	}
 
-	public static String getTaoKeyUrl(String taoKey)
+	public String getTaoKeyUrl(String taoKey)
 	{
 		//taoKey = "【美沫艾莫尔白玫瑰分体纯露免洗面膜 补水保湿提亮肤色 睡眠面贴膜】http://v.cvz5.com/h.EDtTvK 点击链接，再选择浏览器打开；或复制这条信息￥ZzGT0hLFkRC￥后打开👉手淘👈";
 		double textLong1 =getLength(taoKey);
@@ -111,7 +112,7 @@ public class TaokeyTool
 		return finallyString;
 	}
 
-	public static boolean isLetter(char c)
+	public boolean isLetter(char c)
 	{ 
         int k = 0x80; 
         return c / k == 0 ? true : false; 
@@ -122,7 +123,7 @@ public class TaokeyTool
 	 * @param str
 	 * @return
 	 */
-	public static boolean isNull(String str)
+	public boolean isNull(String str)
 	{
 		if (str == null || str.trim().equals("") || str.trim().equalsIgnoreCase("null"))
 		{
@@ -139,7 +140,7 @@ public class TaokeyTool
      * @param String s 需要得到长度的字符串 
      * @return int 得到的字符串长度 
      */ 
-    public static int length(String s)
+    public int length(String s)
 	{
         if (s == null)
             return 0;
@@ -162,7 +163,7 @@ public class TaokeyTool
      * @param String s 需要得到长度的字符串 
      * @return int 得到的字符串长度 
      */ 
-    public static double getLength(String s)
+    public double getLength(String s)
 	{
     	double valueLength = 0;  
         String chinese = "[\u4e00-\u9fa5]";  
@@ -187,7 +188,7 @@ public class TaokeyTool
         return  Math.ceil(valueLength);  
     }
 
-	public static boolean ifChinese(String s){
+	public boolean ifChinese(String s){
 		String chinese = "[\u4e00-\u9fa5]";
 		boolean a = false;
 		for (int i = 0; i < s.length(); i++)

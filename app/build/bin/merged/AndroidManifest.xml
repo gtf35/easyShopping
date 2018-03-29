@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.gtf.easyShopping"
-    android:versionCode="33"
-    android:versionName="3.8.0" >
+    android:versionCode="34"
+    android:versionName="3.8.1" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -30,7 +30,7 @@
             android:value="7445bf51bf" />
         <meta-data
             android:name="BUGLY_APP_VERSION"
-            android:value="3.8.0" />
+            android:value="3.8.1" />
         <meta-data
             android:name="BUGLY_APP_CHANNEL"
             android:value="1" />

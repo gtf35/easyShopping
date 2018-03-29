@@ -45,7 +45,7 @@ public class AD
 					if(haveAD){
 						activity. runOnUiThread(new Runnable() {  
 								public void run() {  
-									Toast.makeText(activity,"ad is:" + haveAD + " url is:" + url,Toast.LENGTH_LONG).show();
+									//Toast.makeText(activity,"ad is:" + haveAD + " url is:" + url,Toast.LENGTH_LONG).show();
 									showAD(activity);
 								}  
 							});
@@ -183,7 +183,7 @@ public class AD
 				{	
 					activity. runOnUiThread(new Runnable() {  
 							public void run() {  
-								Toast.makeText(activity,"开始显示toast",Toast.LENGTH_LONG).show();
+								//Toast.makeText(activity,"开始显示toast",Toast.LENGTH_LONG).show();
 								new AlertDialog.Builder(activity)
 
 									.setTitle(name)
@@ -193,6 +193,7 @@ public class AD
 										@Override
 										public void onClick(DialogInterface dialog, int which)
 										{
+											putADVersion(activity,version);
 											//从其他浏览器打开
 											Intent intent = new Intent();
 											intent.setAction(Intent.ACTION_VIEW);
@@ -216,7 +217,7 @@ public class AD
 							}  
 						});
 				}
-			}, 4000);// 这里百毫秒		
+			}, 10000);// 这里百毫秒		
 		
 		
 		

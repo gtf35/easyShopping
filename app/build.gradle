@@ -8,8 +8,8 @@ android {
         applicationId "io.github.gtf.easyShopping"
         minSdkVersion 14
         targetSdkVersion 21
-        versionCode 33
-        versionName "3.8.0"
+        versionCode 34
+        versionName "3.8.1"
     }
     buildTypes {
         release {
